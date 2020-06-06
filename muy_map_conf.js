@@ -34,7 +34,7 @@ function init(config) {
       mapMarkers.push(marker);
   
       var infoWindow = new google.maps.InfoWindow({
-        content: `<h2>${place.title}</h2>${place.content}`
+        content: '<h2>' + place.title + '</h2>' + place.content
       });
       marker.addListener('click', function() {
         if (openInfoWindow) {
@@ -13587,9 +13587,9 @@ var config = {
   }, {
     "id": "2656",
     "title": "Pizza Hut",
-    "address": "3103 K-FM 1960 East, Humble, TX 77338`",
+    "address": "3103 K-FM 1960 East, Humble, TX 77338",
     "source": "manual",
-    "content": "3103 K-FM 1960 East, Humble, TX 77338`<br>(281) 443-7851",
+    "content": "3103 K-FM 1960 East, Humble, TX 77338<br>(281) 443-7851",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.999445",
