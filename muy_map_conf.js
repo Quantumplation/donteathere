@@ -11,8 +11,11 @@ function init(config) {
     },
     zoom: config.map_options.zoom,
   };
+
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  var mapMarkers = [];
   var openInfoWindow;
+
   for (var i = 0; i < config.places.length; ++i) {
     (function(place) {
       var image = {
@@ -28,6 +31,7 @@ function init(config) {
           lng: parseFloat(place.location.lng, 10)
         }
       });
+      mapMarkers.push(marker);
   
       var content = '<h2>' + place.title + '</h2>' + place.address; 
       var infoWindow = new google.maps.InfoWindow({
@@ -39,9 +43,13 @@ function init(config) {
         }
         infoWindow.open(map, marker);
         openInfoWindow = infoWindow;
-      });  
+      });
     })(config.places[i]);
   }
+
+  //Add marker clustering
+  console.log(config.marker_cluster.image_path);
+  var markerCluster = new MarkerClusterer(map, mapMarkers, {imagePath: config.marker_cluster.image_path});
 }
 
 function initMap() {
