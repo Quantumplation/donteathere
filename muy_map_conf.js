@@ -8844,8 +8844,8 @@ var config = {
     "content": "Hudson Plaza Mall Rt 440, Jersey City, NJ 07306<br>(201) 332-9393",
     "location": {
       "icon": tacoBellIcon,
-      "lat": "40.794683",
-      "lng": "-74.067975",
+      "lat": "40.721250",
+      "lng": "-74.095260",
       "onclick_action": "marker",
       "draggable": false,
       "infowindow_default_open": false,
