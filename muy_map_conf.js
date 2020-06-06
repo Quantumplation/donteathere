@@ -33,9 +33,8 @@ function init(config) {
       });
       mapMarkers.push(marker);
   
-      var content = '<h2>' + place.title + '</h2>' + place.address; 
       var infoWindow = new google.maps.InfoWindow({
-        content: content
+        content: `<h2>${place.title}</h2>${place.content}`
       });
       marker.addListener('click', function() {
         if (openInfoWindow) {
@@ -143,7 +142,7 @@ var config = {
     "title": "Wendy's",
     "address": "1000 W. Walnut Hill Ln., Irving, TX 75038",
     "source": "manual",
-    "content": "1000 W. Walnut Hill Ln., Irving, TX 75038<br>(972) 751-0268<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01803@muyhamburgers.com\">Apply Here</a>",
+    "content": "1000 W. Walnut Hill Ln., Irving, TX 75038<br>(972) 751-0268",
     "location": {
       "icon": wendysIcon,
       "lat": "32.884478",
@@ -178,7 +177,7 @@ var config = {
     "title": "Wendy's",
     "address": "10046 Marsh Lane, Dallas, TX 75229",
     "source": "manual",
-    "content": "10046 Marsh Lane, Dallas, TX 75229<br>(214) 902-9580<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02415@muyhamburgers.com\">Apply Here</a>",
+    "content": "10046 Marsh Lane, Dallas, TX 75229<br>(214) 902-9580",
     "location": {
       "icon": wendysIcon,
       "lat": "32.882087",
@@ -204,7 +203,7 @@ var config = {
     "title": "Wendy's",
     "address": "1005 W. Trinity Mills Carrollton, TX 75006",
     "source": "manual",
-    "content": "1005 W. Trinity Mills Carrollton, TX 75006<br>(972) 245-1501<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02101@muyhamburgers.com\">Apply Here</a>",
+    "content": "1005 W. Trinity Mills Carrollton, TX 75006<br>(972) 245-1501",
     "location": {
       "icon": wendysIcon,
       "lat": "32.982055",
@@ -230,7 +229,7 @@ var config = {
     "title": "Wendy's",
     "address": "112 N. Denton Tap, Coppell, TX 75019",
     "source": "manual",
-    "content": "112 N. Denton Tap, Coppell, TX 75019<br>(972) 304-8393<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02282@muyhamburgers.com\">Apply Here</a>",
+    "content": "112 N. Denton Tap, Coppell, TX 75019<br>(972) 304-8393",
     "location": {
       "icon": wendysIcon,
       "lat": "32.971382",
@@ -256,7 +255,7 @@ var config = {
     "title": "Wendy's",
     "address": "11711 E. NW Highway, Dallas, TX 75218",
     "source": "manual",
-    "content": "11711 E. NW Highway, Dallas, TX 75218<br>(214) 341-0465<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02019@muyhamburgers.com\">Apply Here</a>",
+    "content": "11711 E. NW Highway, Dallas, TX 75218<br>(214) 341-0465",
     "location": {
       "icon": wendysIcon,
       "lat": "32.864217",
@@ -282,7 +281,7 @@ var config = {
     "title": "Wendy's",
     "address": "11722 N. Central Expwy., Dallas, TX 75243",
     "source": "manual",
-    "content": "11722 N. Central Expwy., Dallas, TX 75243<br>(214) 342-1936<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01791@muyhamburgers.com\">Apply Here</a>",
+    "content": "11722 N. Central Expwy., Dallas, TX 75243<br>(214) 342-1936",
     "location": {
       "icon": wendysIcon,
       "lat": "32.908331",
@@ -308,7 +307,7 @@ var config = {
     "title": "Wendy's",
     "address": "1204 North U.S. 377, Roanoke, TX 76262",
     "source": "manual",
-    "content": "1204 North U.S. 377, Roanoke, TX 76262<br>(682) 831-1533<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09724@muyhamburgers.com\">Apply Here</a>",
+    "content": "1204 North U.S. 377, Roanoke, TX 76262<br>(682) 831-1533",
     "location": {
       "icon": wendysIcon,
       "lat": "33.013494",
@@ -334,7 +333,7 @@ var config = {
     "title": "Wendy's",
     "address": "12150 FM 423,  Frisco, TX 75034",
     "source": "manual",
-    "content": "12150 FM 423,  Frisco, TX 75034<br>(972) 731-5073<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10651@muyhamburgers.com\">Apply Here</a>",
+    "content": "12150 FM 423,  Frisco, TX 75034<br>(972) 731-5073",
     "location": {
       "icon": wendysIcon,
       "lat": "33.179345",
@@ -360,7 +359,7 @@ var config = {
     "title": "Wendy's",
     "address": "12415 Lake June Rd., Balch Springs, TX 75180",
     "source": "manual",
-    "content": "12415 Lake June Rd., Balch Springs, TX 75180<br>(972) 285-0913<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11224@muyhamburgers.com\">Apply Here</a>",
+    "content": "12415 Lake June Rd., Balch Springs, TX 75180<br>(972) 285-0913",
     "location": {
       "icon": wendysIcon,
       "lat": "32.734339",
@@ -386,7 +385,7 @@ var config = {
     "title": "Wendy's",
     "address": "1317 N. Saginaw Blvd., Saginaw, TX 76179",
     "source": "manual",
-    "content": "1317 N. Saginaw Blvd., Saginaw, TX 76179<br>(817) 232-4399<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10569@muyhamburgers.com\">Apply Here</a>",
+    "content": "1317 N. Saginaw Blvd., Saginaw, TX 76179<br>(817) 232-4399",
     "location": {
       "icon": wendysIcon,
       "lat": "32.881904",
@@ -412,7 +411,7 @@ var config = {
     "title": "Wendy's",
     "address": "1325 Gross Rd., Mesquite, TX 75149",
     "source": "manual",
-    "content": "1325 Gross Rd., Mesquite, TX 75149<br>(972) 329-5477<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07757@muyhamburgers.com\">Apply Here</a>",
+    "content": "1325 Gross Rd., Mesquite, TX 75149<br>(972) 329-5477",
     "location": {
       "icon": wendysIcon,
       "lat": "32.782505",
@@ -438,7 +437,7 @@ var config = {
     "title": "Wendy's",
     "address": "1345  E. Beltline, Richardson, TX 75081",
     "source": "manual",
-    "content": "1345  E. Beltline, Richardson, TX 75081<br>(972) 234-6298<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08977@muyhamburgers.com\">Apply Here</a>",
+    "content": "1345  E. Beltline, Richardson, TX 75081<br>(972) 234-6298<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "32.94579",
@@ -464,7 +463,7 @@ var config = {
     "title": "Wendy's",
     "address": "1401 W. Kirby St., Wylie, TX 75098",
     "source": "manual",
-    "content": "1401 W. Kirby St., Wylie, TX 75098<br>(972) 442-4566<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09412@muyhamburgers.com\">Apply Here</a>",
+    "content": "1401 W. Kirby St., Wylie, TX 75098<br>(972) 442-4566<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "33.007415",
@@ -490,7 +489,7 @@ var config = {
     "title": "Wendy's",
     "address": "14160 Trinity Blvd., Ft. Worth, TX 76155",
     "source": "manual",
-    "content": "14160 Trinity Blvd., Ft. Worth, TX 76155<br>(817) 283-1588<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02413@muyhamburgers.com\">Apply Here</a>",
+    "content": "14160 Trinity Blvd., Ft. Worth, TX 76155<br>(817) 283-1588<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "32.821887",
@@ -516,7 +515,7 @@ var config = {
     "title": "Wendy's",
     "address": "1500 Eastchase Pkwy., Ft. Worth, TX 76120",
     "source": "manual",
-    "content": "1500 Eastchase Pkwy., Ft. Worth, TX 76120<br>(817) 274-1220<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02414@muyhamburgers.com\">Apply Here</a>",
+    "content": "1500 Eastchase Pkwy., Ft. Worth, TX 76120<br>(817) 274-1220",
     "location": {
       "icon": wendysIcon,
       "lat": "32.756917",
@@ -542,7 +541,7 @@ var config = {
     "title": "Wendy's",
     "address": "1507 E. Kiest Blvd., Dallas, TX 75216",
     "source": "manual",
-    "content": "1507 E. Kiest Blvd., Dallas, TX 75216<br>(214) 374-5346<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09780@muyhamburgers.com\">Apply Here</a>",
+    "content": "1507 E. Kiest Blvd., Dallas, TX 75216<br>(214) 374-5346",
     "location": {
       "icon": wendysIcon,
       "lat": "32.709084",
@@ -568,7 +567,7 @@ var config = {
     "title": "Wendy's",
     "address": "17981  Preston Rd., Dallas, TX 75287",
     "source": "manual",
-    "content": "17981  Preston Rd., Dallas, TX 75287<br>(972) 931-9688<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01894@muyhamburgers.com\">Apply Here</a>",
+    "content": "17981  Preston Rd., Dallas, TX 75287<br>(972) 931-9688",
     "location": {
       "icon": wendysIcon,
       "lat": "32.997394",
@@ -594,7 +593,7 @@ var config = {
     "title": "Wendy's",
     "address": "17989 Marsh Lane, Dallas, TX 75287",
     "source": "manual",
-    "content": "17989 Marsh Lane, Dallas, TX 75287<br>(972) 306-7339<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08604@muyhamburgers.com\">Apply Here</a>",
+    "content": "17989 Marsh Lane, Dallas, TX 75287<br>(972) 306-7339",
     "location": {
       "icon": wendysIcon,
       "lat": "32.994735",
@@ -620,7 +619,7 @@ var config = {
     "title": "Wendy's",
     "address": "1800 N. Beltline, Mesquite, TX 75149",
     "source": "manual",
-    "content": "1800 N. Beltline, Mesquite, TX 75149<br>(972) 289-5288<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04591@muyhamburgers.com\">Apply Here</a>",
+    "content": "1800 N. Beltline, Mesquite, TX 75149<br>(972) 289-5288",
     "location": {
       "icon": wendysIcon,
       "lat": "32.788704",
@@ -646,7 +645,7 @@ var config = {
     "title": "Wendy's",
     "address": "1910 S. Buckner,  Dallas, TX 75217",
     "source": "manual",
-    "content": "1910 S. Buckner,  Dallas, TX 75217<br>(214) 398-5323<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00036@muyhamburgers.com\">Apply Here</a>",
+    "content": "1910 S. Buckner,  Dallas, TX 75217<br>(214) 398-5323",
     "location": {
       "icon": wendysIcon,
       "lat": "32.744584",
@@ -672,7 +671,7 @@ var config = {
     "title": "Wendy's",
     "address": "1951 W. El Dorado Pkwy., McKinney, TX 75070",
     "source": "manual",
-    "content": "1951 W. El Dorado Pkwy., McKinney, TX 75070<br>(972) 562-3600<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08263@muyhamburgers.com\">Apply Here</a>",
+    "content": "1951 W. El Dorado Pkwy., McKinney, TX 75070<br>(972) 562-3600",
     "location": {
       "icon": wendysIcon,
       "lat": "33.171635",
@@ -698,7 +697,7 @@ var config = {
     "title": "Wendy's",
     "address": "200 W. Spring Valley, Richardson, TX 75080",
     "source": "manual",
-    "content": "200 W. Spring Valley, Richardson, TX 75080<br>(972) 231-4577<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02102@muyhamburgers.com\">Apply Here</a>",
+    "content": "200 W. Spring Valley, Richardson, TX 75080<br>(972) 231-4577",
     "location": {
       "icon": wendysIcon,
       "lat": "32.9405",
@@ -724,7 +723,7 @@ var config = {
     "title": "Wendy's",
     "address": "2025 W. McDermott Dr. , Allen, TX 75013",
     "source": "manual",
-    "content": "2025 W. McDermott Dr. , Allen, TX 75013<br>(972) 359-7570<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07755@muyhamburgers.com\">Apply Here</a>",
+    "content": "2025 W. McDermott Dr. , Allen, TX 75013<br>(972) 359-7570",
     "location": {
       "icon": wendysIcon,
       "lat": "33.100312",
@@ -750,7 +749,7 @@ var config = {
     "title": "Wendy's",
     "address": "2041 Justin Rd., Flower Mound, TX 75028",
     "source": "manual",
-    "content": "2041 Justin Rd., Flower Mound, TX 75028<br>(972) 874-7355<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02616@muyhamburgers.com\">Apply Here</a>",
+    "content": "2041 Justin Rd., Flower Mound, TX 75028<br>(972) 874-7355",
     "location": {
       "icon": wendysIcon,
       "lat": "33.071355",
@@ -776,7 +775,7 @@ var config = {
     "title": "Wendy's",
     "address": "2111 Hall-Johnson, Grapevine, TX 76051",
     "source": "manual",
-    "content": "2111 Hall-Johnson, Grapevine, TX 76051<br>(817) 571-4810<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02656@muyhamburgers.com\">Apply Here</a>",
+    "content": "2111 Hall-Johnson, Grapevine, TX 76051<br>(817) 571-4810",
     "location": {
       "icon": wendysIcon,
       "lat": "32.892904",
@@ -802,7 +801,7 @@ var config = {
     "title": "Wendy's",
     "address": "2120 Long Prairie Rd.,Flower Mound, TX 75028",
     "source": "manual",
-    "content": "2120 Long Prairie Rd.,Flower Mound, TX 75028<br>(972) 539-4474<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02416@muyhamburgers.com\">Apply Here</a>",
+    "content": "2120 Long Prairie Rd.,Flower Mound, TX 75028<br>(972) 539-4474",
     "location": {
       "icon": wendysIcon,
       "lat": "33.015687",
@@ -828,7 +827,7 @@ var config = {
     "title": "Wendy's",
     "address": "2130 E. Southlake Blvd., Southlake, TX 76092",
     "source": "manual",
-    "content": "2130 E. Southlake Blvd., Southlake, TX 76092<br>(817) 416-8484<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02613@muyhamburgers.com\">Apply Here</a>",
+    "content": "2130 E. Southlake Blvd., Southlake, TX 76092<br>(817) 416-8484",
     "location": {
       "icon": wendysIcon,
       "lat": "32.941458",
@@ -854,7 +853,7 @@ var config = {
     "title": "Wendy's",
     "address": "2241 W. Northwest Hwy, Dallas, TX 75220",
     "source": "manual",
-    "content": "2241 W. Northwest Hwy, Dallas, TX 75220<br>(214) 350-7436<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02051@muyhamburgers.com\">Apply Here</a>",
+    "content": "2241 W. Northwest Hwy, Dallas, TX 75220<br>(214) 350-7436",
     "location": {
       "icon": wendysIcon,
       "lat": "32.863879",
@@ -880,7 +879,7 @@ var config = {
     "title": "Wendy's",
     "address": "2509 Lakeview Pkwy., Rowlett, TX 75089",
     "source": "manual",
-    "content": "2509 Lakeview Pkwy., Rowlett, TX 75089<br>(214) 607-9117<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08605@muyhamburgers.com\">Apply Here</a>",
+    "content": "2509 Lakeview Pkwy., Rowlett, TX 75089<br>(214) 607-9117",
     "location": {
       "icon": wendysIcon,
       "lat": "32.908184",
@@ -906,7 +905,7 @@ var config = {
     "title": "Wendy's",
     "address": "2545 Ridge Rd., Rockwall, TX 75087",
     "source": "manual",
-    "content": "2545 Ridge Rd., Rockwall, TX 75087<br>(972) 772-3422<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02248@muyhamburgers.com\">Apply Here</a>",
+    "content": "2545 Ridge Rd., Rockwall, TX 75087<br>(972) 772-3422",
     "location": {
       "icon": wendysIcon,
       "lat": "32.899344",
@@ -932,7 +931,7 @@ var config = {
     "title": "Wendy's",
     "address": "2550 E. Pioneer Pkwy., Arlington, TX 76010",
     "source": "manual",
-    "content": "2550 E. Pioneer Pkwy., Arlington, TX 76010<br>(817) 460-5382<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02249@muyhamburgers.com\">Apply Here</a>",
+    "content": "2550 E. Pioneer Pkwy., Arlington, TX 76010<br>(817) 460-5382",
     "location": {
       "icon": wendysIcon,
       "lat": "32.711859",
@@ -958,7 +957,7 @@ var config = {
     "title": "Wendy's",
     "address": "2554 W. IH-20, Grand Prairie, TX 75050",
     "source": "manual",
-    "content": "2554 W. IH-20, Grand Prairie, TX 75050<br>(972) 647-0141<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02103@muyhamburgers.com\">Apply Here</a>",
+    "content": "2554 W. IH-20, Grand Prairie, TX 75050<br>(972) 647-0141",
     "location": {
       "icon": wendysIcon,
       "lat": "32.781145",
@@ -984,7 +983,7 @@ var config = {
     "title": "Wendy's",
     "address": "3200  Custer,  Plano, TX 75075",
     "source": "manual",
-    "content": "3200  Custer,  Plano, TX 75075<br>(972) 519-0484<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01393@muyhamburgers.com\">Apply Here</a>",
+    "content": "3200  Custer,  Plano, TX 75075<br>(972) 519-0484",
     "location": {
       "icon": wendysIcon,
       "lat": "33.040303",
@@ -1010,7 +1009,7 @@ var config = {
     "title": "Wendy's",
     "address": "3208 Preston Rd., Frisco, TX 75034",
     "source": "manual",
-    "content": "3208 Preston Rd., Frisco, TX 75034<br>(469) 633-0641<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09332@muyhamburgers.com\">Apply Here</a>",
+    "content": "3208 Preston Rd., Frisco, TX 75034<br>(469) 633-0641",
     "location": {
       "icon": wendysIcon,
       "lat": "33.10522",
@@ -1036,7 +1035,7 @@ var config = {
     "title": "Wendy's",
     "address": "3232 Lavon Dr., Garland, TX 75040",
     "source": "manual",
-    "content": "3232 Lavon Dr., Garland, TX 75040<br>(972) 414-7084<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02169@muyhamburgers.com\">Apply Here</a>",
+    "content": "3232 Lavon Dr., Garland, TX 75040<br>(972) 414-7084",
     "location": {
       "icon": wendysIcon,
       "lat": "32.946618",
@@ -1062,7 +1061,7 @@ var config = {
     "title": "Wendy's",
     "address": "3521 Custer Rd., Richardson, TX 75080",
     "source": "manual",
-    "content": "3521 Custer Rd., Richardson, TX 75080<br>(972) 889-3356<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07754@muyhamburgers.com\">Apply Here</a>",
+    "content": "3521 Custer Rd., Richardson, TX 75080<br>(972) 889-3356",
     "location": {
       "icon": wendysIcon,
       "lat": "32.975489",
@@ -1088,7 +1087,7 @@ var config = {
     "title": "Wendy's",
     "address": "3924 S.H. 121, Bedford, TX 76021",
     "source": "manual",
-    "content": "3924 S.H. 121, Bedford, TX 76021<br>(817) 283-3726<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09999@muyhamburgers.com\">Apply Here</a>",
+    "content": "3924 S.H. 121, Bedford, TX 76021<br>(817) 283-3726",
     "location": {
       "icon": wendysIcon,
       "lat": "32.865442",
@@ -1114,7 +1113,7 @@ var config = {
     "title": "Wendy's",
     "address": "3990 N. Beltline Rd., Irving, TX 75038",
     "source": "manual",
-    "content": "3990 N. Beltline Rd., Irving, TX 75038<br>(972) 252-3904<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01317@muyhamburgers.com\">Apply Here</a>",
+    "content": "3990 N. Beltline Rd., Irving, TX 75038<br>(972) 252-3904",
     "location": {
       "icon": wendysIcon,
       "lat": "32.860442",
@@ -1140,7 +1139,7 @@ var config = {
     "title": "Wendy's",
     "address": "4169 LBJ Freeway, Farmers Branch, TX 75224",
     "source": "manual",
-    "content": "4169 LBJ Freeway, Farmers Branch, TX 75224<br>(972) 788-1115<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01806@muyhamburgers.com\">Apply Here</a>",
+    "content": "4169 LBJ Freeway, Farmers Branch, TX 75224<br>(972) 788-1115",
     "location": {
       "icon": wendysIcon,
       "lat": "32.925693",
@@ -1166,7 +1165,7 @@ var config = {
     "title": "Wendy's",
     "address": "4380 DFW Turnpike, Dallas, TX 75211",
     "source": "manual",
-    "content": "4380 DFW Turnpike, Dallas, TX 75211<br>(214) 623-8465<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09411@muyhamburgers.com\">Apply Here</a>",
+    "content": "4380 DFW Turnpike, Dallas, TX 75211<br>(214) 623-8465",
     "location": {
       "icon": wendysIcon,
       "lat": "32.765323",
@@ -1192,7 +1191,7 @@ var config = {
     "title": "Wendy's",
     "address": "501 W. I-30, Garland, TX 75043",
     "source": "manual",
-    "content": "501 W. I-30, Garland, TX 75043<br>(972) 303-0600<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08533@muyhamburgers.com\">Apply Here</a>",
+    "content": "501 W. I-30, Garland, TX 75043<br>(972) 303-0600",
     "location": {
       "icon": wendysIcon,
       "lat": "32.840799",
@@ -1218,7 +1217,7 @@ var config = {
     "title": "Wendy's",
     "address": "5215 Spring Valley, Dallas, TX 75240",
     "source": "manual",
-    "content": "5215 Spring Valley, Dallas, TX 75240<br>(972) 490-7981<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09410@muyhamburgers.com\">Apply Here</a>",
+    "content": "5215 Spring Valley, Dallas, TX 75240<br>(972) 490-7981",
     "location": {
       "icon": wendysIcon,
       "lat": "32.939968",
@@ -1244,7 +1243,7 @@ var config = {
     "title": "Wendy's",
     "address": "5235 N. Garland Rd., Garland, TX 75044",
     "source": "manual",
-    "content": "5235 N. Garland Rd., Garland, TX 75044<br>(972) 414-8793<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09398@muyhamburgers.com\">Apply Here</a>",
+    "content": "5235 N. Garland Rd., Garland, TX 75044<br>(972) 414-8793",
     "location": {
       "icon": wendysIcon,
       "lat": "32.963776",
@@ -1270,7 +1269,7 @@ var config = {
     "title": "Wendy's",
     "address": "5309 S.H. 121, The Colony, TX 75056",
     "source": "manual",
-    "content": "5309 S.H. 121, The Colony, TX 75056<br>(469) 384-0783<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08277@muyhamburgers.com\">Apply Here</a>",
+    "content": "5309 S.H. 121, The Colony, TX 75056<br>(469) 384-0783",
     "location": {
       "icon": wendysIcon,
       "lat": "33.073079",
@@ -1296,7 +1295,7 @@ var config = {
     "title": "Wendy's",
     "address": "5502 Harry Hines, Dallas, TX 75235",
     "source": "manual",
-    "content": "5502 Harry Hines, Dallas, TX 75235<br>(214) 631-1803<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00302@muyhamburgers.com\">Apply Here</a>",
+    "content": "5502 Harry Hines, Dallas, TX 75235<br>(214) 631-1803",
     "location": {
       "icon": wendysIcon,
       "lat": "32.814796",
@@ -1322,7 +1321,7 @@ var config = {
     "title": "Wendy's",
     "address": "5555  N. Jim Miller,  Dallas, TX 75228",
     "source": "manual",
-    "content": "5555  N. Jim Miller,  Dallas, TX 75228<br>(214) 381-5157<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01207@muyhamburgers.com\">Apply Here</a>",
+    "content": "5555  N. Jim Miller,  Dallas, TX 75228<br>(214) 381-5157",
     "location": {
       "icon": wendysIcon,
       "lat": "32.79226",
@@ -1348,7 +1347,7 @@ var config = {
     "title": "Wendy's",
     "address": "5555 El Dorado Pkwy., Frisco, TX 75033",
     "source": "manual",
-    "content": "5555 El Dorado Pkwy., Frisco, TX 75033<br>(214) 705-8392<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11223@muyhamburgers.com\">Apply Here</a>",
+    "content": "5555 El Dorado Pkwy., Frisco, TX 75033<br>(214) 705-8392",
     "location": {
       "icon": wendysIcon,
       "lat": "33.174459",
@@ -1374,7 +1373,7 @@ var config = {
     "title": "Wendy's",
     "address": "601 W. McDermott Dr., Allen, TX 75013",
     "source": "manual",
-    "content": "601 W. McDermott Dr., Allen, TX 75013<br>(972) 396-0363<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05530@muyhamburgers.com\">Apply Here</a>",
+    "content": "601 W. McDermott Dr., Allen, TX 75013<br>(972) 396-0363",
     "location": {
       "icon": wendysIcon,
       "lat": "33.101429",
@@ -1400,7 +1399,7 @@ var config = {
     "title": "Wendy's",
     "address": "6011  Greenville Ave.,  Dallas, TX 75206",
     "source": "manual",
-    "content": "6011  Greenville Ave.,  Dallas, TX 75206<br>(214) 369-4588<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01620@muyhamburgers.com\">Apply Here</a>",
+    "content": "6011  Greenville Ave.,  Dallas, TX 75206<br>(214) 369-4588",
     "location": {
       "icon": wendysIcon,
       "lat": "32.858723",
@@ -1426,7 +1425,7 @@ var config = {
     "title": "Wendy's",
     "address": "605 E Malloy Bridge Rd., Seagoville, TX 75159",
     "source": "manual",
-    "content": "605 E Malloy Bridge Rd., Seagoville, TX 75159<br>(972) 287-2040<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10552@muyhamburgers.com\">Apply Here</a>",
+    "content": "605 E Malloy Bridge Rd., Seagoville, TX 75159<br>(972) 287-2040",
     "location": {
       "icon": wendysIcon,
       "lat": "32.648465",
@@ -1452,7 +1451,7 @@ var config = {
     "title": "Wendy's",
     "address": "6108 W. Park Blvd., Plano, TX 75093",
     "source": "manual",
-    "content": "6108 W. Park Blvd., Plano, TX 75093<br>(972) 248-6617<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05502@muyhamburgers.com\">Apply Here</a>",
+    "content": "6108 W. Park Blvd., Plano, TX 75093<br>(972) 248-6617",
     "location": {
       "icon": wendysIcon,
       "lat": "33.027091",
@@ -1478,7 +1477,7 @@ var config = {
     "title": "Wendy's",
     "address": "6348 Lake Worth Blvd., Lake Worth, TX 76135",
     "source": "manual",
-    "content": "6348 Lake Worth Blvd., Lake Worth, TX 76135<br>(817) 237-2460<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10506@muyhamburgers.com\">Apply Here</a>",
+    "content": "6348 Lake Worth Blvd., Lake Worth, TX 76135<br>(817) 237-2460",
     "location": {
       "icon": wendysIcon,
       "lat": "32.809911",
@@ -1504,7 +1503,7 @@ var config = {
     "title": "Wendy's",
     "address": "6716 Bridge St., Fort Worth, TX 76112",
     "source": "manual",
-    "content": "6716 Bridge St., Fort Worth, TX 76112<br>(817) 451-6372<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08265@muyhamburgers.com\">Apply Here</a>",
+    "content": "6716 Bridge St., Fort Worth, TX 76112<br>(817) 451-6372",
     "location": {
       "icon": wendysIcon,
       "lat": "32.76513",
@@ -1530,7 +1529,7 @@ var config = {
     "title": "Wendy's",
     "address": "6912 Coit Rd., Plano, TX 75023",
     "source": "manual",
-    "content": "6912 Coit Rd., Plano, TX 75023<br>(972) 491-3131<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05405@muyhamburgers.com\">Apply Here</a>",
+    "content": "6912 Coit Rd., Plano, TX 75023<br>(972) 491-3131",
     "location": {
       "icon": wendysIcon,
       "lat": "33.070539",
@@ -1556,7 +1555,7 @@ var config = {
     "title": "Wendy's",
     "address": "709 W. Spring Creek Pkwy., Plano, TX 75023",
     "source": "manual",
-    "content": "709 W. Spring Creek Pkwy., Plano, TX 75023<br>(972) 527-5518<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02041@muyhamburgers.com\">Apply Here</a>",
+    "content": "709 W. Spring Creek Pkwy., Plano, TX 75023<br>(972) 527-5518",
     "location": {
       "icon": wendysIcon,
       "lat": "33.05747",
@@ -1582,7 +1581,7 @@ var config = {
     "title": "Wendy's",
     "address": "7201 Preston Rd., Frisco, TX 75035",
     "source": "manual",
-    "content": "7201 Preston Rd., Frisco, TX 75035<br>(972) 377-3177<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07756@muyhamburgers.com\">Apply Here</a>",
+    "content": "7201 Preston Rd., Frisco, TX 75035<br>(972) 377-3177",
     "location": {
       "icon": wendysIcon,
       "lat": "33.138108",
@@ -1608,7 +1607,7 @@ var config = {
     "title": "Wendy's",
     "address": "7700 N. MacArthur, Irving, TX 75063",
     "source": "manual",
-    "content": "7700 N. MacArthur, Irving, TX 75063<br>(972) 401-3937<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02251@muyhamburgers.com\">Apply Here</a>",
+    "content": "7700 N. MacArthur, Irving, TX 75063<br>(972) 401-3937",
     "location": {
       "icon": wendysIcon,
       "lat": "32.911191",
@@ -1634,7 +1633,7 @@ var config = {
     "title": "Wendy's",
     "address": "821 S. MacArthur, Coppell, TX 75019",
     "source": "manual",
-    "content": "821 S. MacArthur, Coppell, TX 75019<br>(972) 393-3850<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01804@muyhamburgers.com\">Apply Here</a>",
+    "content": "821 S. MacArthur, Coppell, TX 75019<br>(972) 393-3850",
     "location": {
       "icon": wendysIcon,
       "lat": "32.951105",
@@ -1660,7 +1659,7 @@ var config = {
     "title": "Wendy's",
     "address": "8424 Denton Hwy., Watauga, TX 76148",
     "source": "manual",
-    "content": "8424 Denton Hwy., Watauga, TX 76148<br>(817) 281-8854<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02597@muyhamburgers.com\">Apply Here</a>",
+    "content": "8424 Denton Hwy., Watauga, TX 76148<br>(817) 281-8854",
     "location": {
       "icon": wendysIcon,
       "lat": "32.892926",
@@ -1686,7 +1685,7 @@ var config = {
     "title": "Wendy's",
     "address": "850 E. Hwy. 80, Forney, TX 75126",
     "source": "manual",
-    "content": "850 E. Hwy. 80, Forney, TX 75126<br>(972) 552-9946<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10836@muyhamburgers.com\">Apply Here</a>",
+    "content": "850 E. Hwy. 80, Forney, TX 75126<br>(972) 552-9946",
     "location": {
       "icon": wendysIcon,
       "lat": "32.742966",
@@ -1712,7 +1711,7 @@ var config = {
     "title": "Wendy's",
     "address": "8901 Lakeview Pkwy., Rowlett, TX 75089",
     "source": "manual",
-    "content": "8901 Lakeview Pkwy., Rowlett, TX 75089<br>(972) 463-9270<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10570@muyhamburgers.com\">Apply Here</a>",
+    "content": "8901 Lakeview Pkwy., Rowlett, TX 75089<br>(972) 463-9270",
     "location": {
       "icon": wendysIcon,
       "lat": "32.918979",
@@ -1738,7 +1737,7 @@ var config = {
     "title": "Wendy's",
     "address": "8904 S.H. 121, McKinney, TX 75070",
     "source": "manual",
-    "content": "8904 S.H. 121, McKinney, TX 75070<br>(214) 383-5369<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10650@muyhamburgers.com\">Apply Here</a>",
+    "content": "8904 S.H. 121, McKinney, TX 75070<br>(214) 383-5369",
     "location": {
       "icon": wendysIcon,
       "lat": "33.12717",
@@ -1764,7 +1763,7 @@ var config = {
     "title": "Wendy's",
     "address": "935 E. Campbell,  Richardson, TX 75082",
     "source": "manual",
-    "content": "935 E. Campbell,  Richardson, TX 75082<br>(972) 680-8106<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02018@muyhamburgers.com\">Apply Here</a>",
+    "content": "935 E. Campbell,  Richardson, TX 75082<br>(972) 680-8106",
     "location": {
       "icon": wendysIcon,
       "lat": "32.975907",
@@ -1790,7 +1789,7 @@ var config = {
     "title": "Wendy's",
     "address": "9680 Audelia, Dallas, TX 75238",
     "source": "manual",
-    "content": "9680 Audelia, Dallas, TX 75238<br>(214) 221-2036<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10774@muyhamburgers.com\">Apply Here</a>",
+    "content": "9680 Audelia, Dallas, TX 75238<br>(214) 221-2036",
     "location": {
       "icon": wendysIcon,
       "lat": "32.878588",
@@ -1816,7 +1815,7 @@ var config = {
     "title": "Wendy's",
     "address": "1004 N. Loop 340, Waco, TX 76705",
     "source": "manual",
-    "content": "1004 N. Loop 340, Waco, TX 76705<br>(254) 412-1288<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05617@muyhamburgers.com\">Apply Here</a>",
+    "content": "1004 N. Loop 340, Waco, TX 76705<br>(254) 412-1288",
     "location": {
       "icon": wendysIcon,
       "lat": "31.604409",
@@ -1842,7 +1841,7 @@ var config = {
     "title": "Wendy's",
     "address": "1015 N. Valley Mills Rd, Waco TX, 76710",
     "source": "manual",
-    "content": "1015 N. Valley Mills Rd, Waco TX, 76710<br>(254) 776-3200<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03142@muyhamburgers.com\">Apply Here</a>",
+    "content": "1015 N. Valley Mills Rd, Waco TX, 76710<br>(254) 776-3200",
     "location": {
       "icon": wendysIcon,
       "lat": "31.530819",
@@ -1868,7 +1867,7 @@ var config = {
     "title": "Wendy's",
     "address": "1019 South Main Street, Centerville, OH 45458",
     "source": "manual",
-    "content": "1019 South Main Street, Centerville, OH 45458<br>(937) 439-9141<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01680@muyhamburgers.com\">Apply Here</a>",
+    "content": "1019 South Main Street, Centerville, OH 45458<br>(937) 439-9141",
     "location": {
       "icon": wendysIcon,
       "lat": "39.609253",
@@ -1894,7 +1893,7 @@ var config = {
     "title": "Wendy's",
     "address": "1201 S Fort Hood St, Killeen, TX 76542",
     "source": "manual",
-    "content": "1201 S Fort Hood St, Killeen, TX 76542<br>(254) 634-7339<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02862@muyhamburgers.com\">Apply Here</a>",
+    "content": "1201 S Fort Hood St, Killeen, TX 76542<br>(254) 634-7339",
     "location": {
       "icon": wendysIcon,
       "lat": "31.10729",
@@ -1920,7 +1919,7 @@ var config = {
     "title": "Wendy's",
     "address": "12310 NW H K Dodgen Loop, ste B, Temple, TX 76501",
     "source": "manual",
-    "content": "12310 NW H K Dodgen Loop, ste B, Temple, TX 76501<br>(254) 773-5053<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08411@muyhamburgers.com\">Apply Here</a>",
+    "content": "12310 NW H K Dodgen Loop, ste B, Temple, TX 76501<br>(254) 773-5053",
     "location": {
       "icon": wendysIcon,
       "lat": "31.138812",
@@ -1946,7 +1945,7 @@ var config = {
     "title": "Wendy's",
     "address": "1235 East Dayton, Fairborn, OH 45324",
     "source": "manual",
-    "content": "1235 East Dayton, Fairborn, OH 45324<br>(937) 879-2495<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07884@muyhamburgers.com\">Apply Here</a>",
+    "content": "1235 East Dayton, Fairborn, OH 45324<br>(937) 879-2495",
     "location": {
       "icon": wendysIcon,
       "lat": "39.828356",
@@ -1972,7 +1971,7 @@ var config = {
     "title": "Wendy's",
     "address": "1300 Archer Drive, Troy, OH 45373",
     "source": "manual",
-    "content": "1300 Archer Drive, Troy, OH 45373<br>(937) 332-8474<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08378@muyhamburgers.com\">Apply Here</a>",
+    "content": "1300 Archer Drive, Troy, OH 45373<br>(937) 332-8474",
     "location": {
       "icon": wendysIcon,
       "lat": "40.025634",
@@ -1998,7 +1997,7 @@ var config = {
     "title": "Wendy's",
     "address": "1348 SW H K Dodgen Loop, Temple, TX 76504",
     "source": "manual",
-    "content": "1348 SW H K Dodgen Loop, Temple, TX 76504<br>(254) 773-7220<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10835@muyhamburgers.com\">Apply Here</a>",
+    "content": "1348 SW H K Dodgen Loop, Temple, TX 76504<br>(254) 773-7220",
     "location": {
       "icon": wendysIcon,
       "lat": "31.074897",
@@ -2024,7 +2023,7 @@ var config = {
     "title": "Wendy's",
     "address": "1417 Hewitt Dr, Waco, TX 76712",
     "source": "manual",
-    "content": "1417 Hewitt Dr, Waco, TX 76712<br>(254) 420-1411<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08043@muyhamburgers.com\">Apply Here</a>",
+    "content": "1417 Hewitt Dr, Waco, TX 76712<br>(254) 420-1411",
     "location": {
       "icon": wendysIcon,
       "lat": "31.485006",
@@ -2050,7 +2049,7 @@ var config = {
     "title": "Wendy's",
     "address": "1507 Wayne Ave., Dayton, OH 45410",
     "source": "manual",
-    "content": "1507 Wayne Ave., Dayton, OH 45410<br>(937) 252-8085<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00056@muyhamburgers.com\">Apply Here</a>",
+    "content": "1507 Wayne Ave., Dayton, OH 45410<br>(937) 252-8085",
     "location": {
       "icon": wendysIcon,
       "lat": "39.747233",
@@ -2076,7 +2075,7 @@ var config = {
     "title": "Wendy's",
     "address": "1521 North Barron Street, Eaton, OH 45320",
     "source": "manual",
-    "content": "1521 North Barron Street, Eaton, OH 45320<br>(937) 456-7113<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02047@muyhamburgers.com\">Apply Here</a>",
+    "content": "1521 North Barron Street, Eaton, OH 45320<br>(937) 456-7113",
     "location": {
       "icon": wendysIcon,
       "lat": "39.763747",
@@ -2102,7 +2101,7 @@ var config = {
     "title": "Wendy's",
     "address": "1604 W. Henderson St., Cleburne, TX 76033",
     "source": "manual",
-    "content": "1604 W. Henderson St., Cleburne, TX 76033<br>(817) 774-9777<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09614@muyhamburgers.com\">Apply Here</a>",
+    "content": "1604 W. Henderson St., Cleburne, TX 76033<br>(817) 774-9777",
     "location": {
       "icon": wendysIcon,
       "lat": "32.339414",
@@ -2128,7 +2127,7 @@ var config = {
     "title": "Wendy's",
     "address": "1780 Woodman Drive, Dayton, OH 45420",
     "source": "manual",
-    "content": "1780 Woodman Drive, Dayton, OH 45420<br>(937) 252-4354<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01132@muyhamburgers.com\">Apply Here</a>",
+    "content": "1780 Woodman Drive, Dayton, OH 45420<br>(937) 252-4354",
     "location": {
       "icon": wendysIcon,
       "lat": "39.728711",
@@ -2154,7 +2153,7 @@ var config = {
     "title": "Wendy's",
     "address": "1880 East Dorothy Lane, Dayton, OH 45429",
     "source": "manual",
-    "content": "1880 East Dorothy Lane, Dayton, OH 45429<br>(937) 296-0275<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00016@muyhamburgers.com\">Apply Here</a>",
+    "content": "1880 East Dorothy Lane, Dayton, OH 45429<br>(937) 296-0275",
     "location": {
       "icon": wendysIcon,
       "lat": "39.702737",
@@ -2180,7 +2179,7 @@ var config = {
     "title": "Wendy's",
     "address": "2008 E Central Texas Express, Killeen, TX 76541",
     "source": "manual",
-    "content": "2008 E Central Texas Express, Killeen, TX 76541<br>(254) 526-3507<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04412@muyhamburgers.com\">Apply Here</a>",
+    "content": "2008 E Central Texas Express, Killeen, TX 76541<br>(254) 526-3507",
     "location": {
       "icon": wendysIcon,
       "lat": "31.090287",
@@ -2206,7 +2205,7 @@ var config = {
     "title": "Wendy's",
     "address": "205 West FM 544, Murphy, TX 75094",
     "source": "manual",
-    "content": "205 West FM 544, Murphy, TX 75094<br>(972) 422-6367<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10504@muyhamburgers.com\">Apply Here</a>",
+    "content": "205 West FM 544, Murphy, TX 75094<br>(972) 422-6367",
     "location": {
       "icon": wendysIcon,
       "lat": "33.013409",
@@ -2232,7 +2231,7 @@ var config = {
     "title": "Wendy's",
     "address": "2120 Edwin C Moses Drive, Dayton, OH 45408",
     "source": "manual",
-    "content": "2120 Edwin C Moses Drive, Dayton, OH 45408<br>(937) 222-1255<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08384@muyhamburgers.com\">Apply Here</a>",
+    "content": "2120 Edwin C Moses Drive, Dayton, OH 45408<br>(937) 222-1255",
     "location": {
       "icon": wendysIcon,
       "lat": "39.73266",
@@ -2258,7 +2257,7 @@ var config = {
     "title": "Wendy's",
     "address": "220 South Heincke Road, Miamisburg, OH 45343",
     "source": "manual",
-    "content": "220 South Heincke Road, Miamisburg, OH 45343<br>(937) 866-3529<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01977@muyhamburgers.com\">Apply Here</a>",
+    "content": "220 South Heincke Road, Miamisburg, OH 45343<br>(937) 866-3529",
     "location": {
       "icon": wendysIcon,
       "lat": "39.638517",
@@ -2284,7 +2283,7 @@ var config = {
     "title": "Wendy's",
     "address": "2311 Needmore Rd, Dayton, OH 45414",
     "source": "manual",
-    "content": "2311 Needmore Rd, Dayton, OH 45414<br>(937) 277-3930<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09211@muyhamburgers.com\">Apply Here</a>",
+    "content": "2311 Needmore Rd, Dayton, OH 45414<br>(937) 277-3930",
     "location": {
       "icon": wendysIcon,
       "lat": "39.820337",
@@ -2310,7 +2309,7 @@ var config = {
     "title": "Wendy's",
     "address": "2670 Lucas Rd, Lucas, TX 75002",
     "source": "manual",
-    "content": "2670 Lucas Rd, Lucas, TX 75002<br>(469) 656-7365<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11493@muyhamburgers.com\">Apply Here</a>",
+    "content": "2670 Lucas Rd, Lucas, TX 75002<br>(469) 656-7365",
     "location": {
       "icon": wendysIcon,
       "lat": "33.086121",
@@ -2336,7 +2335,7 @@ var config = {
     "title": "Wendy's",
     "address": "270 NW John Jones Road, Burleson, TX 76028",
     "source": "manual",
-    "content": "270 NW John Jones Road, Burleson, TX 76028<br>(817) 295-3003<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09838@muyhamburgers.com\">Apply Here</a>",
+    "content": "270 NW John Jones Road, Burleson, TX 76028<br>(817) 295-3003",
     "location": {
       "icon": wendysIcon,
       "lat": "32.52423",
@@ -2362,7 +2361,7 @@ var config = {
     "title": "Wendy's",
     "address": "2740 E Hwy 190, Copperas Cove, TX 76522",
     "source": "manual",
-    "content": "2740 E Hwy 190, Copperas Cove, TX 76522<br>(254) 547-9558<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07840@muyhamburgers.com\">Apply Here</a>",
+    "content": "2740 E Hwy 190, Copperas Cove, TX 76522<br>(254) 547-9558",
     "location": {
       "icon": wendysIcon,
       "lat": "31.120025",
@@ -2388,7 +2387,7 @@ var config = {
     "title": "Wendy's",
     "address": "2944 Harshman Road, Dayton, OH 45424",
     "source": "manual",
-    "content": "2944 Harshman Road, Dayton, OH 45424<br>(937) 236-8553<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01697@muyhamburgers.com\">Apply Here</a>",
+    "content": "2944 Harshman Road, Dayton, OH 45424<br>(937) 236-8553",
     "location": {
       "icon": wendysIcon,
       "lat": "39.81471",
@@ -2414,7 +2413,7 @@ var config = {
     "title": "Wendy's",
     "address": "2948 Centerville-Miamisburg, Dayton, OH 45459",
     "source": "manual",
-    "content": "2948 Centerville-Miamisburg, Dayton, OH 45459<br>(937) 433-7561<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00193@muyhamburgers.com\">Apply Here</a>",
+    "content": "2948 Centerville-Miamisburg, Dayton, OH 45459<br>(937) 433-7561",
     "location": {
       "icon": wendysIcon,
       "lat": "39.637144",
@@ -2440,7 +2439,7 @@ var config = {
     "title": "Wendy's",
     "address": "2964 West Camp Wisdom Road, Grand Prairie, TX 75052",
     "source": "manual",
-    "content": "2964 West Camp Wisdom Road, Grand Prairie, TX 75052<br>(469) 615-3845<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11391@muyhamburgers.com\">Apply Here</a>",
+    "content": "2964 West Camp Wisdom Road, Grand Prairie, TX 75052<br>(469) 615-3845",
     "location": {
       "icon": wendysIcon,
       "lat": "32.64745",
@@ -2466,7 +2465,7 @@ var config = {
     "title": "Wendy's",
     "address": "3 Weller Dr, Tipp City, OH 45371",
     "source": "manual",
-    "content": "3 Weller Dr, Tipp City, OH 45371<br>(937) 667-0096<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02122@muyhamburgers.com\">Apply Here</a>",
+    "content": "3 Weller Dr, Tipp City, OH 45371<br>(937) 667-0096",
     "location": {
       "icon": wendysIcon,
       "lat": "39.961638",
@@ -2492,7 +2491,7 @@ var config = {
     "title": "Wendy's",
     "address": "3001 South Dixie Drive, Moraine, OH 45439",
     "source": "manual",
-    "content": "3001 South Dixie Drive, Moraine, OH 45439<br>(937) 299-5620<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00262@muyhamburgers.com\">Apply Here</a>",
+    "content": "3001 South Dixie Drive, Moraine, OH 45439<br>(937) 299-5620",
     "location": {
       "icon": wendysIcon,
       "lat": "39.707329",
@@ -2518,7 +2517,7 @@ var config = {
     "title": "Wendy's",
     "address": "302 I-35 NE, Hillsboro, TX 76645",
     "source": "manual",
-    "content": "302 I-35 NE, Hillsboro, TX 76645<br>(254) 582-7121<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08038@muyhamburgers.com\">Apply Here</a>",
+    "content": "302 I-35 NE, Hillsboro, TX 76645<br>(254) 582-7121",
     "location": {
       "icon": wendysIcon,
       "lat": "32.017878",
@@ -2544,7 +2543,7 @@ var config = {
     "title": "Wendy's",
     "address": "3084 Colonel Glenn Hwy, Fairborn, OH 45324",
     "source": "manual",
-    "content": "3084 Colonel Glenn Hwy, Fairborn, OH 45324<br>(937) 426-0889<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01733@muyhamburgers.com\">Apply Here</a>",
+    "content": "3084 Colonel Glenn Hwy, Fairborn, OH 45324<br>(937) 426-0889",
     "location": {
       "icon": wendysIcon,
       "lat": "39.77665",
@@ -2570,7 +2569,7 @@ var config = {
     "title": "Wendy's",
     "address": "3220 Dayton Xenia Rd, Beavercreek, OH 45434",
     "source": "manual",
-    "content": "3220 Dayton Xenia Rd, Beavercreek, OH 45434<br>(937) 458-0240<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10777@muyhamburgers.com\">Apply Here</a>",
+    "content": "3220 Dayton Xenia Rd, Beavercreek, OH 45434<br>(937) 458-0240",
     "location": {
       "icon": wendysIcon,
       "lat": "39.727822",
@@ -2596,7 +2595,7 @@ var config = {
     "title": "Wendy's",
     "address": "3420 Salem Ave, Dayton, OH 45406",
     "source": "manual",
-    "content": "3420 Salem Ave, Dayton, OH 45406<br>(937) 277-2386<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00011@muyhamburgers.com\">Apply Here</a>",
+    "content": "3420 Salem Ave, Dayton, OH 45406<br>(937) 277-2386",
     "location": {
       "icon": wendysIcon,
       "lat": "39.791217",
@@ -2622,7 +2621,7 @@ var config = {
     "title": "Wendy's",
     "address": "3815 Southwest Loop 820, Fort Worth, TX 73132",
     "source": "manual",
-    "content": "3815 Southwest Loop 820, Fort Worth, TX 73132<br>(817) 361-0660<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09080@muyhamburgers.com\">Apply Here</a>",
+    "content": "3815 Southwest Loop 820, Fort Worth, TX 73132<br>(817) 361-0660",
     "location": {
       "icon": wendysIcon,
       "lat": "32.71641",
@@ -2648,7 +2647,7 @@ var config = {
     "title": "Wendy's",
     "address": "383 East National Road, Vandalia, OH 45377",
     "source": "manual",
-    "content": "383 East National Road, Vandalia, OH 45377<br>(937) 898-8887<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01290@muyhamburgers.com\">Apply Here</a>",
+    "content": "383 East National Road, Vandalia, OH 45377<br>(937) 898-8887",
     "location": {
       "icon": wendysIcon,
       "lat": "39.891695",
@@ -2674,7 +2673,7 @@ var config = {
     "title": "Wendy's",
     "address": "393 North Broad Street, Fairborn, OH 45324",
     "source": "manual",
-    "content": "393 North Broad Street, Fairborn, OH 45324<br>(937) 879-2371<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00089@muyhamburgers.com\">Apply Here</a>",
+    "content": "393 North Broad Street, Fairborn, OH 45324<br>(937) 879-2371",
     "location": {
       "icon": wendysIcon,
       "lat": "39.828957",
@@ -2700,7 +2699,7 @@ var config = {
     "title": "Wendy's",
     "address": "4003 Wilmington Pike, Kettering, OH 45429",
     "source": "manual",
-    "content": "4003 Wilmington Pike, Kettering, OH 45429<br>(937) 643-0277<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02558@muyhamburgers.com\">Apply Here</a>",
+    "content": "4003 Wilmington Pike, Kettering, OH 45429<br>(937) 643-0277",
     "location": {
       "icon": wendysIcon,
       "lat": "39.688129",
@@ -2726,7 +2725,7 @@ var config = {
     "title": "Wendy's",
     "address": "4465 Indian Ripple Rd, Dayton, OH 45440",
     "source": "manual",
-    "content": "4465 Indian Ripple Rd, Dayton, OH 45440<br>(937) 458-0082<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09598@muyhamburgers.com\">Apply Here</a>",
+    "content": "4465 Indian Ripple Rd, Dayton, OH 45440<br>(937) 458-0082",
     "location": {
       "icon": wendysIcon,
       "lat": "39.696233",
@@ -2752,7 +2751,7 @@ var config = {
     "title": "Wendy's",
     "address": "4873 Airway Rd, Dayton, OH 45431",
     "source": "manual",
-    "content": "4873 Airway Rd, Dayton, OH 45431<br>(937) 253-2063<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00197@muyhamburgers.com\">Apply Here</a>",
+    "content": "4873 Airway Rd, Dayton, OH 45431<br>(937) 253-2063",
     "location": {
       "icon": wendysIcon,
       "lat": "39.769453",
@@ -2778,7 +2777,7 @@ var config = {
     "title": "Wendy's",
     "address": "4997 North Main Street, Dayton, OH 45414",
     "source": "manual",
-    "content": "4997 North Main Street, Dayton, OH 45414<br>(937) 279-9484<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01111@muyhamburgers.com\">Apply Here</a>",
+    "content": "4997 North Main Street, Dayton, OH 45414<br>(937) 279-9484",
     "location": {
       "icon": wendysIcon,
       "lat": "39.813698",
@@ -2804,7 +2803,7 @@ var config = {
     "title": "Wendy's",
     "address": "510 Upper Lewisburg, Brookville, OH 45309",
     "source": "manual",
-    "content": "510 Upper Lewisburg, Brookville, OH 45309<br>(937) 833-5151<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00822@muyhamburgers.com\">Apply Here</a>",
+    "content": "510 Upper Lewisburg, Brookville, OH 45309<br>(937) 833-5151",
     "location": {
       "icon": wendysIcon,
       "lat": "39.846029",
@@ -2830,7 +2829,7 @@ var config = {
     "title": "Wendy's",
     "address": "606 South Main Street, Englewood, OH 45322",
     "source": "manual",
-    "content": "606 South Main Street, Englewood, OH 45322<br>(937) 836-3035<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00178@muyhamburgers.com\">Apply Here</a>",
+    "content": "606 South Main Street, Englewood, OH 45322<br>(937) 836-3035",
     "location": {
       "icon": wendysIcon,
       "lat": "39.86915",
@@ -2856,7 +2855,7 @@ var config = {
     "title": "Wendy's",
     "address": "6199 Wilmington Pike, Centerville, OH 45459",
     "source": "manual",
-    "content": "6199 Wilmington Pike, Centerville, OH 45459<br>(937) 291-1925<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01976@muyhamburgers.com\">Apply Here</a>",
+    "content": "6199 Wilmington Pike, Centerville, OH 45459<br>(937) 291-1925",
     "location": {
       "icon": wendysIcon,
       "lat": "39.650465",
@@ -2882,7 +2881,7 @@ var config = {
     "title": "Wendy's",
     "address": "6250 Oakmont, Fort Worth, TX 76132",
     "source": "manual",
-    "content": "6250 Oakmont, Fort Worth, TX 76132<br>(817) 370-2644<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05488@muyhamburgers.com\">Apply Here</a>",
+    "content": "6250 Oakmont, Fort Worth, TX 76132<br>(817) 370-2644",
     "location": {
       "icon": wendysIcon,
       "lat": "32.66329",
@@ -2908,7 +2907,7 @@ var config = {
     "title": "Wendy's",
     "address": "7200 Hoke Road, Clayton, OH 45315",
     "source": "manual",
-    "content": "7200 Hoke Road, Clayton, OH 45315<br>(937) 836-9390<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09607@muyhamburgers.com\">Apply Here</a>",
+    "content": "7200 Hoke Road, Clayton, OH 45315<br>(937) 836-9390",
     "location": {
       "icon": wendysIcon,
       "lat": "39.850201",
@@ -2934,7 +2933,7 @@ var config = {
     "title": "Wendy's",
     "address": "731 East Central Ave, West Carollton, OH 45449",
     "source": "manual",
-    "content": "731 East Central Ave, West Carollton, OH 45449<br>(937) 859-0976<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00343@muyhamburgers.com\">Apply Here</a>",
+    "content": "731 East Central Ave, West Carollton, OH 45449<br>(937) 859-0976",
     "location": {
       "icon": wendysIcon,
       "lat": "39.676866",
@@ -2960,7 +2959,7 @@ var config = {
     "title": "Wendy's",
     "address": "7435 Brandt Pike, Dayton, OH 45424",
     "source": "manual",
-    "content": "7435 Brandt Pike, Dayton, OH 45424<br>(937) 233-7254<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00010@muyhamburgers.com\">Apply Here</a>",
+    "content": "7435 Brandt Pike, Dayton, OH 45424<br>(937) 233-7254",
     "location": {
       "icon": wendysIcon,
       "lat": "39.859934",
@@ -2986,7 +2985,7 @@ var config = {
     "title": "Wendy's",
     "address": "8055 Interstate 35 South, Robinson, TX 76706",
     "source": "manual",
-    "content": "8055 Interstate 35 South, Robinson, TX 76706<br>(254) 662-3034<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09052@muyhamburgers.com\">Apply Here</a>",
+    "content": "8055 Interstate 35 South, Robinson, TX 76706<br>(254) 662-3034",
     "location": {
       "icon": wendysIcon,
       "lat": "31.45614",
@@ -3012,7 +3011,7 @@ var config = {
     "title": "Wendy's",
     "address": "811 S. 5th Street, Waco, TX 76706",
     "source": "manual",
-    "content": "811 S. 5th Street, Waco, TX 76706<br>(254) 752-8850<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03317@muyhamburgers.com\">Apply Here</a>",
+    "content": "811 S. 5th Street, Waco, TX 76706<br>(254) 752-8850",
     "location": {
       "icon": wendysIcon,
       "lat": "31.550929",
@@ -3038,7 +3037,7 @@ var config = {
     "title": "Wendy's",
     "address": "8201 State Route 235, Huber Heights, OH 45424",
     "source": "manual",
-    "content": "8201 State Route 235, Huber Heights, OH 45424<br>(937) 787-7314<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07628@muyhamburgers.com\">Apply Here</a>",
+    "content": "8201 State Route 235, Huber Heights, OH 45424<br>(937) 787-7314",
     "location": {
       "icon": wendysIcon,
       "lat": "39.87293",
@@ -3064,7 +3063,7 @@ var config = {
     "title": "Wendy's",
     "address": "825 West Main St, Troy, OH 45373",
     "source": "manual",
-    "content": "825 West Main St, Troy, OH 45373<br>(937) 335-6936<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00184@muyhamburgers.com\">Apply Here</a>",
+    "content": "825 West Main St, Troy, OH 45373<br>(937) 335-6936",
     "location": {
       "icon": wendysIcon,
       "lat": "40.04378",
@@ -3090,7 +3089,7 @@ var config = {
     "title": "Wendy's",
     "address": "881 NE Alsbury Blvd., Burleson, TX 76028",
     "source": "manual",
-    "content": "881 NE Alsbury Blvd., Burleson, TX 76028<br>(817) 295-4345<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09835@muyhamburgers.com\">Apply Here</a>",
+    "content": "881 NE Alsbury Blvd., Burleson, TX 76028<br>(817) 295-4345",
     "location": {
       "icon": wendysIcon,
       "lat": "32.565384",
@@ -3116,7 +3115,7 @@ var config = {
     "title": "Wendy's",
     "address": "2801 N. Tarrant Pkwy, Ft. Worth, TX 76177",
     "source": "manual",
-    "content": "2801 N. Tarrant Pkwy, Ft. Worth, TX 76177<br>(817) 847-7425 <br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11462@muyhamburgers.com\">Apply Here</a>",
+    "content": "2801 N. Tarrant Pkwy, Ft. Worth, TX 76177<br>(817) 847-7425 ",
     "location": {
       "icon": wendysIcon,
       "lat": "32.898237",
@@ -3142,7 +3141,7 @@ var config = {
     "title": "Wendy's",
     "address": "1905 S Garland Ave, Garland, TX 75040",
     "source": "manual",
-    "content": "1905 S Garland Ave, Garland, TX 75040<br>(972) 278-9790<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11546@muyhamburgers.com\">Apply Here</a>W",
+    "content": "1905 S Garland Ave, Garland, TX 75040<br>(972) 278-9790W",
     "location": {
       "icon": wendysIcon,
       "lat": "32.8954482",
@@ -3168,7 +3167,7 @@ var config = {
     "title": "Wendy's",
     "address": "4018 Lemmon Ave., Dallas, TX 75219",
     "source": "manual",
-    "content": "4018 Lemmon Ave., Dallas, TX 75219<br>(214) 528-8700<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00030@muyhamburgers.com\">Apply Here</a>",
+    "content": "4018 Lemmon Ave., Dallas, TX 75219<br>(214) 528-8700",
     "location": {
       "icon": wendysIcon,
       "lat": "32.8145073",
@@ -3194,7 +3193,7 @@ var config = {
     "title": "Wendy's",
     "address": "2328 W. Illinois Ave., Dallas, TX 75224",
     "source": "manual",
-    "content": "2328 W. Illinois Ave., Dallas, TX 75224<br>(214) 339-4388<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00226@muyhamburgers.com\">Apply Here</a>",
+    "content": "2328 W. Illinois Ave., Dallas, TX 75224<br>(214) 339-4388",
     "location": {
       "icon": wendysIcon,
       "lat": "32.719989",
@@ -3220,7 +3219,7 @@ var config = {
     "title": "Wendy's",
     "address": "622 E. Camp Wisdom Rd., Duncanville, TX 75116",
     "source": "manual",
-    "content": "622 E. Camp Wisdom Rd., Duncanville, TX 75116<br>(972) 296-4585<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00233@muyhamburgers.com\">Apply Here</a>",
+    "content": "622 E. Camp Wisdom Rd., Duncanville, TX 75116<br>(972) 296-4585",
     "location": {
       "icon": wendysIcon,
       "lat": "32.662231",
@@ -3246,7 +3245,7 @@ var config = {
     "title": "Wendy's",
     "address": "1304 E. Pleasant Run Rd., Desoto, TX 75115",
     "source": "manual",
-    "content": "1304 E. Pleasant Run Rd., Desoto, TX 75115<br>(972) 230-3172<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01094@muyhamburgers.com\">Apply Here</a>",
+    "content": "1304 E. Pleasant Run Rd., Desoto, TX 75115<br>(972) 230-3172",
     "location": {
       "icon": wendysIcon,
       "lat": "32.6039021",
@@ -3272,7 +3271,7 @@ var config = {
     "title": "Wendy's",
     "address": "1981 Fort Worth Ave., Dallas, TX 75208",
     "source": "manual",
-    "content": "1981 Fort Worth Ave., Dallas, TX 75208<br>(214) 948-7905<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01649@muyhamburgers.com\">Apply Here</a>",
+    "content": "1981 Fort Worth Ave., Dallas, TX 75208<br>(214) 948-7905",
     "location": {
       "icon": wendysIcon,
       "lat": "32.763776",
@@ -3298,7 +3297,7 @@ var config = {
     "title": "Wendy's",
     "address": "2828 W. Wheatland Rd., Dallas, TX 75237",
     "source": "manual",
-    "content": "2828 W. Wheatland Rd., Dallas, TX 75237 <br>(972) 298-6337<br><a href=\"https://muyhamburgers.com/crew-application/?store-email= ws02252@muyhamburgers.com\">Apply Here</a>",
+    "content": "2828 W. Wheatland Rd., Dallas, TX 75237 <br>(972) 298-6337<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "32.6471445",
@@ -3324,7 +3323,7 @@ var config = {
     "title": "Wendy's",
     "address": "1060 US 287 BYP, Waxahachie, TX 75165",
     "source": "manual",
-    "content": "1060 US 287 BYP, Waxahachie, TX 75165<br>(972) 938-3887<br><a href=\"https://muyhamburgers.com/crew-application/?store-email= ws07848@muyhamburgers.com\">Apply Here</a>",
+    "content": "1060 US 287 BYP, Waxahachie, TX 75165<br>(972) 938-3887<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "32.421214",
@@ -3350,7 +3349,7 @@ var config = {
     "title": "Wendy's",
     "address": "510 South Beckley, Dallas, TX 75203",
     "source": "manual",
-    "content": "1060 US 287 BYP, Waxahachie, TX 75165<br> (214) 941-4393 <br><a href=\"https://muyhamburgers.com/crew-application/?store-email= ws07971@muyhamburgers.com\">Apply Here</a>",
+    "content": "1060 US 287 BYP, Waxahachie, TX 75165<br> (214) 941-4393 <br>",
     "location": {
       "icon": wendysIcon,
       "lat": "32.7416034",
@@ -3376,7 +3375,7 @@ var config = {
     "title": "Wendy's",
     "address": "404 E. FM 1382, Cedar Hill, TX 75104",
     "source": "manual",
-    "content": "404 E. FM 1382, Cedar Hill, TX 75104<br>(469) 272-0125<br><a href=\"https://muyhamburgers.com/crew-application/?store-email= ws08264@muyhamburgers.com\">Apply Here</a>",
+    "content": "404 E. FM 1382, Cedar Hill, TX 75104<br>(469) 272-0125<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "32.5919563",
@@ -3402,7 +3401,7 @@ var config = {
     "title": "Wendy's",
     "address": "1002 E. Ennis Ave., Ennis, TX 75119",
     "source": "manual",
-    "content": "1002 E. Ennis Ave., Ennis, TX 75119<br>(972) 878-5205<br><a href=\"https://muyhamburgers.com/crew-application/?store-email= ws09059@muyhamburgers.com\">Apply Here</a>",
+    "content": "1002 E. Ennis Ave., Ennis, TX 75119<br>(972) 878-5205<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "32.3328652",
@@ -3428,7 +3427,7 @@ var config = {
     "title": "Wendy's",
     "address": "2800 E Berry St., Fort Worth, TX 76105",
     "source": "manual",
-    "content": "2800 E Berry St., Fort Worth, TX 76105<br>(817) 413-0744<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11566@muyhamburgers.com\">Apply Here</a>",
+    "content": "2800 E Berry St., Fort Worth, TX 76105<br>(817) 413-0744",
     "location": {
       "icon": wendysIcon,
       "lat": "32.7063079",
@@ -3454,7 +3453,7 @@ var config = {
     "title": "Wendy's",
     "address": "912 W Galbraith Rd, Cincinnati, OH 45231, USA",
     "source": "manual",
-    "content": "912 W Galbraith Rd, Cincinnati, OH 45231<br>(513) 931-3471<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00027@muyhamburgers.com\">Apply Here</a>",
+    "content": "912 W Galbraith Rd, Cincinnati, OH 45231<br>(513) 931-3471",
     "location": {
       "icon": wendysIcon,
       "lat": "39.216211",
@@ -3480,7 +3479,7 @@ var config = {
     "title": "Wendy's",
     "address": "7289 Kenwood Rd, Cincinnati, OH 45236",
     "source": "manual",
-    "content": "7289 Kenwood Rd, Cincinnati, OH 45236<br>(513) 984-2251<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00078@muyhamburgers.com\">Apply Here</a>",
+    "content": "7289 Kenwood Rd, Cincinnati, OH 45236<br>(513) 984-2251",
     "location": {
       "icon": wendysIcon,
       "lat": "39.196319",
@@ -3506,7 +3505,7 @@ var config = {
     "title": "Wendy's",
     "address": "3640 Harrison Ave, Cheviot, OH 45211",
     "source": "manual",
-    "content": "3640 Harrison Ave, Cheviot, OH 45211<br>(513) 661-1344<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00112@muyhamburgers.com\">Apply Here</a>",
+    "content": "3640 Harrison Ave, Cheviot, OH 45211<br>(513) 661-1344",
     "location": {
       "icon": wendysIcon,
       "lat": "39.156554",
@@ -3532,7 +3531,7 @@ var config = {
     "title": "Wendy's",
     "address": "5330 Ridge Rd, Cincinnati, OH 45213",
     "source": "manual",
-    "content": "5330 Ridge Rd, Cincinnati, OH 45213<br>(513) 531-3389<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00199@muyhamburgers.com\">Apply Here</a>",
+    "content": "5330 Ridge Rd, Cincinnati, OH 45213<br>(513) 531-3389",
     "location": {
       "icon": wendysIcon,
       "lat": "39.169783",
@@ -3558,7 +3557,7 @@ var config = {
     "title": "Wendy's",
     "address": "4474 Montgomery Rd, Norwood, OH 45212",
     "source": "manual",
-    "content": "4474 Montgomery Rd, Norwood, OH 45212<br>(513) 631-2215<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00246@muyhamburgers.com\">Apply Here</a>",
+    "content": "4474 Montgomery Rd, Norwood, OH 45212<br>(513) 631-2215",
     "location": {
       "icon": wendysIcon,
       "lat": "39.159126",
@@ -3584,7 +3583,7 @@ var config = {
     "title": "Wendy's",
     "address": "400 Northland Blvd, Cincinnati, OH 45240",
     "source": "manual",
-    "content": "400 Northland Blvd, Cincinnati, OH 45240<br>(513) 851-2232<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00497@muyhamburgers.com\">Apply Here</a>",
+    "content": "400 Northland Blvd, Cincinnati, OH 45240<br>(513) 851-2232",
     "location": {
       "icon": wendysIcon,
       "lat": "39.282785",
@@ -3610,7 +3609,7 @@ var config = {
     "title": "Wendy's",
     "address": "4559 Eastgate Blvd, Cincinnati, OH 45245",
     "source": "manual",
-    "content": "4559 Eastgate Blvd, Cincinnati, OH 45245<br>(513) 752-9225<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00775@muyhamburgers.com\">Apply Here</a>",
+    "content": "4559 Eastgate Blvd, Cincinnati, OH 45245<br>(513) 752-9225",
     "location": {
       "icon": wendysIcon,
       "lat": "39.101323",
@@ -3636,7 +3635,7 @@ var config = {
     "title": "Wendy's",
     "address": "8240 Vine St, Cincinnati, OH 45216",
     "source": "manual",
-    "content": "8240 Vine St, Cincinnati, OH 45216<br>(513) 821-3038<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00804@muyhamburgers.com\">Apply Here</a>",
+    "content": "8240 Vine St, Cincinnati, OH 45216<br>(513) 821-3038",
     "location": {
       "icon": wendysIcon,
       "lat": "39.210944",
@@ -3662,7 +3661,7 @@ var config = {
     "title": "Wendy's",
     "address": "4910 Vine St, Cincinnati, OH 45217",
     "source": "manual",
-    "content": "4910 Vine St, Cincinnati, OH 45217<br>(513) 242-6074<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00857@muyhamburgers.com\">Apply Here</a>",
+    "content": "4910 Vine St, Cincinnati, OH 45217<br>(513) 242-6074",
     "location": {
       "icon": wendysIcon,
       "lat": "39.169082",
@@ -3688,7 +3687,7 @@ var config = {
     "title": "Wendy's",
     "address": "6243 Glenway Ave, Cincinnati, OH 45211",
     "source": "manual",
-    "content": "6243 Glenway Ave, Cincinnati, OH 45211<br>(513) 481-7366<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00940@muyhamburgers.com\">Apply Here</a>",
+    "content": "6243 Glenway Ave, Cincinnati, OH 45211<br>(513) 481-7366",
     "location": {
       "icon": wendysIcon,
       "lat": "39.145035",
@@ -3714,7 +3713,7 @@ var config = {
     "title": "Wendy's",
     "address": "7311 Dixie Hwy, Fairfield, OH 45014",
     "source": "manual",
-    "content": "7311 Dixie Hwy, Fairfield, OH 45014<br>(513) 874-5000<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00984@muyhamburgers.com\">Apply Here</a>",
+    "content": "7311 Dixie Hwy, Fairfield, OH 45014<br>(513) 874-5000",
     "location": {
       "icon": wendysIcon,
       "lat": "39.306878",
@@ -3740,7 +3739,7 @@ var config = {
     "title": "Wendy's",
     "address": "8234 Colerain Ave, Cincinnati, OH 45239",
     "source": "manual",
-    "content": "8234 Colerain Ave, Cincinnati, OH 45239<br>(513) 741-0117<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01068@muyhamburgers.com\">Apply Here</a>",
+    "content": "8234 Colerain Ave, Cincinnati, OH 45239<br>(513) 741-0117",
     "location": {
       "icon": wendysIcon,
       "lat": "39.220696",
@@ -3766,7 +3765,7 @@ var config = {
     "title": "Wendy's",
     "address": "11007 Reed Hartman Hwy, Cincinnati, OH 45242",
     "source": "manual",
-    "content": "11007 Reed Hartman Hwy, Cincinnati, OH 45242<br>(513) 984-4586<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01117@muyhamburgers.com\">Apply Here</a>",
+    "content": "11007 Reed Hartman Hwy, Cincinnati, OH 45242<br>(513) 984-4586",
     "location": {
       "icon": wendysIcon,
       "lat": "39.266278",
@@ -3792,7 +3791,7 @@ var config = {
     "title": "Wendy's",
     "address": "9812 Escort Dr, Mason, OH 45040",
     "source": "manual",
-    "content": "9812 Escort Dr, Mason, OH 45040<br>(513) 398-6080<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01842@muyhamburgers.com\">Apply Here</a>",
+    "content": "9812 Escort Dr, Mason, OH 45040<br>(513) 398-6080",
     "location": {
       "icon": wendysIcon,
       "lat": "39.294992",
@@ -3818,7 +3817,7 @@ var config = {
     "title": "Wendy's",
     "address": "2238 Beechmont Ave, Cincinnati, OH 45230",
     "source": "manual",
-    "content": "2238 Beechmont Ave, Cincinnati, OH 45230<br>(513) 231-4834<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01975@muyhamburgers.com\">Apply Here</a>",
+    "content": "2238 Beechmont Ave, Cincinnati, OH 45230<br>(513) 231-4834",
     "location": {
       "icon": wendysIcon,
       "lat": "39.095347",
@@ -3844,7 +3843,7 @@ var config = {
     "title": "Wendy's",
     "address": "1015 Gest St, Cincinnati, OH 45203",
     "source": "manual",
-    "content": "1015 Gest St, Cincinnati, OH 45203<br>(513) 241-2458<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01980@muyhamburgers.com\">Apply Here</a>",
+    "content": "1015 Gest St, Cincinnati, OH 45203<br>(513) 241-2458",
     "location": {
       "icon": wendysIcon,
       "lat": "39.106301",
@@ -3870,7 +3869,7 @@ var config = {
     "title": "Wendy's",
     "address": "11898 Chase Plz, Cincinnati, OH 45240",
     "source": "manual",
-    "content": "11898 Chase Plz, Cincinnati, OH 45240<br>(513) 851-1502<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01981@muyhamburgers.com\">Apply Here</a>",
+    "content": "11898 Chase Plz, Cincinnati, OH 45240<br>(513) 851-1502",
     "location": {
       "icon": wendysIcon,
       "lat": "39.295048",
@@ -3896,7 +3895,7 @@ var config = {
     "title": "Wendy's",
     "address": "3988 US-22, Loveland, OH 45140",
     "source": "manual",
-    "content": "3988 US-22, Loveland, OH 45140<br>(513) 677-1890<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02120@muyhamburgers.com\">Apply Here</a>",
+    "content": "3988 US-22, Loveland, OH 45140<br>(513) 677-1890",
     "location": {
       "icon": wendysIcon,
       "lat": "39.292784",
@@ -3922,7 +3921,7 @@ var config = {
     "title": "Wendy's",
     "address": "3802 Hamilton Cleves Rd, Hamilton, OH 45013, USA",
     "source": "manual",
-    "content": "3802 Hamilton Cleves Rd, Hamilton, OH 45013, USA<br>(513) 738-1441<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02157@muyhamburgers.com\">Apply Here</a>",
+    "content": "3802 Hamilton Cleves Rd, Hamilton, OH 45013, USA<br>(513) 738-1441",
     "location": {
       "icon": wendysIcon,
       "lat": "39.322535",
@@ -3948,7 +3947,7 @@ var config = {
     "title": "Wendy's",
     "address": "9537 Mangham Dr, Cincinnati, OH 45215",
     "source": "manual",
-    "content": "9537 Mangham Dr, Cincinnati, OH 45215<br>(513) 733-5149<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02210@muyhamburgers.com\">Apply Here</a>",
+    "content": "9537 Mangham Dr, Cincinnati, OH 45215<br>(513) 733-5149",
     "location": {
       "icon": wendysIcon,
       "lat": "39.237304",
@@ -3974,7 +3973,7 @@ var config = {
     "title": "Wendy's",
     "address": "8342 Princeton Glendale Rd, West Chester, OH 45069",
     "source": "manual",
-    "content": "8342 Princeton Glendale Rd, West Chester, OH 45069<br>(513) 860-3936<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02214@muyhamburgers.com\">Apply Here</a>",
+    "content": "8342 Princeton Glendale Rd, West Chester, OH 45069<br>(513) 860-3936",
     "location": {
       "icon": wendysIcon,
       "lat": "39.349234",
@@ -4000,7 +3999,7 @@ var config = {
     "title": "Wendy's",
     "address": "3478 River Hills Dr, Cincinnati, OH 45244",
     "source": "manual",
-    "content": "3478 River Hills Dr, Cincinnati, OH 45244<br>(513) 271-6692<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02229@muyhamburgers.com\">Apply Here</a>",
+    "content": "3478 River Hills Dr, Cincinnati, OH 45244<br>(513) 271-6692",
     "location": {
       "icon": wendysIcon,
       "lat": "39.124351",
@@ -4026,7 +4025,7 @@ var config = {
     "title": "Wendy's",
     "address": "5909 Muhlhauser Rd, West Chester, OH 45069",
     "source": "manual",
-    "content": "5909 Muhlhauser Rd, West Chester, OH 45069<br>(513) 874-3134<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02389@muyhamburgers.com\">Apply Here</a>",
+    "content": "5909 Muhlhauser Rd, West Chester, OH 45069<br>(513) 874-3134",
     "location": {
       "icon": wendysIcon,
       "lat": "39.321055",
@@ -4052,7 +4051,7 @@ var config = {
     "title": "Wendy's",
     "address": "2108 Front Wheel Dr, Batavia, OH 45103",
     "source": "manual",
-    "content": "2108 Front Wheel Dr, Batavia, OH 45103<br>(513) 724-5637<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02429@muyhamburgers.com\">Apply Here</a>",
+    "content": "2108 Front Wheel Dr, Batavia, OH 45103<br>(513) 724-5637",
     "location": {
       "icon": wendysIcon,
       "lat": "39.077007",
@@ -4078,7 +4077,7 @@ var config = {
     "title": "Wendy's",
     "address": "201 Sterling Run Blvd, Mt Orab, OH 45154",
     "source": "manual",
-    "content": "201 Sterling Run Blvd, Mt Orab, OH 45154<br>(937) 444-9119<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02430@muyhamburgers.com\">Apply Here</a>",
+    "content": "201 Sterling Run Blvd, Mt Orab, OH 45154<br>(937) 444-9119",
     "location": {
       "icon": wendysIcon,
       "lat": "39.038361",
@@ -4104,7 +4103,7 @@ var config = {
     "title": "Wendy's",
     "address": "10775 Reading Rd, Cincinnati, OH 45241",
     "source": "manual",
-    "content": "10775 Reading Rd, Cincinnati, OH 45241<br>(513) 769-6789<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02532@muyhamburgers.com\">Apply Here</a>",
+    "content": "10775 Reading Rd, Cincinnati, OH 45241<br>(513) 769-6789",
     "location": {
       "icon": wendysIcon,
       "lat": "39.26312",
@@ -4130,7 +4129,7 @@ var config = {
     "title": "Wendy's",
     "address": "855 William Howard Taft Rd, Cincinnati, OH 45206",
     "source": "manual",
-    "content": "855 William Howard Taft Rd, Cincinnati, OH 45206<br>(513) 751-1334<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04304@muyhamburgers.com\">Apply Here</a>",
+    "content": "855 William Howard Taft Rd, Cincinnati, OH 45206<br>(513) 751-1334",
     "location": {
       "icon": wendysIcon,
       "lat": "39.127219",
@@ -4156,7 +4155,7 @@ var config = {
     "title": "Wendy's",
     "address": "1246 Hopple St, Cincinnati, OH 45225",
     "source": "manual",
-    "content": "1246 Hopple St, Cincinnati, OH 45225<br>(513) 681-0500<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08507@muyhamburgers.com\">Apply Here</a>",
+    "content": "1246 Hopple St, Cincinnati, OH 45225<br>(513) 681-0500",
     "location": {
       "icon": wendysIcon,
       "lat": "39.137576",
@@ -4182,7 +4181,7 @@ var config = {
     "title": "Wendy's",
     "address": "54 E. Grandin Rd, Maineville, OH 45039",
     "source": "manual",
-    "content": "54 Grandin Rd, Maineville, OH 45039<br>(513) 583-5971<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08580@muyhamburgers.com\">Apply Here</a>",
+    "content": "54 Grandin Rd, Maineville, OH 45039<br>(513) 583-5971",
     "location": {
       "icon": wendysIcon,
       "lat": "39.34637",
@@ -4208,7 +4207,7 @@ var config = {
     "title": "Wendy's",
     "address": "621 W Plane St, Bethel, OH 45106",
     "source": "manual",
-    "content": "621 W Plane St, Bethel, OH 45106<br>(513) 734- 0794<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09756@muyhamburgers.com\">Apply Here</a>",
+    "content": "621 W Plane St, Bethel, OH 45106<br>(513) 734- 0794",
     "location": {
       "icon": wendysIcon,
       "lat": "38.96433",
@@ -4234,7 +4233,7 @@ var config = {
     "title": "Wendy's",
     "address": "5316 Kings Island Dr, Mason, OH 45040",
     "source": "manual",
-    "content": "5316 Kings Island Dr, Mason, OH 45040<br>(513) 336-6159 <br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10547@muyhamburgers.com\">Apply Here</a>",
+    "content": "5316 Kings Island Dr, Mason, OH 45040<br>(513) 336-6159 ",
     "location": {
       "icon": wendysIcon,
       "lat": "39.357866",
@@ -4260,7 +4259,7 @@ var config = {
     "title": "Wendy's",
     "address": "1146 Marian Dr, Batavia, OH 45103",
     "source": "manual",
-    "content": "1146 Marian Dr, Batavia, OH 45103<br>(513) 947-1111<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10582@muyhamburgers.com\">Apply Here</a>",
+    "content": "1146 Marian Dr, Batavia, OH 45103<br>(513) 947-1111",
     "location": {
       "icon": wendysIcon,
       "lat": "39.089751",
@@ -4286,7 +4285,7 @@ var config = {
     "title": "Wendy's",
     "address": "3994 Red Bank Rd, Cincinnati, OH 45227",
     "source": "manual",
-    "content": "3994 Red Bank Rd, Cincinnati, OH 45227<br>(513) 271-1467<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11189@muyhamburgers.com\">Apply Here</a>",
+    "content": "3994 Red Bank Rd, Cincinnati, OH 45227<br>(513) 271-1467",
     "location": {
       "icon": wendysIcon,
       "lat": "39.147941",
@@ -4312,7 +4311,7 @@ var config = {
     "title": "Wendy's",
     "address": "200 W Main St, Amelia, OH 45102",
     "source": "manual",
-    "content": "200 W Main St, Amelia, OH 45102<br>(513) 752-1292<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11384@muyhamburgers.com\">Apply Here</a>",
+    "content": "200 W Main St, Amelia, OH 45102<br>(513) 752-1292",
     "location": {
       "icon": wendysIcon,
       "lat": "39.036316",
@@ -4338,7 +4337,7 @@ var config = {
     "title": "Wendy's",
     "address": "10152 Colerain Ave, Cincinnati, OH 45251",
     "source": "manual",
-    "content": "10152 Colerain Ave, Cincinnati, OH 45251<br>(513) 385-5371<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01674@muyhamburgers.com\">Apply Here</a>",
+    "content": "10152 Colerain Ave, Cincinnati, OH 45251<br>(513) 385-5371",
     "location": {
       "icon": wendysIcon,
       "lat": "39.259228",
@@ -4364,7 +4363,7 @@ var config = {
     "title": "Wendy's",
     "address": "9140 N. Tarrant Parkway, N. Richland Hills, TX 76182",
     "source": "manual",
-    "content": "9140 N. Tarrant Parkway, N. Richland Hills, TX 76182<br>(817) 788-4902<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11589@muyhamburgers.com\">Apply Here</a>",
+    "content": "9140 N. Tarrant Parkway, N. Richland Hills, TX 76182<br>(817) 788-4902",
     "location": {
       "icon": wendysIcon,
       "lat": "32.903734",
@@ -4390,7 +4389,7 @@ var config = {
     "title": "Wendy's",
     "address": "5066 Delhi Pike, Cincinnati, OH, 45238",
     "source": "manual",
-    "content": "5066 Delhi Pike, Cincinnati, OH, 45238<br>(513) 922-3593<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00038@muyhamburgers.com\">Apply Here</a>",
+    "content": "5066 Delhi Pike, Cincinnati, OH, 45238<br>(513) 922-3593",
     "location": {
       "icon": wendysIcon,
       "lat": "39.095399",
@@ -4419,7 +4418,7 @@ var config = {
     "title": "Wendy's",
     "address": "5460 North Bend Road, Cincinnati, OH 45247",
     "source": "manual",
-    "content": "5460 North Bend Road, Cincinnati, OH 45247<br>(513) 481-6018<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00465@muyhamburgers.com\">Apply Here</a>",
+    "content": "5460 North Bend Road, Cincinnati, OH 45247<br>(513) 481-6018",
     "location": {
       "icon": wendysIcon,
       "lat": "39.189697",
@@ -4445,7 +4444,7 @@ var config = {
     "title": "Wendy's",
     "address": "900 North High St., Hillsboro, OH 45133",
     "source": "manual",
-    "content": "900 North High St., Hillsboro, OH 45133<br>(937) 393-5256<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04271@muyhamburgers.com\">Apply Here</a>",
+    "content": "900 North High St., Hillsboro, OH 45133<br>(937) 393-5256",
     "location": {
       "icon": wendysIcon,
       "lat": "39.213428",
@@ -4471,7 +4470,7 @@ var config = {
     "title": "Wendy's",
     "address": "3800 Clear Creek Rd., Killeen, TX 76459",
     "source": "manual",
-    "content": "3800 Clear Creek Rd., Killeen, TX 76459<br>(254) 539-1024<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11610@muyhamburgers.com\">Apply Here</a>",
+    "content": "3800 Clear Creek Rd., Killeen, TX 76459<br>(254) 539-1024",
     "location": {
       "icon": wendysIcon,
       "lat": "31.104501",
@@ -4497,7 +4496,7 @@ var config = {
     "title": "Wendy's",
     "address": "10 Booth Street, Canandaigua, NY 14424",
     "source": "manual",
-    "content": "10 Booth Street, Canandaigua, NY 14424<br>(585) 394-8660<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09543@muyhamburgers.com\">Apply Here</a>",
+    "content": "10 Booth Street, Canandaigua, NY 14424<br>(585) 394-8660",
     "location": {
       "icon": wendysIcon,
       "lat": "42.877377",
@@ -4523,7 +4522,7 @@ var config = {
     "title": "Wendy's",
     "address": "1011 Park Ave., Meadville, PA 16335",
     "source": "manual",
-    "content": "1011 Park Ave., Meadville, PA 16335<br>(814) 333-9655<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03171@muyhamburgers.com\">Apply Here</a>",
+    "content": "1011 Park Ave., Meadville, PA 16335<br>(814) 333-9655",
     "location": {
       "icon": wendysIcon,
       "lat": "41.636003",
@@ -4549,7 +4548,7 @@ var config = {
     "title": "Wendy's",
     "address": "102 Washington Towne Blvd., Edinboro, PA 16412",
     "source": "manual",
-    "content": "102 Washington Towne Blvd., Edinboro, PA 16412<br>(814) 734-2921<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08768@muyhamburgers.com\">Apply Here</a>",
+    "content": "102 Washington Towne Blvd., Edinboro, PA 16412<br>(814) 734-2921",
     "location": {
       "icon": wendysIcon,
       "lat": "41.878844",
@@ -4575,7 +4574,7 @@ var config = {
     "title": "Wendy's",
     "address": "10350 Bennett Rd., Fredonia, NY 14063",
     "source": "manual",
-    "content": "10350 Bennett Rd., Fredonia, NY 14063<br>(716) 672-5226<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03915@muyhamburgers.com\">Apply Here</a>",
+    "content": "10350 Bennett Rd., Fredonia, NY 14063<br>(716) 672-5226",
     "location": {
       "icon": wendysIcon,
       "lat": "42.450664",
@@ -4601,7 +4600,7 @@ var config = {
     "title": "Wendy's",
     "address": "105 East 12th St., Erie, PA 16501",
     "source": "manual",
-    "content": "105 East 12th St., Erie, PA 16501<br>(814) 455-0640<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09587@muyhamburgers.com\">Apply Here</a>",
+    "content": "105 East 12th St., Erie, PA 16501<br>(814) 455-0640",
     "location": {
       "icon": wendysIcon,
       "lat": "42.123723",
@@ -4627,7 +4626,7 @@ var config = {
     "title": "Wendy's",
     "address": "1051 MAIN STREET, BUFFALO, NY 14209",
     "source": "manual",
-    "content": "1051 MAIN STREET, BUFFALO, NY 14209<br>(716) 883-7242<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04571@muyhamburgers.com\">Apply Here</a>",
+    "content": "1051 MAIN STREET, BUFFALO, NY 14209<br>(716) 883-7242",
     "location": {
       "icon": wendysIcon,
       "lat": "42.903046",
@@ -4653,7 +4652,7 @@ var config = {
     "title": "Wendy's",
     "address": "1175 E. Ridge Rd., Irondequoit, NY 14617",
     "source": "manual",
-    "content": "1175 E. Ridge Rd., Irondequoit, NY 14617<br>(585) 266-7523<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03620@muyhamburgers.com\">Apply Here</a>",
+    "content": "1175 E. Ridge Rd., Irondequoit, NY 14617<br>(585) 266-7523",
     "location": {
       "icon": wendysIcon,
       "lat": "43.197085",
@@ -4679,7 +4678,7 @@ var config = {
     "title": "Wendy's",
     "address": "13246 Cedar Rd., Cleveland Hts., Ohio 44118",
     "source": "manual",
-    "content": "13246 Cedar Rd., Cleveland Hts., Ohio 44118<br>(216) 371-3402<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04786@muyhamburgers.com\">Apply Here</a>",
+    "content": "13246 Cedar Rd., Cleveland Hts., Ohio 44118<br>(216) 371-3402",
     "location": {
       "icon": wendysIcon,
       "lat": "41.501021",
@@ -4705,7 +4704,7 @@ var config = {
     "title": "Wendy's",
     "address": "1331 West 117th St., Cleveland, Ohio 44107",
     "source": "manual",
-    "content": "1331 West 117th St., Cleveland, Ohio 44107<br>(216) 521-6211<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01900@muyhamburgers.com\">Apply Here</a>",
+    "content": "1331 West 117th St., Cleveland, Ohio 44107<br>(216) 521-6211",
     "location": {
       "icon": wendysIcon,
       "lat": "41.485577",
@@ -4731,7 +4730,7 @@ var config = {
     "title": "Wendy's",
     "address": "1355 E. Second St., Jamestown, NY 14701",
     "source": "manual",
-    "content": "1355 E. Second St., Jamestown, NY 14701<br>(716) 665-6798<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03438@muyhamburgers.com\">Apply Here</a>",
+    "content": "1355 E. Second St., Jamestown, NY 14701<br>(716) 665-6798",
     "location": {
       "icon": wendysIcon,
       "lat": "42.113571",
@@ -4757,7 +4756,7 @@ var config = {
     "title": "Wendy's",
     "address": "1374 Som Center Rd., Mayfield Hts., Ohio 44124",
     "source": "manual",
-    "content": "1374 Som Center Rd., Mayfield Hts., Ohio 44124<br>(440) 461-7718<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03308@muyhamburgers.com\">Apply Here</a>",
+    "content": "1374 Som Center Rd., Mayfield Hts., Ohio 44124<br>(440) 461-7718",
     "location": {
       "icon": wendysIcon,
       "lat": "41.52319",
@@ -4783,7 +4782,7 @@ var config = {
     "title": "Wendy's",
     "address": "14015 Lorain Ave., Cleveland, Ohio 44111",
     "source": "manual",
-    "content": "14015 Lorain Ave., Cleveland, Ohio 44111<br>(216) 252-1990<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01908@muyhamburgers.com\">Apply Here</a>",
+    "content": "14015 Lorain Ave., Cleveland, Ohio 44111<br>(216) 252-1990",
     "location": {
       "icon": wendysIcon,
       "lat": "41.465223",
@@ -4809,7 +4808,7 @@ var config = {
     "title": "Wendy's",
     "address": "1410 Colorado Ave., Lorain, Ohio 44052",
     "source": "manual",
-    "content": "1410 Colorado Ave., Lorain, Ohio 44052<br>(440) 288-0910<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04153@muyhamburgers.com\">Apply Here</a>",
+    "content": "1410 Colorado Ave., Lorain, Ohio 44052<br>(440) 288-0910",
     "location": {
       "icon": wendysIcon,
       "lat": "41.465223",
@@ -4835,7 +4834,7 @@ var config = {
     "title": "Wendy's",
     "address": "14944 Pearl Rd., Strongsville, Ohio 44136",
     "source": "manual",
-    "content": "14944 Pearl Rd., Strongsville, Ohio 44136<br>(440) 238-6690<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04495@muyhamburgers.com\">Apply Here</a>",
+    "content": "14944 Pearl Rd., Strongsville, Ohio 44136<br>(440) 238-6690",
     "location": {
       "icon": wendysIcon,
       "lat": "41.306901",
@@ -4861,7 +4860,7 @@ var config = {
     "title": "Wendy's",
     "address": "15170 E. Bagley Rd., Middleburg Hts., Ohio 44130",
     "source": "manual",
-    "content": "15170 E. Bagley Rd., Middleburg Hts., Ohio 44130<br>(440) 885-4980<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03671@muyhamburgers.com\">Apply Here</a>",
+    "content": "15170 E. Bagley Rd., Middleburg Hts., Ohio 44130<br>(440) 885-4980",
     "location": {
       "icon": wendysIcon,
       "lat": "41.369271",
@@ -4887,7 +4886,7 @@ var config = {
     "title": "Wendy's",
     "address": "1550 Mt Hope Ave, Rochester, NY 14620",
     "source": "manual",
-    "content": "1550 Mt Hope Ave, Rochester, NY 14620<br>(585) 271-3030<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04096@muyhamburgers.com\">Apply Here</a>",
+    "content": "1550 Mt Hope Ave, Rochester, NY 14620<br>(585) 271-3030",
     "location": {
       "icon": wendysIcon,
       "lat": "43.119945",
@@ -4913,7 +4912,7 @@ var config = {
     "title": "Wendy's",
     "address": "1685 GRAND ISLAND BLVD, GRAND ISLAND, NY 14072",
     "source": "manual",
-    "content": "1685 GRAND ISLAND BLVD, GRAND ISLAND, NY 14072<br>(716) 773-6330<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09294@muyhamburgers.com\">Apply Here</a>",
+    "content": "1685 GRAND ISLAND BLVD, GRAND ISLAND, NY 14072<br>(716) 773-6330",
     "location": {
       "icon": wendysIcon,
       "lat": "43.007842",
@@ -4939,7 +4938,7 @@ var config = {
     "title": "Wendy's",
     "address": "1844 East Avenue, Rochester, NY 14610",
     "source": "manual",
-    "content": "1844 East Avenue, Rochester, NY 14610<br>(585) 244-5080<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04199@muyhamburgers.com\">Apply Here</a>",
+    "content": "1844 East Avenue, Rochester, NY 14610<br>(585) 244-5080",
     "location": {
       "icon": wendysIcon,
       "lat": "43.145566",
@@ -4965,7 +4964,7 @@ var config = {
     "title": "Wendy's",
     "address": "1951 Buffalo Rd., Rochester, NY 14624",
     "source": "manual",
-    "content": "1951 Buffalo Rd., Rochester, NY 14624<br>(585) 247-1792<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03562@muyhamburgers.com\">Apply Here</a>",
+    "content": "1951 Buffalo Rd., Rochester, NY 14624<br>(585) 247-1792",
     "location": {
       "icon": wendysIcon,
       "lat": "43.148198",
@@ -4991,7 +4990,7 @@ var config = {
     "title": "Wendy's",
     "address": "2021 RIDGE ROAD, W.SENECA, NY 14224",
     "source": "manual",
-    "content": "2021 RIDGE ROAD, W.SENECA, NY 14224<br>(716) 675-5882<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03872@muyhamburgers.com\">Apply Here</a>",
+    "content": "2021 RIDGE ROAD, W.SENECA, NY 14224<br>(716) 675-5882",
     "location": {
       "icon": wendysIcon,
       "lat": "42.829119",
@@ -5017,7 +5016,7 @@ var config = {
     "title": "Wendy's",
     "address": "21250 Center Ridge Rd., Rocky River, Ohio 44116",
     "source": "manual",
-    "content": "21250 Center Ridge Rd., Rocky River, Ohio 44116<br>(440) 333-4377<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02850@muyhamburgers.com\">Apply Here</a>",
+    "content": "21250 Center Ridge Rd., Rocky River, Ohio 44116<br>(440) 333-4377",
     "location": {
       "icon": wendysIcon,
       "lat": "41.461061",
@@ -5043,7 +5042,7 @@ var config = {
     "title": "Wendy's",
     "address": "2207 West 12th St., Erie, PA 16505",
     "source": "manual",
-    "content": "2207 West 12th St., Erie, PA 16505<br>(814) 459-3062<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11339@muyhamburgers.com\">Apply Here</a>",
+    "content": "2207 West 12th St., Erie, PA 16505<br>(814) 459-3062",
     "location": {
       "icon": wendysIcon,
       "lat": "42.104101",
@@ -5069,7 +5068,7 @@ var config = {
     "title": "Wendy's",
     "address": "2230 ELMWOOD AVENUE, BUFFALO, NY 14214",
     "source": "manual",
-    "content": "2230 ELMWOOD AVENUE, BUFFALO, NY 14214<br>(716) 875-4166<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08512@muyhamburgers.com\">Apply Here</a>",
+    "content": "2230 ELMWOOD AVENUE, BUFFALO, NY 14214<br>(716) 875-4166",
     "location": {
       "icon": wendysIcon,
       "lat": "42.958088",
@@ -5095,7 +5094,7 @@ var config = {
     "title": "Wendy's",
     "address": "23050 Broadway Ave., Oakwood, Ohio 44146",
     "source": "manual",
-    "content": "23050 Broadway Ave., Oakwood, Ohio 44146<br>(440) 232-9009<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05583@muyhamburgers.com\">Apply Here</a>",
+    "content": "23050 Broadway Ave., Oakwood, Ohio 44146<br>(440) 232-9009",
     "location": {
       "icon": wendysIcon,
       "lat": "41.369303",
@@ -5121,7 +5120,7 @@ var config = {
     "title": "Wendy's",
     "address": "250 East 222nd St., Euclid, Ohio 44123",
     "source": "manual",
-    "content": "250 East 222nd St., Euclid, Ohio 44123<br>(216) 731-8821<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11305@muyhamburgers.com\">Apply Here</a>",
+    "content": "250 East 222nd St., Euclid, Ohio 44123<br>(216) 731-8821",
     "location": {
       "icon": wendysIcon,
       "lat": "41.608349",
@@ -5147,7 +5146,7 @@ var config = {
     "title": "Wendy's",
     "address": "26650 Lorain Ave., N. Olmsted, Ohio 44070",
     "source": "manual",
-    "content": "26650 Lorain Ave., N. Olmsted, Ohio 44070<br>(440) 777-7171<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02714@muyhamburgers.com\">Apply Here</a>",
+    "content": "26650 Lorain Ave., N. Olmsted, Ohio 44070<br>(440) 777-7171",
     "location": {
       "icon": wendysIcon,
       "lat": "41.418645",
@@ -5173,7 +5172,7 @@ var config = {
     "title": "Wendy's",
     "address": "27400 Chagrin Blvd., Orange Village, Ohio 44122",
     "source": "manual",
-    "content": "27400 Chagrin Blvd., Orange Village, Ohio 44122<br>(216) 292-3852<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03787@muyhamburgers.com\">Apply Here</a>",
+    "content": "27400 Chagrin Blvd., Orange Village, Ohio 44122<br>(216) 292-3852",
     "location": {
       "icon": wendysIcon,
       "lat": "41.462041",
@@ -5199,7 +5198,7 @@ var config = {
     "title": "Wendy's",
     "address": "2937 Lorain Ave., Cleveland, Ohio 44113",
     "source": "manual",
-    "content": "2937 Lorain Ave., Cleveland, Ohio 44113<br>(216) 651-4666<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02712@muyhamburgers.com\">Apply Here</a>",
+    "content": "2937 Lorain Ave., Cleveland, Ohio 44113<br>(216) 651-4666",
     "location": {
       "icon": wendysIcon,
       "lat": "41.482538",
@@ -5225,7 +5224,7 @@ var config = {
     "title": "Wendy's",
     "address": "29778 Detroit Rd., Westlake, Ohio 44145",
     "source": "manual",
-    "content": "29778 Detroit Rd., Westlake, Ohio 44145<br>(440) 892-8946<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04668@muyhamburgers.com\">Apply Here</a>",
+    "content": "29778 Detroit Rd., Westlake, Ohio 44145<br>(440) 892-8946",
     "location": {
       "icon": wendysIcon,
       "lat": "41.464351",
@@ -5251,7 +5250,7 @@ var config = {
     "title": "Wendy's",
     "address": "2988 W Ridge, Greece, NY 14626",
     "source": "manual",
-    "content": "2988 W Ridge, Greece, NY 14626<br>(585) 225-6010<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03880@muyhamburgers.com\">Apply Here</a>",
+    "content": "2988 W Ridge, Greece, NY 14626<br>(585) 225-6010",
     "location": {
       "icon": wendysIcon,
       "lat": "43.21114",
@@ -5277,7 +5276,7 @@ var config = {
     "title": "Wendy's",
     "address": "305 West Commercial, E. Rochester, NY 14445",
     "source": "manual",
-    "content": "305 West Commercial, E. Rochester, NY 14445<br>(585) 385-4890<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02867@muyhamburgers.com\">Apply Here</a>",
+    "content": "305 West Commercial, E. Rochester, NY 14445<br>(585) 385-4890",
     "location": {
       "icon": wendysIcon,
       "lat": "43.114819",
@@ -5303,7 +5302,7 @@ var config = {
     "title": "Wendy's",
     "address": "3050 Winton Road, Rochester, NY 14623",
     "source": "manual",
-    "content": "3050 Winton Road, Rochester, NY 14623<br>(585) 292-0690<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07989@muyhamburgers.com\">Apply Here</a>",
+    "content": "3050 Winton Road, Rochester, NY 14623<br>(585) 292-0690",
     "location": {
       "icon": wendysIcon,
       "lat": "43.094105",
@@ -5329,7 +5328,7 @@ var config = {
     "title": "Wendy's",
     "address": "3180 Monroe Avenue, Rochester, NY 14618",
     "source": "manual",
-    "content": "3180 Monroe Avenue, Rochester, NY 14618<br>(585) 383-1660<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08749@muyhamburgers.com\">Apply Here</a>",
+    "content": "3180 Monroe Avenue, Rochester, NY 14618<br>(585) 383-1660",
     "location": {
       "icon": wendysIcon,
       "lat": "43.106153",
@@ -5355,7 +5354,7 @@ var config = {
     "title": "Wendy's",
     "address": "3180 NIAGARA FALLS BLVD, AMHERST, NY 14228",
     "source": "manual",
-    "content": "3180 NIAGARA FALLS BLVD, AMHERST, NY 14228<br>(716) 743-0592<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05315@muyhamburgers.com\">Apply Here</a>",
+    "content": "3180 NIAGARA FALLS BLVD, AMHERST, NY 14228<br>(716) 743-0592",
     "location": {
       "icon": wendysIcon,
       "lat": "43.040816",
@@ -5381,7 +5380,7 @@ var config = {
     "title": "Wendy's",
     "address": "3200 Chili Ave., Rochester, NY 14624",
     "source": "manual",
-    "content": "3200 Chili Ave., Rochester, NY 14624<br>(585) 889-5046<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03853@muyhamburgers.com\">Apply Here</a>",
+    "content": "3200 Chili Ave., Rochester, NY 14624<br>(585) 889-5046",
     "location": {
       "icon": wendysIcon,
       "lat": "43.106466",
@@ -5407,7 +5406,7 @@ var config = {
     "title": "Wendy's",
     "address": "327 E. Fairmont Ave., Lakewood, NY 14750",
     "source": "manual",
-    "content": "327 E. Fairmont Ave., Lakewood, NY 14750<br>(716) 763-0998<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02941@muyhamburgers.com\">Apply Here</a>",
+    "content": "327 E. Fairmont Ave., Lakewood, NY 14750<br>(716) 763-0998",
     "location": {
       "icon": wendysIcon,
       "lat": "42.099614",
@@ -5433,7 +5432,7 @@ var config = {
     "title": "Wendy's",
     "address": "3275 ORCHARD PARK RD, ORCHARD PARK, NY 14127",
     "source": "manual",
-    "content": "3275 ORCHARD PARK RD, ORCHARD PARK, NY 14127<br>(716) 677-6837<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09287@muyhamburgers.com\">Apply Here</a>",
+    "content": "3275 ORCHARD PARK RD, ORCHARD PARK, NY 14127<br>(716) 677-6837",
     "location": {
       "icon": wendysIcon,
       "lat": "42.795675",
@@ -5459,7 +5458,7 @@ var config = {
     "title": "Wendy's",
     "address": "3362 MAIN STREET, BUFFALO, NY 14214",
     "source": "manual",
-    "content": "3362 MAIN STREET, BUFFALO, NY 14214<br>(716) 862-3511<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04049@muyhamburgers.com\">Apply Here</a>",
+    "content": "3362 MAIN STREET, BUFFALO, NY 14214<br>(716) 862-3511",
     "location": {
       "icon": wendysIcon,
       "lat": "42.95504",
@@ -5485,7 +5484,7 @@ var config = {
     "title": "Wendy's",
     "address": "34323 Center Ridge Rd., N. Ridgeville, Ohio 44039",
     "source": "manual",
-    "content": "34323 Center Ridge Rd., N. Ridgeville, Ohio 44039<br>(440) 327-2113<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03644@muyhamburgers.com\">Apply Here</a>",
+    "content": "34323 Center Ridge Rd., N. Ridgeville, Ohio 44039<br>(440) 327-2113",
     "location": {
       "icon": wendysIcon,
       "lat": "41.397477",
@@ -5511,7 +5510,7 @@ var config = {
     "title": "Wendy's",
     "address": "3513 MCKINLEY PKWY, BUFFALO, NY 14219",
     "source": "manual",
-    "content": "3513 MCKINLEY PKWY, BUFFALO, NY 14219<br>(716) 826-2826<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08192@muyhamburgers.com\">Apply Here</a>",
+    "content": "3513 MCKINLEY PKWY, BUFFALO, NY 14219<br>(716) 826-2826",
     "location": {
       "icon": wendysIcon,
       "lat": "42.789134",
@@ -5537,7 +5536,7 @@ var config = {
     "title": "Wendy's",
     "address": "3516 Warrensville Center Rd., Shaker Hts., Ohio 44122",
     "source": "manual",
-    "content": "3516 Warrensville Center Rd., Shaker Hts., Ohio 44122<br>(216) 752-6960<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03907@muyhamburgers.com\">Apply Here</a>",
+    "content": "3516 Warrensville Center Rd., Shaker Hts., Ohio 44122<br>(216) 752-6960",
     "location": {
       "icon": wendysIcon,
       "lat": "41.464133",
@@ -5563,7 +5562,7 @@ var config = {
     "title": "Wendy's",
     "address": "360 DINGENS, BUFFALO, NY 14206",
     "source": "manual",
-    "content": "360 DINGENS, BUFFALO, NY 14206<br>(716) 824-3011<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03561@muyhamburgers.com\">Apply Here</a>",
+    "content": "360 DINGENS, BUFFALO, NY 14206<br>(716) 824-3011",
     "location": {
       "icon": wendysIcon,
       "lat": "42.878399",
@@ -5589,7 +5588,7 @@ var config = {
     "title": "Wendy's",
     "address": "3825 Dewey Ave, Greece, NY 14616",
     "source": "manual",
-    "content": "3825 Dewey Ave, Greece, NY 14616<br>(585) 621-4394<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04255@muyhamburgers.com\">Apply Here</a>",
+    "content": "3825 Dewey Ave, Greece, NY 14616<br>(585) 621-4394",
     "location": {
       "icon": wendysIcon,
       "lat": "43.240232",
@@ -5615,7 +5614,7 @@ var config = {
     "title": "Wendy's",
     "address": "4050 MAPLE RD., AMHERST, NY 14226",
     "source": "manual",
-    "content": "4050 MAPLE RD., AMHERST, NY 14226<br>(716) 832-0855<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03316@muyhamburgers.com\">Apply Here</a>",
+    "content": "4050 MAPLE RD., AMHERST, NY 14226<br>(716) 832-0855",
     "location": {
       "icon": wendysIcon,
       "lat": "42.991269",
@@ -5641,7 +5640,7 @@ var config = {
     "title": "Wendy's",
     "address": "4158 Lakeville Road, Geneseo, NY 14454",
     "source": "manual",
-    "content": "4158 Lakeville Road, Geneseo, NY 14454<br>(585) 243-2210<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07997@muyhamburgers.com\">Apply Here</a>",
+    "content": "4158 Lakeville Road, Geneseo, NY 14454<br>(585) 243-2210",
     "location": {
       "icon": wendysIcon,
       "lat": "42.794952",
@@ -5667,7 +5666,7 @@ var config = {
     "title": "Wendy's",
     "address": "4186 Buffalo Rd., Erie, PA 16510",
     "source": "manual",
-    "content": "4186 Buffalo Rd., Erie, PA 16510<br>(814) 899-4611<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03060@muyhamburgers.com\">Apply Here</a>",
+    "content": "4186 Buffalo Rd., Erie, PA 16510<br>(814) 899-4611",
     "location": {
       "icon": wendysIcon,
       "lat": "42.145178",
@@ -5693,7 +5692,7 @@ var config = {
     "title": "Wendy's",
     "address": "44 Main St, Batavia, NY 14020",
     "source": "manual",
-    "content": "44 Main St, Batavia, NY 14020<br>(585) 343-5858<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04269@muyhamburgers.com\">Apply Here</a>",
+    "content": "44 Main St, Batavia, NY 14020<br>(585) 343-5858",
     "location": {
       "icon": wendysIcon,
       "lat": "42.998287",
@@ -5719,7 +5718,7 @@ var config = {
     "title": "Wendy's",
     "address": "4602 Northfield Rd., North Randall, Ohio 44128",
     "source": "manual",
-    "content": "4602 Northfield Rd., North Randall, Ohio 44128<br>(216) 332-0485<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09560@muyhamburgers.com\">Apply Here</a>",
+    "content": "4602 Northfield Rd., North Randall, Ohio 44128<br>(216) 332-0485",
     "location": {
       "icon": wendysIcon,
       "lat": "41.434619",
@@ -5745,7 +5744,7 @@ var config = {
     "title": "Wendy's",
     "address": "4640 Lake Road, Brockport, NY 14420",
     "source": "manual",
-    "content": "4640 Lake Road, Brockport, NY 14420<br>(585) 637-5220<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04543@muyhamburgers.com\">Apply Here</a>",
+    "content": "4640 Lake Road, Brockport, NY 14420<br>(585) 637-5220",
     "location": {
       "icon": wendysIcon,
       "lat": "43.202884",
@@ -5771,7 +5770,7 @@ var config = {
     "title": "Wendy's",
     "address": "4747 West Henrietta Road, Rochester, NY 14467",
     "source": "manual",
-    "content": "4747 West Henrietta Road, Rochester, NY 14467<br>(585) 334-3450<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07414@muyhamburgers.com\">Apply Here</a>",
+    "content": "4747 West Henrietta Road, Rochester, NY 14467<br>(585) 334-3450",
     "location": {
       "icon": wendysIcon,
       "lat": "43.05828",
@@ -5797,7 +5796,7 @@ var config = {
     "title": "Wendy's",
     "address": "481 Hamilton Street, Geneva, NY 14456",
     "source": "manual",
-    "content": "481 Hamilton Street, Geneva, NY 14456<br>(315) 789-2463<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05103@muyhamburgers.com\">Apply Here</a>",
+    "content": "481 Hamilton Street, Geneva, NY 14456<br>(315) 789-2463",
     "location": {
       "icon": wendysIcon,
       "lat": "42.856405",
@@ -5823,7 +5822,7 @@ var config = {
     "title": "Wendy's",
     "address": "4961 TRANSIT ROAD, DEPEW, NY 14043",
     "source": "manual",
-    "content": "4961 TRANSIT ROAD, DEPEW, NY 14043<br>(716) 206-0003<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09520@muyhamburgers.com\">Apply Here</a>",
+    "content": "4961 TRANSIT ROAD, DEPEW, NY 14043<br>(716) 206-0003",
     "location": {
       "icon": wendysIcon,
       "lat": "42.881425",
@@ -5849,7 +5848,7 @@ var config = {
     "title": "Wendy's",
     "address": "510 W.Union St., Newark, NY 14513",
     "source": "manual",
-    "content": "510 W.Union St., Newark, NY 14513<br>(315) 331-5922<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07585@muyhamburgers.com\">Apply Here</a>",
+    "content": "510 W.Union St., Newark, NY 14513<br>(315) 331-5922",
     "location": {
       "icon": wendysIcon,
       "lat": "43.046231",
@@ -5875,7 +5874,7 @@ var config = {
     "title": "Wendy's",
     "address": "5200 North Abbe Rd., Sheffield Village, Ohio 44035",
     "source": "manual",
-    "content": "5200 North Abbe Rd., Sheffield Village, Ohio 44035<br>(440) 934-7666<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07905@muyhamburgers.com\">Apply Here</a>",
+    "content": "5200 North Abbe Rd., Sheffield Village, Ohio 44035<br>(440) 934-7666",
     "location": {
       "icon": wendysIcon,
       "lat": "41.422318",
@@ -5901,7 +5900,7 @@ var config = {
     "title": "Wendy's",
     "address": "5244 MAIN ST., WILLIAMSVILLE, NY 14221",
     "source": "manual",
-    "content": "5244 MAIN ST., WILLIAMSVILLE, NY 14221<br>(716) 626-3397<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03175@muyhamburgers.com\">Apply Here</a>",
+    "content": "5244 MAIN ST., WILLIAMSVILLE, NY 14221<br>(716) 626-3397",
     "location": {
       "icon": wendysIcon,
       "lat": "42.961184",
@@ -5927,7 +5926,7 @@ var config = {
     "title": "Wendy's",
     "address": "525 Cleveland St., Elyria, Ohio 44035",
     "source": "manual",
-    "content": "525 Cleveland St., Elyria, Ohio 44035<br>(440) 365-8805<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03305@muyhamburgers.com\">Apply Here</a>",
+    "content": "525 Cleveland St., Elyria, Ohio 44035<br>(440) 365-8805",
     "location": {
       "icon": wendysIcon,
       "lat": "41.375645",
@@ -5953,7 +5952,7 @@ var config = {
     "title": "Wendy's",
     "address": "5251 Turney Rd., Garfield Hts., Ohio 44125",
     "source": "manual",
-    "content": "5251 Turney Rd., Garfield Hts., Ohio 44125<br>(216) 662-1685<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08779@muyhamburgers.com\">Apply Here</a>",
+    "content": "5251 Turney Rd., Garfield Hts., Ohio 44125<br>(216) 662-1685",
     "location": {
       "icon": wendysIcon,
       "lat": "41.418918",
@@ -5979,7 +5978,7 @@ var config = {
     "title": "Wendy's",
     "address": "5281 CAMP ROAD, HAMBURG, NY 14075",
     "source": "manual",
-    "content": "5281 CAMP ROAD, HAMBURG, NY 14075<br>(716) 649-5754<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04502@muyhamburgers.com\">Apply Here</a>",
+    "content": "5281 CAMP ROAD, HAMBURG, NY 14075<br>(716) 649-5754",
     "location": {
       "icon": wendysIcon,
       "lat": "42.743616",
@@ -6005,7 +6004,7 @@ var config = {
     "title": "Wendy's",
     "address": "5360 Warrensville Center Rd., Maple Hts, Ohio 44137",
     "source": "manual",
-    "content": "5360 Warrensville Center Rd., Maple Hts, Ohio 44137<br>(216) 332-0156<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08776@muyhamburgers.com\">Apply Here</a>",
+    "content": "5360 Warrensville Center Rd., Maple Hts, Ohio 44137<br>(216) 332-0156",
     "location": {
       "icon": wendysIcon,
       "lat": "41.414779",
@@ -6031,7 +6030,7 @@ var config = {
     "title": "Wendy's",
     "address": "557 Moseley Road, Perinton, NY 14450",
     "source": "manual",
-    "content": "557 Moseley Road, Perinton, NY 14450<br>(585) 425-7657<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04644@muyhamburgers.com\">Apply Here</a>",
+    "content": "557 Moseley Road, Perinton, NY 14450<br>(585) 425-7657",
     "location": {
       "icon": wendysIcon,
       "lat": "43.071836",
@@ -6057,7 +6056,7 @@ var config = {
     "title": "Wendy's",
     "address": "558 Griswold Rd., Elyria, Ohio 44035 (Midway Mall)",
     "source": "manual",
-    "content": "558 Griswold Rd., Elyria, Ohio 44035 (Midway Mall)<br>(440) 324-6640<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03058@muyhamburgers.com\">Apply Here</a>",
+    "content": "558 Griswold Rd., Elyria, Ohio 44035 (Midway Mall)<br>(440) 324-6640",
     "location": {
       "icon": wendysIcon,
       "lat": "41.400166",
@@ -6083,7 +6082,7 @@ var config = {
     "title": "Wendy's",
     "address": "566 Jefferson Rd, Rochester, NY 14623",
     "source": "manual",
-    "content": "566 Jefferson Rd, Rochester, NY 14623<br>(585) 292-1390<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03382@muyhamburgers.com\">Apply Here</a>",
+    "content": "566 Jefferson Rd, Rochester, NY 14623<br>(585) 292-1390",
     "location": {
       "icon": wendysIcon,
       "lat": "43.087598",
@@ -6109,7 +6108,7 @@ var config = {
     "title": "Wendy's",
     "address": "5737 S. TRANSIT ROAD, LOCKPORT, NY 14094",
     "source": "manual",
-    "content": "5737 S. TRANSIT ROAD, LOCKPORT, NY 14094<br>(716) 434-6439<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08930@muyhamburgers.com\">Apply Here</a>",
+    "content": "5737 S. TRANSIT ROAD, LOCKPORT, NY 14094<br>(716) 434-6439",
     "location": {
       "icon": wendysIcon,
       "lat": "43.147736",
@@ -6135,7 +6134,7 @@ var config = {
     "title": "Wendy's",
     "address": "5815 St. Clair Ave., Cleveland, Ohio 44103",
     "source": "manual",
-    "content": "5815 St. Clair Ave., Cleveland, Ohio 44103<br>(216) 881-1990<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01901@muyhamburgers.com\">Apply Here</a>",
+    "content": "5815 St. Clair Ave., Cleveland, Ohio 44103<br>(216) 881-1990",
     "location": {
       "icon": wendysIcon,
       "lat": "41.522984",
@@ -6161,7 +6160,7 @@ var config = {
     "title": "Wendy's",
     "address": "5901 Peach St., Erie, PA 16509",
     "source": "manual",
-    "content": "5901 Peach St., Erie, PA 16509<br>(814) 868-2839<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05264@muyhamburgers.com\">Apply Here</a>",
+    "content": "5901 Peach St., Erie, PA 16509<br>(814) 868-2839",
     "location": {
       "icon": wendysIcon,
       "lat": "42.066011",
@@ -6187,7 +6186,7 @@ var config = {
     "title": "Wendy's",
     "address": "5902 Wattsburg Rd., exit 8 & I-90, Erie, PA 16509",
     "source": "manual",
-    "content": "5902 Wattsburg Rd., exit 8 & I-90, Erie, PA 16509<br>(814) 825-5897<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04946@muyhamburgers.com\">Apply Here</a>",
+    "content": "5902 Wattsburg Rd., exit 8 & I-90, Erie, PA 16509<br>(814) 825-5897",
     "location": {
       "icon": wendysIcon,
       "lat": "42.049417",
@@ -6213,7 +6212,7 @@ var config = {
     "title": "Wendy's",
     "address": "60 Pennsylvania Ave., Warren, PA 16365",
     "source": "manual",
-    "content": "60 Pennsylvania Ave., Warren, PA 16365<br>(814) 723-2740<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03404@muyhamburgers.com\">Apply Here</a>",
+    "content": "60 Pennsylvania Ave., Warren, PA 16365<br>(814) 723-2740",
     "location": {
       "icon": wendysIcon,
       "lat": "41.844133",
@@ -6239,7 +6238,7 @@ var config = {
     "title": "Wendy's",
     "address": "6020 PORTER ROAD, NIAGARA FALLS, NY 14305",
     "source": "manual",
-    "content": "6020 PORTER ROAD, NIAGARA FALLS, NY 14305<br>(716) 297-6088<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05450@muyhamburgers.com\">Apply Here</a>",
+    "content": "6020 PORTER ROAD, NIAGARA FALLS, NY 14305<br>(716) 297-6088",
     "location": {
       "icon": wendysIcon,
       "lat": "43.108087",
@@ -6265,7 +6264,7 @@ var config = {
     "title": "Wendy's",
     "address": "604 North Leavitt Rd., Amherst, Ohio 44001",
     "source": "manual",
-    "content": "604 North Leavitt Rd., Amherst, Ohio 44001<br>(440) 985-1680<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05570@muyhamburgers.com\">Apply Here</a>",
+    "content": "604 North Leavitt Rd., Amherst, Ohio 44001<br>(440) 985-1680",
     "location": {
       "icon": wendysIcon,
       "lat": "41.41235",
@@ -6291,7 +6290,7 @@ var config = {
     "title": "Wendy's",
     "address": "6540 Pearl Rd., Parma Hts., Ohio 44130",
     "source": "manual",
-    "content": "6540 Pearl Rd., Parma Hts., Ohio 44130<br>(440) 842-6070<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04562@muyhamburgers.com\">Apply Here</a>",
+    "content": "6540 Pearl Rd., Parma Hts., Ohio 44130<br>(440) 842-6070",
     "location": {
       "icon": wendysIcon,
       "lat": "41.384429",
@@ -6317,7 +6316,7 @@ var config = {
     "title": "Wendy's",
     "address": "683 Lake Av., Rochester, NY 14613",
     "source": "manual",
-    "content": "683 Lake Av., Rochester, NY 14613<br>(585) 254-2860<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07634@muyhamburgers.com\">Apply Here</a>",
+    "content": "683 Lake Av., Rochester, NY 14613<br>(585) 254-2860",
     "location": {
       "icon": wendysIcon,
       "lat": "43.177133",
@@ -6343,7 +6342,7 @@ var config = {
     "title": "Wendy's",
     "address": "6899 Rockside Rd., Independence, Ohio 44131",
     "source": "manual",
-    "content": "6899 Rockside Rd., Independence, Ohio 44131<br>(216) 520-0566<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05539@muyhamburgers.com\">Apply Here</a>",
+    "content": "6899 Rockside Rd., Independence, Ohio 44131<br>(216) 520-0566",
     "location": {
       "icon": wendysIcon,
       "lat": "41.394926",
@@ -6369,7 +6368,7 @@ var config = {
     "title": "Wendy's",
     "address": "6940 TRANSIT RD., WILLIAMSVILLE, NY 14221",
     "source": "manual",
-    "content": "6940 TRANSIT RD., WILLIAMSVILLE, NY 14221<br>(716) 634-4075<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03206@muyhamburgers.com\">Apply Here</a>",
+    "content": "6940 TRANSIT RD., WILLIAMSVILLE, NY 14221<br>(716) 634-4075",
     "location": {
       "icon": wendysIcon,
       "lat": "42.95692",
@@ -6395,7 +6394,7 @@ var config = {
     "title": "Wendy's",
     "address": "6970 Ridge Rd., Parma, Ohio 44129",
     "source": "manual",
-    "content": "6970 Ridge Rd., Parma, Ohio 44129<br>(440) 843-7717<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01986@muyhamburgers.com\">Apply Here</a>",
+    "content": "6970 Ridge Rd., Parma, Ohio 44129<br>(440) 843-7717",
     "location": {
       "icon": wendysIcon,
       "lat": "41.375839",
@@ -6421,7 +6420,7 @@ var config = {
     "title": "Wendy's",
     "address": "744 East Main St, Rochester, NY 14605",
     "source": "manual",
-    "content": "744 East Main St, Rochester, NY 14605<br>(585) 232-5586<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02971@muyhamburgers.com\">Apply Here</a>",
+    "content": "744 East Main St, Rochester, NY 14605<br>(585) 232-5586",
     "location": {
       "icon": wendysIcon,
       "lat": "43.160545",
@@ -6447,7 +6446,7 @@ var config = {
     "title": "Wendy's",
     "address": "7473 Victor-Pittsford Road, Victor, NY 14564",
     "source": "manual",
-    "content": "7473 Victor-Pittsford Road, Victor, NY 14564<br>(585) 924-8430<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11009@muyhamburgers.com\">Apply Here</a>",
+    "content": "7473 Victor-Pittsford Road, Victor, NY 14564<br>(585) 924-8430",
     "location": {
       "icon": wendysIcon,
       "lat": "43.007804",
@@ -6473,7 +6472,7 @@ var config = {
     "title": "Wendy's",
     "address": "7515 NIAGARA FALLS BOULEVARD, NIAGARA FALLS, NY 14304",
     "source": "manual",
-    "content": "7515 NIAGARA FALLS BOULEVARD, NIAGARA FALLS, NY 14304<br>(716) 236-0300<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11031@muyhamburgers.com\">Apply Here</a>",
+    "content": "7515 NIAGARA FALLS BOULEVARD, NIAGARA FALLS, NY 14304<br>(716) 236-0300",
     "location": {
       "icon": wendysIcon,
       "lat": "43.087619",
@@ -6499,7 +6498,7 @@ var config = {
     "title": "Wendy's",
     "address": "811 YOUNG ST, TONAWANDA, NY 14150",
     "source": "manual",
-    "content": "811 YOUNG ST, TONAWANDA, NY 14150<br>(716) 693-2578<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04780@muyhamburgers.com\">Apply Here</a>",
+    "content": "811 YOUNG ST, TONAWANDA, NY 14150<br>(716) 693-2578",
     "location": {
       "icon": wendysIcon,
       "lat": "43.002707",
@@ -6525,7 +6524,7 @@ var config = {
     "title": "Wendy's",
     "address": "820 Richmond Rd., Richmond Hts., Ohio 44143",
     "source": "manual",
-    "content": "820 Richmond Rd., Richmond Hts., Ohio 44143<br>(216) 291-2525<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04102@muyhamburgers.com\">Apply Here</a>",
+    "content": "820 Richmond Rd., Richmond Hts., Ohio 44143<br>(216) 291-2525",
     "location": {
       "icon": wendysIcon,
       "lat": "41.53805",
@@ -6551,7 +6550,7 @@ var config = {
     "title": "Wendy's",
     "address": "9175 West Ridge Rd., Girard , PA 16417",
     "source": "manual",
-    "content": "9175 West Ridge Rd., Girard , PA 16417<br>(814) 774-9770<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03780@muyhamburgers.com\">Apply Here</a>",
+    "content": "9175 West Ridge Rd., Girard , PA 16417<br>(814) 774-9770",
     "location": {
       "icon": wendysIcon,
       "lat": "42.00888",
@@ -6577,7 +6576,7 @@ var config = {
     "title": "Wendy's",
     "address": "987 Ridge Road, Webster, NY 14580",
     "source": "manual",
-    "content": "987 Ridge Road, Webster, NY 14580<br>(585) 872-5635<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11543@muyhamburgers.com\">Apply Here</a>",
+    "content": "987 Ridge Road, Webster, NY 14580<br>(585) 872-5635",
     "location": {
       "icon": wendysIcon,
       "lat": "43.208401",
@@ -6605,7 +6604,7 @@ var config = {
     "title": "Wendy's",
     "address": "447 N. Union St., Olean, NY 14760",
     "source": "manual",
-    "content": "447 N. Union St., Olean, NY 14760<br>(716) 372-5400<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04431@muyhamburgers.com\">Apply Here</a>",
+    "content": "447 N. Union St., Olean, NY 14760<br>(716) 372-5400",
     "location": {
       "icon": wendysIcon,
       "lat": "42.083958",
@@ -6631,7 +6630,7 @@ var config = {
     "title": "Wendy's",
     "address": "9221 Benbrook Blvd, Benbrook, TX 76126",
     "source": "manual",
-    "content": "9221 Benbrook Blvd, Benbrook, TX 76126<br>(817) 249-7659<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11685@muyhamburgers.com\">Apply Here</a>",
+    "content": "9221 Benbrook Blvd, Benbrook, TX 76126<br>(817) 249-7659",
     "location": {
       "icon": wendysIcon,
       "lat": "32.672181",
@@ -6657,7 +6656,7 @@ var config = {
     "title": "Wendy's",
     "address": "8660 Beechmont Ave, Cincinnati, Ohio 45255",
     "source": "manual",
-    "content": "8660 Beechmont Ave, Cincinnati, Ohio 45255<br>(513) 388-0033<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11690@muyhamburgers.com\">Apply Here</a>",
+    "content": "8660 Beechmont Ave, Cincinnati, Ohio 45255<br>(513) 388-0033",
     "location": {
       "icon": wendysIcon,
       "lat": "39.072381",
@@ -6683,7 +6682,7 @@ var config = {
     "title": "Wendy's",
     "address": "1040 W. Prospect, Ashtabula, OH 44004",
     "source": "manual",
-    "content": "1040 W. Prospect, Ashtabula, OH 44004<br>(440) 998-1223<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03001@muyhamburgers.com\">Apply Here</a>",
+    "content": "1040 W. Prospect, Ashtabula, OH 44004<br>(440) 998-1223",
     "location": {
       "icon": wendysIcon,
       "lat": "41.863566",
@@ -6709,7 +6708,7 @@ var config = {
     "title": "Wendy's",
     "address": "1782 South Broadway, Geneva, OH 44041",
     "source": "manual",
-    "content": "1782 South Broadway, Geneva, OH 44041<br>(440) 466-0977<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws07536@muyhamburgers.com\">Apply Here</a>",
+    "content": "1782 South Broadway, Geneva, OH 44041<br>(440) 466-0977",
     "location": {
       "icon": wendysIcon,
       "lat": "41.786013",
@@ -6735,7 +6734,7 @@ var config = {
     "title": "Wendy's",
     "address": "135 Short Blvd, Dallas, TX 75232",
     "source": "manual",
-    "content": "135 Short Blvd, Dallas, TX 75232<br>(214) 372-8446<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11747@muyhamburgers.com\">Apply Here</a>",
+    "content": "135 Short Blvd, Dallas, TX 75232<br>(214) 372-8446",
     "location": {
       "icon": wendysIcon,
       "lat": "32.685792",
@@ -6761,7 +6760,7 @@ var config = {
     "title": "Wendy's",
     "address": "6827 W. Military Dr., San Antonio, TX 78227",
     "source": "manual",
-    "content": "6827 W. Military Dr., San Antonio, TX 78227<br>(210) 674-8889<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01040@muyhamburgers.com\">Apply Here</a>",
+    "content": "6827 W. Military Dr., San Antonio, TX 78227<br>(210) 674-8889",
     "location": {
       "icon": wendysIcon,
       "lat": "29.404972",
@@ -6787,7 +6786,7 @@ var config = {
     "title": "Wendy's",
     "address": "9700 San Pedro Ave, San Antonio, TX 78216",
     "source": "manual",
-    "content": "9700 San Pedro Ave, San Antonio, TX 78216<br>(210) 344-7577<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01041@muyhamburgers.com\">Apply Here</a>",
+    "content": "9700 San Pedro Ave, San Antonio, TX 78216<br>(210) 344-7577",
     "location": {
       "icon": wendysIcon,
       "lat": "29.528642",
@@ -6813,7 +6812,7 @@ var config = {
     "title": "Wendy's",
     "address": "2343 SW Military Dr, San Antonio, TX 78224",
     "source": "manual",
-    "content": "2343 SW Military Dr, San Antonio, TX 78224<br>(210) 924-1660<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01043@muyhamburgers.com\">Apply Here</a>",
+    "content": "2343 SW Military Dr, San Antonio, TX 78224<br>(210) 924-1660",
     "location": {
       "icon": wendysIcon,
       "lat": "29.357004",
@@ -6839,7 +6838,7 @@ var config = {
     "title": "Wendy's",
     "address": "111 N WW White, San Antonio, TX 78219",
     "source": "manual",
-    "content": "111 N WW White, San Antonio, TX 78219<br>(210) 333-2531<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01044@muyhamburgers.com\">Apply Here</a>",
+    "content": "111 N WW White, San Antonio, TX 78219<br>(210) 333-2531",
     "location": {
       "icon": wendysIcon,
       "lat": "29.433177",
@@ -6865,7 +6864,7 @@ var config = {
     "title": "Wendy's",
     "address": "430 San Pedro Ave, San Antonio, TX 78212",
     "source": "manual",
-    "content": "430 San Pedro Ave, San Antonio, TX 78212<br>(210) 222-0009<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01048@muyhamburgers.com\">Apply Here</a>",
+    "content": "430 San Pedro Ave, San Antonio, TX 78212<br>(210) 222-0009",
     "location": {
       "icon": wendysIcon,
       "lat": "29.437702",
@@ -6891,7 +6890,7 @@ var config = {
     "title": "Wendy's",
     "address": "514 W Cevallos, San Antonio, TX 78204",
     "source": "manual",
-    "content": "514 W Cevallos, San Antonio, TX 78204<br>(210) 222-0015<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01049@muyhamburgers.com\">Apply Here</a>",
+    "content": "514 W Cevallos, San Antonio, TX 78204<br>(210) 222-0015",
     "location": {
       "icon": wendysIcon,
       "lat": "29.410895",
@@ -6917,7 +6916,7 @@ var config = {
     "title": "Wendy's",
     "address": "607 SW Military Dr, San Antonio, TX 78221",
     "source": "manual",
-    "content": "607 SW Military Dr, San Antonio, TX 78221<br>(210) 922-6771<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01051@muyhamburgers.com\">Apply Here</a>",
+    "content": "607 SW Military Dr, San Antonio, TX 78221<br>(210) 922-6771",
     "location": {
       "icon": wendysIcon,
       "lat": "29.357115",
@@ -6943,7 +6942,7 @@ var config = {
     "title": "Wendy's",
     "address": "9340 Wurzbach Rd, San Antonio, TX 78229",
     "source": "manual",
-    "content": "9340 Wurzbach Rd, San Antonio, TX 78229<br>(210) 593-0244<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01053@muyhamburgers.com\">Apply Here</a>",
+    "content": "9340 Wurzbach Rd, San Antonio, TX 78229<br>(210) 593-0244",
     "location": {
       "icon": wendysIcon,
       "lat": "29.529244",
@@ -6969,7 +6968,7 @@ var config = {
     "title": "Wendy's",
     "address": "114 Hwy 46 S, New Braunfels, TX 78130",
     "source": "manual",
-    "content": "114 Hwy 46 S, New Braunfels, TX 78130<br>(830) 606-1700<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01055@muyhamburgers.com\">Apply Here</a>",
+    "content": "114 Hwy 46 S, New Braunfels, TX 78130<br>(830) 606-1700",
     "location": {
       "icon": wendysIcon,
       "lat": "29.702286",
@@ -6995,7 +6994,7 @@ var config = {
     "title": "Wendy's",
     "address": "11919 Perrin-Beitel, San Antonio, TX 78217",
     "source": "manual",
-    "content": "11919 Perrin-Beitel, San Antonio, TX 78217<br>(210) 650-9250<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01180@muyhamburgers.com\">Apply Here</a>",
+    "content": "11919 Perrin-Beitel, San Antonio, TX 78217<br>(210) 650-9250",
     "location": {
       "icon": wendysIcon,
       "lat": "29.548895",
@@ -7021,7 +7020,7 @@ var config = {
     "title": "Wendy's",
     "address": "7039 Culebra, San Antonio, TX 78238",
     "source": "manual",
-    "content": "7039 Culebra, San Antonio, TX 78238<br>(210) 681-4767<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01247@muyhamburgers.com\">Apply Here</a>",
+    "content": "7039 Culebra, San Antonio, TX 78238<br>(210) 681-4767",
     "location": {
       "icon": wendysIcon,
       "lat": "29.452503",
@@ -7047,7 +7046,7 @@ var config = {
     "title": "Wendy's",
     "address": "4519 Fredericksburg, San Antonio, TX 78201",
     "source": "manual",
-    "content": "4519 Fredericksburg, San Antonio, TX 78201<br>(210) 736-1211<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws01319@muyhamburgers.com\">Apply Here</a>",
+    "content": "4519 Fredericksburg, San Antonio, TX 78201<br>(210) 736-1211",
     "location": {
       "icon": wendysIcon,
       "lat": "29.489999",
@@ -7073,7 +7072,7 @@ var config = {
     "title": "Wendy's",
     "address": "1242 S Main, Boerne, TX 78006",
     "source": "manual",
-    "content": "1242 S Main, Boerne, TX 78006<br>(830) 816-3037<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04484@muyhamburgers.com\">Apply Here</a>",
+    "content": "1242 S Main, Boerne, TX 78006<br>(830) 816-3037",
     "location": {
       "icon": wendysIcon,
       "lat": "29.780698",
@@ -7099,7 +7098,7 @@ var config = {
     "title": "Wendy's",
     "address": "701 E Hopkins, San Marcos, TX 78666",
     "source": "manual",
-    "content": "701 E Hopkins, San Marcos, TX 78666<br>(512) 754-7040<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04721@muyhamburgers.com\">Apply Here</a>",
+    "content": "701 E Hopkins, San Marcos, TX 78666<br>(512) 754-7040",
     "location": {
       "icon": wendysIcon,
       "lat": "29.884492",
@@ -7125,7 +7124,7 @@ var config = {
     "title": "Wendy's",
     "address": "5121 NW Loop 410, San Antonio, TX 78229",
     "source": "manual",
-    "content": "5121 NW Loop 410, San Antonio, TX 78229<br>(210) 523-7337<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04860@muyhamburgers.com\">Apply Here</a>",
+    "content": "5121 NW Loop 410, San Antonio, TX 78229<br>(210) 523-7337",
     "location": {
       "icon": wendysIcon,
       "lat": "29.487223",
@@ -7151,7 +7150,7 @@ var config = {
     "title": "Wendy's",
     "address": "7662 Guilbeau, San Antonio, TX 78250",
     "source": "manual",
-    "content": "7662 Guilbeau, San Antonio, TX 78250<br>(210) 523-8400<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04867@muyhamburgers.com\">Apply Here</a>",
+    "content": "7662 Guilbeau, San Antonio, TX 78250<br>(210) 523-8400",
     "location": {
       "icon": wendysIcon,
       "lat": "29.518819",
@@ -7177,7 +7176,7 @@ var config = {
     "title": "Wendy's",
     "address": "2422 E Southcross, San Antonio, TX 78223",
     "source": "manual",
-    "content": "2422 E Southcross, San Antonio, TX 78223<br>(210) 533-2898<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04945@muyhamburgers.com\">Apply Here</a>",
+    "content": "2422 E Southcross, San Antonio, TX 78223<br>(210) 533-2898",
     "location": {
       "icon": wendysIcon,
       "lat": "29.375073",
@@ -7203,7 +7202,7 @@ var config = {
     "title": "Wendy's",
     "address": "4445 W Commerce St, San Antonio, TX 78237",
     "source": "manual",
-    "content": "4445 W Commerce St, San Antonio, TX 78237<br>(210) 433-7202<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05101@muyhamburgers.com\">Apply Here</a>",
+    "content": "4445 W Commerce St, San Antonio, TX 78237<br>(210) 433-7202",
     "location": {
       "icon": wendysIcon,
       "lat": "29.430727",
@@ -7229,7 +7228,7 @@ var config = {
     "title": "Wendy's",
     "address": "7727 Wurzbach Rd, San Antonio, TX 78229",
     "source": "manual",
-    "content": "7727 Wurzbach Rd, San Antonio, TX 78229<br>(210) 614-0540<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05127@muyhamburgers.com\">Apply Here</a>",
+    "content": "7727 Wurzbach Rd, San Antonio, TX 78229<br>(210) 614-0540",
     "location": {
       "icon": wendysIcon,
       "lat": "29.51007",
@@ -7255,7 +7254,7 @@ var config = {
     "title": "Wendy's",
     "address": "16611 Nacogdoches, San Antonio, TX 78247",
     "source": "manual",
-    "content": "16611 Nacogdoches, San Antonio, TX 78247<br>(210) 655-0567<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05174@muyhamburgers.com\">Apply Here</a>",
+    "content": "16611 Nacogdoches, San Antonio, TX 78247<br>(210) 655-0567",
     "location": {
       "icon": wendysIcon,
       "lat": "29.591599",
@@ -7281,7 +7280,7 @@ var config = {
     "title": "Wendy's",
     "address": "5550 FM 3009, Scherz, TX 78154",
     "source": "manual",
-    "content": "5550 FM 3009, Scherz, TX 78154<br>(210) 651-5551<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05185@muyhamburgers.com\">Apply Here</a>",
+    "content": "5550 FM 3009, Scherz, TX 78154<br>(210) 651-5551",
     "location": {
       "icon": wendysIcon,
       "lat": "29.601589",
@@ -7307,7 +7306,7 @@ var config = {
     "title": "Wendy's",
     "address": "5195 De Zavala Road, San Antonio, TX 78249",
     "source": "manual",
-    "content": "5195 De Zavala Road, San Antonio, TX 78249<br>(210) 690-9182<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05403@muyhamburgers.com\">Apply Here</a>",
+    "content": "5195 De Zavala Road, San Antonio, TX 78249<br>(210) 690-9182",
     "location": {
       "icon": wendysIcon,
       "lat": "29.565402",
@@ -7333,7 +7332,7 @@ var config = {
     "title": "Wendy's",
     "address": "19170 Stone Oak Pkwy, San Antonio, TX 78258",
     "source": "manual",
-    "content": "19170 Stone Oak Pkwy, San Antonio, TX 78258<br>(210) 403-3793<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08055@muyhamburgers.com\">Apply Here</a>",
+    "content": "19170 Stone Oak Pkwy, San Antonio, TX 78258<br>(210) 403-3793",
     "location": {
       "icon": wendysIcon,
       "lat": "29.624981",
@@ -7359,7 +7358,7 @@ var config = {
     "title": "Wendy's",
     "address": "9800 Fredericksburg Road, San Antonio, TX 78288",
     "source": "manual",
-    "content": "9800 Fredericksburg Road, San Antonio, TX 78288<br>(210) 498-2238<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09075@muyhamburgers.com\">Apply Here</a>",
+    "content": "9800 Fredericksburg Road, San Antonio, TX 78288<br>(210) 498-2238",
     "location": {
       "icon": wendysIcon,
       "lat": "29.53442",
@@ -7385,7 +7384,7 @@ var config = {
     "title": "Wendy's",
     "address": "1410 Austin Highway, San Antonio, TX 78209",
     "source": "manual",
-    "content": "1410 Austin Highway, San Antonio, TX 78209<br>(210) 826-0275<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09613@muyhamburgers.com\">Apply Here</a>",
+    "content": "1410 Austin Highway, San Antonio, TX 78209<br>(210) 826-0275",
     "location": {
       "icon": wendysIcon,
       "lat": "29.491078",
@@ -7411,7 +7410,7 @@ var config = {
     "title": "Wendy's",
     "address": "8171 Agora Parkway, Live Oak, TX 78154",
     "source": "manual",
-    "content": "8171 Agora Parkway, Live Oak, TX 78154<br>(210) 658-0386<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09626@muyhamburgers.com\">Apply Here</a>",
+    "content": "8171 Agora Parkway, Live Oak, TX 78154<br>(210) 658-0386",
     "location": {
       "icon": wendysIcon,
       "lat": "29.56716",
@@ -7437,7 +7436,7 @@ var config = {
     "title": "Wendy's",
     "address": "18303 Blanco Road, San Antonio, TX 78258",
     "source": "manual",
-    "content": "18303 Blanco Road, San Antonio, TX 78258<br>(210) 408-2861<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09645@muyhamburgers.com\">Apply Here</a>",
+    "content": "18303 Blanco Road, San Antonio, TX 78258<br>(210) 408-2861",
     "location": {
       "icon": wendysIcon,
       "lat": "29.613604",
@@ -7463,7 +7462,7 @@ var config = {
     "title": "Wendy's",
     "address": "9535 Culebra Rd., San Antonio, TX 78250",
     "source": "manual",
-    "content": "9535 Culebra Rd., San Antonio, TX 78250<br>(210) 256-1595<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10527@muyhamburgers.com\">Apply Here</a>",
+    "content": "9535 Culebra Rd., San Antonio, TX 78250<br>(210) 256-1595",
     "location": {
       "icon": wendysIcon,
       "lat": "29.48726",
@@ -7489,7 +7488,7 @@ var config = {
     "title": "Wendy's",
     "address": "8646 FM 78, Converse, TX 78255",
     "source": "manual",
-    "content": "8646 FM 78, Converse, TX 78255<br>(210) 661-3558<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11076@muyhamburgers.com\">Apply Here</a>",
+    "content": "8646 FM 78, Converse, TX 78255<br>(210) 661-3558",
     "location": {
       "icon": wendysIcon,
       "lat": "29.499578",
@@ -7515,7 +7514,7 @@ var config = {
     "title": "Wendy's",
     "address": "7400 San Pedro #3, San Antonio, TX 78216",
     "source": "manual",
-    "content": "7400 San Pedro #3, San Antonio, TX 78216<br>(210) 348-9829<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11295@muyhamburgers.com\">Apply Here</a>",
+    "content": "7400 San Pedro #3, San Antonio, TX 78216<br>(210) 348-9829",
     "location": {
       "icon": wendysIcon,
       "lat": "29.518829",
@@ -7541,7 +7540,7 @@ var config = {
     "title": "Wendy's",
     "address": "10738 Potranco, San Antonio, TX 78251",
     "source": "manual",
-    "content": "10738 Potranco, San Antonio, TX 78251<br>(210) 647-8116<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11313@muyhamburgers.com\">Apply Here</a>",
+    "content": "10738 Potranco, San Antonio, TX 78251<br>(210) 647-8116",
     "location": {
       "icon": wendysIcon,
       "lat": "29.435313",
@@ -7567,7 +7566,7 @@ var config = {
     "title": "Wendy's",
     "address": "17702 Bulverde Road, San Antonio, TX 78259, United States",
     "source": "manual",
-    "content": "17702 Bulverde Road, San Antonio, TX 78259<br>(210) 402-0042<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11705@muyhamburgers.com\">Apply Here</a>",
+    "content": "17702 Bulverde Road, San Antonio, TX 78259<br>(210) 402-0042",
     "location": {
       "icon": wendysIcon,
       "lat": "29.6025644",
@@ -7597,7 +7596,7 @@ var config = {
     "title": "Wendy's",
     "address": "8774 Potranco Rd, San Antonio, TX 78251, United States",
     "source": "manual",
-    "content": "8774 Potranco Rd, San Antonio, TX 78251<br>(210) 647-7818<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11730@muyhamburgers.com\">Apply Here</a>",
+    "content": "8774 Potranco Rd, San Antonio, TX 78251<br>(210) 647-7818",
     "location": {
       "icon": wendysIcon,
       "lat": "29.4433627",
@@ -7627,7 +7626,7 @@ var config = {
     "title": "Wendy's",
     "address": "11652 Bandera Rd Suite 106, San Antonio, TX 78250",
     "source": "manual",
-    "content": "11652 Bandera Rd Suite 106, San Antonio, TX 78250<br>(210) 521-2573<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11759@muyhamburgers.com\">Apply Here</a>",
+    "content": "11652 Bandera Rd Suite 106, San Antonio, TX 78250<br>(210) 521-2573",
     "location": {
       "icon": wendysIcon,
       "lat": "29.553177",
@@ -9551,7 +9550,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "100 Sterling, Suite D, Dayton TX 77535",
     "source": "manual",
-    "content": "100 Sterling, Suite D, Dayton TX 77535<br>(936) 336-8708<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs029705@pizzahut.com\">Apply Here</a>",
+    "content": "100 Sterling, Suite D, Dayton TX 77535<br>(936) 336-8708",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.044597",
@@ -9577,7 +9576,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1001 Colubmia Ave., Morris, MN 56267-0000",
     "source": "manual",
-    "content": "1001 Colubmia Ave., Morris, MN 56267-0000<br>(320) 589-4084<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030195@pizzahut.com\">Apply Here</a>",
+    "content": "1001 Colubmia Ave., Morris, MN 56267-0000<br>(320) 589-4084",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.593525",
@@ -9603,7 +9602,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1004 18th Ave NW, Suite A, Austin, MN 55912",
     "source": "manual",
-    "content": "1004 18th Ave NW, Suite A, Austin, MN 55912<br>507-434-0333<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031221@pizzahut.com\">Apply Here</a>",
+    "content": "1004 18th Ave NW, Suite A, Austin, MN 55912<br>507-434-0333",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "43.6849351",
@@ -9629,7 +9628,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1008 SW Military Dr, San Antonio, TX 78221",
     "source": "manual",
-    "content": "1008 SW Military Dr, San Antonio, TX 78221<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027063@pizzahut.com\">Apply Here</a>",
+    "content": "1008 SW Military Dr, San Antonio, TX 78221<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.356349",
@@ -9655,7 +9654,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1010 North Esplanade, Cuero, TX  77954",
     "source": "manual",
-    "content": "1010 North Esplanade, Cuero, TX  77954<br>(361) 275-3434<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022643@pizzahut.com\">Apply Here</a>",
+    "content": "1010 North Esplanade, Cuero, TX  77954<br>(361) 275-3434",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.09913",
@@ -9681,7 +9680,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1017 John Sims Parkway E, Niceville, FL, 32578",
     "source": "manual",
-    "content": "1017 John Sims Parkway E, Niceville, FL, 32578<br>(850) 678-7776<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031186@pizzahut.com\">Apply Here</a>",
+    "content": "1017 John Sims Parkway E, Niceville, FL, 32578<br>(850) 678-7776",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.51698",
@@ -9707,7 +9706,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1020 Eldridge Road, Sugar Land, TX 77478",
     "source": "manual",
-    "content": "1020 Eldridge Road, Sugar Land, TX 77478<br>(281) 240-2323<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027132@pizzahut.com\">Apply Here</a>",
+    "content": "1020 Eldridge Road, Sugar Land, TX 77478<br>(281) 240-2323",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.635015",
@@ -9733,7 +9732,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1022 Mebane Oaks Rd., Mebane, NC, 27302",
     "source": "manual",
-    "content": "1022 Mebane Oaks Rd., Mebane, NC, 27302<br>(919) 304-0566<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031211@pizzahut.com\">Apply Here</a>",
+    "content": "1022 Mebane Oaks Rd., Mebane, NC, 27302<br>(919) 304-0566",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.071861",
@@ -9759,7 +9758,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1027 Hwy 98 East, Destin, FL, 32541",
     "source": "manual",
-    "content": "1027 Hwy 98 East, Destin, FL, 32541<br>(850) 269-2555<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031180@pizzahut.com\">Apply Here</a>",
+    "content": "1027 Hwy 98 East, Destin, FL, 32541<br>(850) 269-2555",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.385219",
@@ -9785,7 +9784,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1041 N. Hwy 181, Portland, TX 78374",
     "source": "manual",
-    "content": "1041 N. Hwy 181, Portland, TX 78374<br>(361) 643-7544<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023649@pizzahut.com\">Apply Here</a>",
+    "content": "1041 N. Hwy 181, Portland, TX 78374<br>(361) 643-7544",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.880658",
@@ -9811,7 +9810,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "105 Kenning Rd. #3, Crosby, TX 77532",
     "source": "manual",
-    "content": "105 Kenning Rd. #3, Crosby, TX 77532<br>(281) 328-4178<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027170@pizzahut.com\">Apply Here</a>",
+    "content": "105 Kenning Rd. #3, Crosby, TX 77532<br>(281) 328-4178",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.889382",
@@ -9837,7 +9836,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "10504 Broadway Street, Pearland, TX 77581",
     "source": "manual",
-    "content": "10504 Broadway Street, Pearland, TX 77581<br>(713) 436-1014<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027156@pizzahut.com\">Apply Here</a>",
+    "content": "10504 Broadway Street, Pearland, TX 77581<br>(713) 436-1014",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.555397",
@@ -9863,7 +9862,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "10525 South Padre Island Drive, Corpus Christi TX 78418-3422",
     "source": "manual",
-    "content": "10525 South Padre Island Drive, Corpus Christi TX 78418-3422<br>(361) 937-6336<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023630@pizzahut.com\">Apply Here</a>",
+    "content": "10525 South Padre Island Drive, Corpus Christi TX 78418-3422<br>(361) 937-6336",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.666914",
@@ -9889,7 +9888,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "10555A Westheirmer Road, Houston, TX 77042",
     "source": "manual",
-    "content": "10555A Westheirmer Road, Houston, TX 77042<br>(713) 784-0298<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027154@pizzahut.com\">Apply Here</a>",
+    "content": "10555A Westheirmer Road, Houston, TX 77042<br>(713) 784-0298",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.736199",
@@ -9915,7 +9914,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "106 N. Sunset Strip, Kenedy, TX  78119",
     "source": "manual",
-    "content": "106 N. Sunset Strip, Kenedy, TX  78119<br>(830) 583-9864<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027058@pizzahut.com\">Apply Here</a>",
+    "content": "106 N. Sunset Strip, Kenedy, TX  78119<br>(830) 583-9864",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.815878",
@@ -9941,7 +9940,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "10610 N. Loop Drive, Suite #N-1, Socorro TX 79927",
     "source": "manual",
-    "content": "10610 N. Loop Drive, Suite #N-1, Socorro TX 79927<br>(915) 235-0123<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027528@pizzahut.com\">Apply Here</a>",
+    "content": "10610 N. Loop Drive, Suite #N-1, Socorro TX 79927<br>(915) 235-0123",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.65614",
@@ -9967,7 +9966,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "10702 Leopard St., Corpus Christi, TX 78410",
     "source": "manual",
-    "content": "10702 Leopard St., Corpus Christi, TX 78410<br>(361) 241-5628<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023631@pizzahut.com\">Apply Here</a>",
+    "content": "10702 Leopard St., Corpus Christi, TX 78410<br>(361) 241-5628",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.841495",
@@ -9993,7 +9992,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1073 Tiger Blvd, Clemson, SC, 29631-1416",
     "source": "manual",
-    "content": "1073 Tiger Blvd, Clemson, SC, 29631-1416<br>(864) 654-8646<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031175@pizzahut.com\">Apply Here</a>",
+    "content": "1073 Tiger Blvd, Clemson, SC, 29631-1416<br>(864) 654-8646",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.691467",
@@ -10019,7 +10018,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "10765 Kenworthy, El Paso, TX 79924",
     "source": "manual",
-    "content": "10765 Kenworthy, El Paso, TX 79924<br>(915) 757-3094<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023656@pizzahut.com\">Apply Here</a>",
+    "content": "10765 Kenworthy, El Paso, TX 79924<br>(915) 757-3094",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.920614",
@@ -10045,7 +10044,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "108 W Parkwood, Friendswood, TX 77546",
     "source": "manual",
-    "content": "108 W Parkwood, Friendswood, TX 77546<br>(281) 482-0444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027157@pizzahut.com\">Apply Here</a>",
+    "content": "108 W Parkwood, Friendswood, TX 77546<br>(281) 482-0444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.509044",
@@ -10071,7 +10070,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "10886 Beechnut Street, Houston, TX 77072",
     "source": "manual",
-    "content": "10886 Beechnut Street, Houston, TX 77072<br>(281) 530-3355<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027138@pizzahut.com\">Apply Here</a>",
+    "content": "10886 Beechnut Street, Houston, TX 77072<br>(281) 530-3355",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.689158",
@@ -10097,7 +10096,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "10904 Scarsdale Blvd Ste 130, Houston, TX 77089",
     "source": "manual",
-    "content": "10904 Scarsdale Blvd Ste 130, Houston, TX 77089<br>(281) 484-0111<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027144@pizzahut.com\">Apply Here</a>",
+    "content": "10904 Scarsdale Blvd Ste 130, Houston, TX 77089<br>(281) 484-0111",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.585626",
@@ -10123,7 +10122,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "110 South W.W. White, San Antonio, TX 78219",
     "source": "manual",
-    "content": "110 South W.W. White, San Antonio, TX 78219<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027069@pizzahut.com\">Apply Here</a>",
+    "content": "110 South W.W. White, San Antonio, TX 78219<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.430342",
@@ -10149,7 +10148,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "11017A Chimney Rock road, Houston, TX 77096",
     "source": "manual",
-    "content": "11017A Chimney Rock road, Houston, TX 77096<br>(713) 721-2777<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027129@pizzahut.com\">Apply Here</a>",
+    "content": "11017A Chimney Rock road, Houston, TX 77096<br>(713) 721-2777",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.660332",
@@ -10175,7 +10174,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "11181 Tara Blvd, S-130, Hampton, GA, 30228",
     "source": "manual",
-    "content": "11181 Tara Blvd, S-130, Hampton, GA, 30228<br>(770) 477-7799<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031160@pizzahut.com\">Apply Here</a>",
+    "content": "11181 Tara Blvd, S-130, Hampton, GA, 30228<br>(770) 477-7799",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.449354",
@@ -10201,7 +10200,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "11203 Potranco Rd., San Antonio, TX 78253",
     "source": "manual",
-    "content": "11203 Potranco Rd., San Antonio, TX 78253<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs029736@pizzahut.com\">Apply Here</a>",
+    "content": "11203 Potranco Rd., San Antonio, TX 78253<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.435501",
@@ -10227,7 +10226,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "11456 Jefferson Ct., Champlin, MN 55316",
     "source": "manual",
-    "content": "11456 Jefferson Ct., Champlin, MN 55316<br>(763) 421-1112<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030242@pizzahut.com\">Apply Here</a>",
+    "content": "11456 Jefferson Ct., Champlin, MN 55316<br>(763) 421-1112",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.160637",
@@ -10253,7 +10252,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "11601 Shadow Creek Pkwy Suite 119, Pearland, TX 77584",
     "source": "manual",
-    "content": "11601 Shadow Creek Pkwy Suite 119, Pearland, TX 77584<br>(713) 436-2217<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027176@pizzahut.com\">Apply Here</a>",
+    "content": "11601 Shadow Creek Pkwy Suite 119, Pearland, TX 77584<br>(713) 436-2217",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.580278",
@@ -10279,7 +10278,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "11611 W Airport Blvd, Meadows Place, TX 77477",
     "source": "manual",
-    "content": "11611 W Airport Blvd, Meadows Place, TX 77477<br>(281) 240-5800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027155@pizzahut.com\">Apply Here</a>",
+    "content": "11611 W Airport Blvd, Meadows Place, TX 77477<br>(281) 240-5800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.646913",
@@ -10305,7 +10304,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1169 Gulf Breeze Parkway, Gulf Breeze, FL, 32561",
     "source": "manual",
-    "content": "1169 Gulf Breeze Parkway, Gulf Breeze, FL, 32561<br>(850) 934-1200<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031184@pizzahut.com\">Apply Here</a>",
+    "content": "1169 Gulf Breeze Parkway, Gulf Breeze, FL, 32561<br>(850) 934-1200",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.358569",
@@ -10331,7 +10330,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "120 Circle Way Street, Lake Jackson, TX 77566",
     "source": "manual",
-    "content": "120 Circle Way Street, Lake Jackson, TX 77566<br>(979) 297-5281<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027185@pizzahut.com\">Apply Here</a>",
+    "content": "120 Circle Way Street, Lake Jackson, TX 77566<br>(979) 297-5281",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.04205",
@@ -10357,7 +10356,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "12000 Bellaire Blvd Suite 200 Houston TX 77072",
     "source": "manual",
-    "content": "12000 Bellaire Blvd Suite 200 Houston TX 77072<br>(281) 495-4090<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027164@pizzahut.com\">Apply Here</a>",
+    "content": "12000 Bellaire Blvd Suite 200 Houston TX 77072<br>(281) 495-4090",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.704469",
@@ -10383,7 +10382,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1201 S. Canal, Carlsbad, NM 88220",
     "source": "manual",
-    "content": "1201 S. Canal, Carlsbad, NM 88220<br>(575) 887-1922<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023653@pizzahut.com\">Apply Here</a>",
+    "content": "1201 S. Canal, Carlsbad, NM 88220<br>(575) 887-1922",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "32.407329",
@@ -10409,7 +10408,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1201 W. Grand, Yoakum TX 77995",
     "source": "manual",
-    "content": "1201 W. Grand, Yoakum TX 77995<br>(361) 293-6316<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022646@pizzahut.com\">Apply Here</a>",
+    "content": "1201 W. Grand, Yoakum TX 77995<br>(361) 293-6316",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.294144",
@@ -10435,7 +10434,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1203 N Velasco Street, Angleton, TX 77515",
     "source": "manual",
-    "content": "1203 N Velasco Street, Angleton, TX 77515<br>(979) 849-4372<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027190@pizzahut.com\">Apply Here</a>",
+    "content": "1203 N Velasco Street, Angleton, TX 77515<br>(979) 849-4372",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.177473",
@@ -10461,7 +10460,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1211 W Main Street, Tomball, TX 77375",
     "source": "manual",
-    "content": "1211 W Main Street, Tomball, TX 77375<br>(281) 351-8300<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027183@pizzahut.com\">Apply Here</a>",
+    "content": "1211 W Main Street, Tomball, TX 77375<br>(281) 351-8300",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.090937",
@@ -10487,7 +10486,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "12120 Westheirmer Road, Houston, TX 77077",
     "source": "manual",
-    "content": "12120 Westheirmer Road, Houston, TX 77077<br>(281) 497-5959<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027125@pizzahut.com\">Apply Here</a>",
+    "content": "12120 Westheirmer Road, Houston, TX 77077<br>(281) 497-5959",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.736875",
@@ -10513,7 +10512,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "12207 State Hwy 6 Ste F, Fresno, TX 77545",
     "source": "manual",
-    "content": "12207 State Hwy 6 Ste F, Fresno, TX 77545<br>(281) 431-9602<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027169@pizzahut.com\">Apply Here</a>",
+    "content": "12207 State Hwy 6 Ste F, Fresno, TX 77545<br>(281) 431-9602",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.54491",
@@ -10539,7 +10538,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1225 Westheirmer Road, Houston, TX 77006",
     "source": "manual",
-    "content": "1225 Westheirmer Road, Houston, TX 77006<br>(713) 521-3366<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027146@pizzahut.com\">Apply Here</a>",
+    "content": "1225 Westheirmer Road, Houston, TX 77006<br>(713) 521-3366",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.743737",
@@ -10565,7 +10564,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1227 W 43rd Road Street, Houston, TX 77018",
     "source": "manual",
-    "content": "1227 W 43rd Road Street, Houston, TX 77018<br>(713) 681-4600<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027147@pizzahut.com\">Apply Here</a>",
+    "content": "1227 W 43rd Road Street, Houston, TX 77018<br>(713) 681-4600",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.82823",
@@ -10591,7 +10590,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "124 Jefferson Street, Newnan, GA, 30263",
     "source": "manual",
-    "content": "124 Jefferson Street, Newnan, GA, 30263<br>(770) 251-6511<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031141@pizzahut.com\">Apply Here</a>",
+    "content": "124 Jefferson Street, Newnan, GA, 30263<br>(770) 251-6511",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.382442",
@@ -10617,7 +10616,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "12408 Texas 6, Santa Fe, TX 77510",
     "source": "manual",
-    "content": "12408 Texas 6, Santa Fe, TX 77510<br>(409) 440-7030<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs028582@pizzahut.com\">Apply Here</a>",
+    "content": "12408 Texas 6, Santa Fe, TX 77510<br>(409) 440-7030",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.384386",
@@ -10643,7 +10642,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1259 Piney Forest Road, Danville,VA, 24540",
     "source": "manual",
-    "content": "1259 Piney Forest Road, Danville,VA, 24540<br>(434) 836-5757<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031190@pizzahut.com\">Apply Here</a>",
+    "content": "1259 Piney Forest Road, Danville,VA, 24540<br>(434) 836-5757",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.628087",
@@ -10669,7 +10668,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "12616 Jones Road, Houston, TX 77489",
     "source": "manual",
-    "content": "12616 Jones Road, Houston, TX 77489<br>(281) 894-5353<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027135@pizzahut.com\">Apply Here</a>",
+    "content": "12616 Jones Road, Houston, TX 77489<br>(281) 894-5353",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.956265",
@@ -10695,7 +10694,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "12775 Bissonet Street, Houston, TX 77099",
     "source": "manual",
-    "content": "12775 Bissonet Street, Houston, TX 77099<br>(281) 495-4393<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027149@pizzahut.com\">Apply Here</a>",
+    "content": "12775 Bissonet Street, Houston, TX 77099<br>(281) 495-4393",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.678264",
@@ -10721,7 +10720,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1307 W Fairmont Pkwy, La Porte, TX 77571",
     "source": "manual",
-    "content": "1307 W Fairmont Pkwy, La Porte, TX 77571<br>(281) 470-1974<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027162@pizzahut.com\">Apply Here</a>",
+    "content": "1307 W Fairmont Pkwy, La Porte, TX 77571<br>(281) 470-1974",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.651787",
@@ -10747,7 +10746,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1310 Hwy 15 S, Suite 102, Hutchinson, MN 55350",
     "source": "manual",
-    "content": "1310 Hwy 15 S, Suite 102, Hutchinson, MN 55350<br>320-587-6839<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030971@pizzahut.com\">Apply Here</a>",
+    "content": "1310 Hwy 15 S, Suite 102, Hutchinson, MN 55350<br>320-587-6839",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.8704024",
@@ -10773,7 +10772,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "13176 W Lake Houston Pkwy, #2, Houston, TX 77044",
     "source": "manual",
-    "content": "13176 W Lake Houston Pkwy, #2, Houston, TX 77044<br>(281) 288-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027755@pizzahut.com\">Apply Here</a>",
+    "content": "13176 W Lake Houston Pkwy, #2, Houston, TX 77044<br>(281) 288-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.923974",
@@ -10799,7 +10798,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1322 Mendota Road East, Inver Grove Heights, MN 55077",
     "source": "manual",
-    "content": "1322 Mendota Road East, Inver Grove Heights, MN 55077<br>(651) 457-1855<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030238@pizzahut.com\">Apply Here</a>",
+    "content": "1322 Mendota Road East, Inver Grove Heights, MN 55077<br>(651) 457-1855",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.882336",
@@ -10825,7 +10824,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1330 S 14th Street, Kingsville TX 78363",
     "source": "manual",
-    "content": "1330 S 14th Street, Kingsville TX 78363<br>(361) 595-5652<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030202@pizzahut.com\">Apply Here</a>",
+    "content": "1330 S 14th Street, Kingsville TX 78363<br>(361) 595-5652",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.504266",
@@ -10851,7 +10850,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1330 S Frontage Rd, Hastings, MN 55033-2426",
     "source": "manual",
-    "content": "1330 S Frontage Rd, Hastings, MN 55033-2426<br>(651) 437-5577<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023628@pizzahut.com\">Apply Here</a>",
+    "content": "1330 S Frontage Rd, Hastings, MN 55033-2426<br>(651) 437-5577",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.737714",
@@ -10877,7 +10876,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1343 Hwy 97 W., Pleasanton, TX  78064",
     "source": "manual",
-    "content": "1343 Hwy 97 W., Pleasanton, TX  78064<br>(830) 569-8783<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027080@pizzahut.com\">Apply Here</a>",
+    "content": "1343 Hwy 97 W., Pleasanton, TX  78064<br>(830) 569-8783",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.947613",
@@ -10903,7 +10902,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "13471 Sergeant Major Blvd, El Paso, TX 79916",
     "source": "manual",
-    "content": "13471 Sergeant Major Blvd. El Paso, TX 79916<br>(915) 566-5130<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030647@pizzahut.com\">Apply Here</a>",
+    "content": "13471 Sergeant Major Blvd. El Paso, TX 79916<br>(915) 566-5130",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.8265264",
@@ -10929,7 +10928,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "13526 E Tidwell Suite 100, Houston, TX 77044",
     "source": "manual",
-    "content": "13526 E Tidwell Suite 100, Houston, TX 77044<br>(281) 288-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027754@pizzahut.com\">Apply Here</a>",
+    "content": "13526 E Tidwell Suite 100, Houston, TX 77044<br>(281) 288-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.851565",
@@ -10955,7 +10954,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "13750 N Eldridge Pkwy #100, Cypress, TX 77429",
     "source": "manual",
-    "content": "13750 N Eldridge Pkwy #100, Cypress, TX 77429<br>(281) 257-6172<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027158@pizzahut.com\">Apply Here</a>",
+    "content": "13750 N Eldridge Pkwy #100, Cypress, TX 77429<br>(281) 257-6172",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.983081",
@@ -10981,7 +10980,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "140 North Kenazo, Space F, Horizon City TX 79928",
     "source": "manual",
-    "content": "140 North Kenazo, Space F, Horizon City TX 79928<br>(915) 235-0123<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027527@pizzahut.com\">Apply Here</a>",
+    "content": "140 North Kenazo, Space F, Horizon City TX 79928<br>(915) 235-0123",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.684607",
@@ -11007,7 +11006,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1402 5th St SE, Minneapolis, MN 55414-1502",
     "source": "manual",
-    "content": "1402 5th St SE, Minneapolis, MN 55414-1502<br>(612) 623-0775<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030231@pizzahut.com\">Apply Here</a>",
+    "content": "1402 5th St SE, Minneapolis, MN 55414-1502<br>(612) 623-0775",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.980861",
@@ -11033,7 +11032,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "141 Miracle Strip Pkwy SW, Fort Walton Beach, FL, 32548",
     "source": "manual",
-    "content": "141 Miracle Strip Pkwy SW, Fort Walton Beach, FL, 32548<br>(850) 243-8727<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031181@pizzahut.com\">Apply Here</a>",
+    "content": "141 Miracle Strip Pkwy SW, Fort Walton Beach, FL, 32548<br>(850) 243-8727",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.405731",
@@ -11059,7 +11058,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "14249 Jones St, Lavonia, GA, 30553",
     "source": "manual",
-    "content": "14249 Jones St, Lavonia, GA, 30553<br>(706) 356-2345<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031168@pizzahut.com\">Apply Here</a>",
+    "content": "14249 Jones St, Lavonia, GA, 30553<br>(706) 356-2345",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.448075",
@@ -11085,7 +11084,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1433 S Main Street, Ste#110, Boerne, TX  78006",
     "source": "manual",
-    "content": "1433 S Main Street, Ste#110, Boerne, TX  78006<br>(830) 816-1616<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027079@pizzahut.com\">Apply Here</a>",
+    "content": "1433 S Main Street, Ste#110, Boerne, TX  78006<br>(830) 816-1616",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.77636",
@@ -11111,7 +11110,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "14414 US Highway 87 W #009l, La Vernia, TX 78121",
     "source": "manual",
-    "content": "14414 US Highway 87 W #009l, La Vernia, TX 78121<br>(830) 542-6669<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027515@pizzahut.com\">Apply Here</a>",
+    "content": "14414 US Highway 87 W #009l, La Vernia, TX 78121<br>(830) 542-6669",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.35894",
@@ -11137,7 +11136,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "14844 Granada Drive, Apple Valley, MN 55124-5513",
     "source": "manual",
-    "content": "14844 Granada Drive, Apple Valley, MN 55124-5513<br>(952) 431-3340<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030229@pizzahut.com\">Apply Here</a>",
+    "content": "14844 Granada Drive, Apple Valley, MN 55124-5513<br>(952) 431-3340",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.736605",
@@ -11163,7 +11162,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "150 1st St. W, Humble, TX 77388",
     "source": "manual",
-    "content": "150 1st St. W, Humble, TX 77388<br>(281) 446-1711<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027184@pizzahut.com\">Apply Here</a>",
+    "content": "150 1st St. W, Humble, TX 77388<br>(281) 446-1711",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.001255",
@@ -11189,7 +11188,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1500 Clinton Lane, Suite 100, Northfield, MN 55057",
     "source": "manual",
-    "content": "1500 Clinton Lane, Suite 100, Northfield, MN 55057<br>(507) 663-6033<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030244@pizzahut.com\">Apply Here</a>",
+    "content": "1500 Clinton Lane, Suite 100, Northfield, MN 55057<br>(507) 663-6033",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.444046",
@@ -11215,7 +11214,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "15002 Ella Boulevard, Houston TX 77090",
     "source": "manual",
-    "content": "15002 Ella Boulevard, Houston TX 77090<br>(281) 872-0077<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027166@pizzahut.com\">Apply Here</a>",
+    "content": "15002 Ella Boulevard, Houston TX 77090<br>(281) 872-0077",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.984589",
@@ -11241,7 +11240,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1502 S Main St, Darlington, SC, 29532-5660",
     "source": "manual",
-    "content": "1502 S Main St, Darlington, SC, 29532-5660<br>(843) 393-5201<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031170@pizzahut.com\">Apply Here</a>",
+    "content": "1502 S Main St, Darlington, SC, 29532-5660<br>(843) 393-5201",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.281638",
@@ -11267,7 +11266,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1504 13th Street South, Virginia, MN 55792",
     "source": "manual",
-    "content": "1504 13th Street South, Virginia, MN 55792<br>(218) 749-4111<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030192@pizzahut.com\">Apply Here</a>",
+    "content": "1504 13th Street South, Virginia, MN 55792<br>(218) 749-4111",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "47.512623",
@@ -11293,7 +11292,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "15090 Claret Avenue, Rosemount, MN 55068",
     "source": "manual",
-    "content": "15090 Claret Avenue, Rosemount, MN 55068<br>(651) 423-5161<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030239@pizzahut.com\">Apply Here</a>",
+    "content": "15090 Claret Avenue, Rosemount, MN 55068<br>(651) 423-5161",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.729401",
@@ -11319,7 +11318,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1544 Larpenteur Ave. W., Saint Paul, MN 55108",
     "source": "manual",
-    "content": "1544 Larpenteur Ave. W., Saint Paul, MN 55108<br>(651) 251-6550<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030234@pizzahut.com\">Apply Here</a>",
+    "content": "1544 Larpenteur Ave. W., Saint Paul, MN 55108<br>(651) 251-6550",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.991458",
@@ -11345,7 +11344,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1571 Zaragosa, El Paso, TX 79936",
     "source": "manual",
-    "content": "1571 Zaragosa, El Paso, TX 79936<br>(915) 855-2335<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023647@pizzahut.com\">Apply Here</a>",
+    "content": "1571 Zaragosa, El Paso, TX 79936<br>(915) 855-2335",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.743562",
@@ -11371,7 +11370,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1575 W. McIntosh Road, Griffin, GA, 30223",
     "source": "manual",
-    "content": "1575 W. McIntosh Road, Griffin, GA, 30223<br>(770) 228-4400<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031138@pizzahut.com\">Apply Here</a>",
+    "content": "1575 W. McIntosh Road, Griffin, GA, 30223<br>(770) 228-4400",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.274907",
@@ -11397,7 +11396,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1591 E Hwy 6 Suite 114, Alvin, TX 77511",
     "source": "manual",
-    "content": "1591 E Hwy 6 Suite 114, Alvin, TX 77511<br>(281) 331-6009<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027159@pizzahut.com\">Apply Here</a>",
+    "content": "1591 E Hwy 6 Suite 114, Alvin, TX 77511<br>(281) 331-6009",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.424552",
@@ -11423,7 +11422,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "16380 Wagner Way, Eden Prairie, MN 55344-5753",
     "source": "manual",
-    "content": "16380 Wagner Way, Eden Prairie, MN 55344-5753<br>(952) 934-4900<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030217@pizzahut.com\">Apply Here</a>",
+    "content": "16380 Wagner Way, Eden Prairie, MN 55344-5753<br>(952) 934-4900",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.86428",
@@ -11449,7 +11448,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1660 Hwy 81 East, McDonough, GA, 30252",
     "source": "manual",
-    "content": "1660 Hwy 81 East, McDonough, GA, 30252<br>(678) 583-5545<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031207@pizzahut.com\">Apply Here</a>",
+    "content": "1660 Hwy 81 East, McDonough, GA, 30252<br>(678) 583-5545",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.42835",
@@ -11475,7 +11474,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "16635 W Airport Blvd, Sugar Land, TX 77498",
     "source": "manual",
-    "content": "16635 W Airport Blvd, Sugar Land, TX 77498<br>(281) 313-0170<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027179@pizzahut.com\">Apply Here</a>",
+    "content": "16635 W Airport Blvd, Sugar Land, TX 77498<br>(281) 313-0170",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.648296",
@@ -11501,7 +11500,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1685 White Bear Ave N, Maplewood, MN 55109-3700",
     "source": "manual",
-    "content": "1685 White Bear Ave N, Maplewood, MN 55109-3700<br>(651) 770-1117<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030221@pizzahut.com\">Apply Here</a>",
+    "content": "1685 White Bear Ave N, Maplewood, MN 55109-3700<br>(651) 770-1117",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.992398",
@@ -11527,7 +11526,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "17254 Tomball Parkway, Houston, TX 77064, United States",
     "source": "manual",
-    "content": "17254 Tomball Parkway, Houston, TX 77064<br>(281) 955-0373<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027186@pizzahut.com\">Apply Here</a>",
+    "content": "17254 Tomball Parkway, Houston, TX 77064<br>(281) 955-0373",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.9559152",
@@ -11559,7 +11558,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1749 S.W. Loop 410, San Antonio, TX 78227",
     "source": "manual",
-    "content": "1749 S.W. Loop 410, San Antonio, TX 78227<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027067@pizzahut.com\">Apply Here</a>",
+    "content": "1749 S.W. Loop 410, San Antonio, TX 78227<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.41548",
@@ -11585,7 +11584,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1800 George Dieter Dr, El Paso TX 79936",
     "source": "manual",
-    "content": "1800 George Dieter Dr, El Paso TX 79936<br>(915) 857-7663<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023642@pizzahut.com\">Apply Here</a>",
+    "content": "1800 George Dieter Dr, El Paso TX 79936<br>(915) 857-7663",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.765136",
@@ -11611,7 +11610,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1801 Highway 83 E., Crystal City, TX 78839",
     "source": "manual",
-    "content": "1801 Highway 83 E., Crystal City, TX 78839<br>(830) 374-2387<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027053@pizzahut.com\">Apply Here</a>",
+    "content": "1801 Highway 83 E., Crystal City, TX 78839<br>(830) 374-2387",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.693192",
@@ -11637,7 +11636,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1820 S General McMullen Drive, San Antonio, TX 78226",
     "source": "manual",
-    "content": "1820 S General McMullen Drive, San Antonio, TX 78226<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027068@pizzahut.com\">Apply Here</a>",
+    "content": "1820 S General McMullen Drive, San Antonio, TX 78226<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.398302",
@@ -11663,7 +11662,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1847 W. Highway 46, New Braunfels, TX 78132",
     "source": "manual",
-    "content": "1847 W. Highway 46, New Braunfels, TX 78132<br>(830) 626-8888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs028530@pizzahut.com\">Apply Here</a>",
+    "content": "1847 W. Highway 46, New Braunfels, TX 78132<br>(830) 626-8888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.719268",
@@ -11689,7 +11688,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "18539 Kuykendahl Road, Spring, TX 77379",
     "source": "manual",
-    "content": "18539 Kuykendahl Road, Spring, TX 77379<br>(281) 320-2020<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027140@pizzahut.com\">Apply Here</a>",
+    "content": "18539 Kuykendahl Road, Spring, TX 77379<br>(281) 320-2020",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.038593",
@@ -11715,7 +11714,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "187 Cheshire Lane #200, Plymouth, MN 55441-5490",
     "source": "manual",
-    "content": "187 Cheshire Lane #200, Plymouth, MN 55441-5490<br>(763) 253-0338<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030230@pizzahut.com\">Apply Here</a>",
+    "content": "187 Cheshire Lane #200, Plymouth, MN 55441-5490<br>(763) 253-0338",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.98317",
@@ -11741,7 +11740,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1926 Goliad Rd, San Antonio, TX 78223",
     "source": "manual",
-    "content": "1926 Goliad Rd, San Antonio, TX 78223<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027064@pizzahut.com\">Apply Here</a>",
+    "content": "1926 Goliad Rd, San Antonio, TX 78223<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.366659",
@@ -11767,7 +11766,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "19328 Hwy 169, Elk River, MN 55330",
     "source": "manual",
-    "content": "19328 Hwy 169, Elk River, MN 55330<br>(763) 233-3147<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030997@pizzahut.com\">Apply Here</a>",
+    "content": "19328 Hwy 169, Elk River, MN 55330<br>(763) 233-3147",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.3220783",
@@ -11793,7 +11792,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "19620 FM 1485 Rd, New Caney, TX 77357",
     "source": "manual",
-    "content": "19620 FM 1485 Rd, New Caney, TX 77357<br>(281) 288-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs028258@pizzahut.com\">Apply Here</a>",
+    "content": "19620 FM 1485 Rd, New Caney, TX 77357<br>(281) 288-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.240083",
@@ -11819,7 +11818,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "19645 Pilot Knob, Farmington, MN 55024",
     "source": "manual",
-    "content": "19645 Pilot Knob, Farmington, MN 55024<br>(651) 460-8880<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030241@pizzahut.com\">Apply Here</a>",
+    "content": "19645 Pilot Knob, Farmington, MN 55024<br>(651) 460-8880",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.666296",
@@ -11845,7 +11844,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "200 Franklin Springs Cir, Royston, GA, 30662-2903",
     "source": "manual",
-    "content": "200 Franklin Springs Cir, Royston, GA, 30662-2903<br>(706) 245-6686<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031167@pizzahut.com\">Apply Here</a>",
+    "content": "200 Franklin Springs Cir, Royston, GA, 30662-2903<br>(706) 245-6686",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.285232",
@@ -11871,7 +11870,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2000-2001 State Hwy 146 Sp#220, Seabrook, TX 77586",
     "source": "manual",
-    "content": "2000-2001 State Hwy 146 Sp#220, Seabrook, TX 77586<br>(281) 291-9227<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023657@pizzahut.com\">Apply Here</a>",
+    "content": "2000-2001 State Hwy 146 Sp#220, Seabrook, TX 77586<br>(281) 291-9227",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.583732",
@@ -11897,7 +11896,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2001 W Highway 52, Rochester, MN 55901-0626",
     "source": "manual",
-    "content": "2001 W Highway 52, Rochester, MN 55901-0626<br>(507) 287-6396<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027161@pizzahut.com\">Apply Here</a>",
+    "content": "2001 W Highway 52, Rochester, MN 55901-0626<br>(507) 287-6396",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.045284",
@@ -11923,7 +11922,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "20051 Interstate 45, Spring, TX 77388",
     "source": "manual",
-    "content": "20051 Interstate 45, Spring, TX 77388<br>(281) 288-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030203@pizzahut.com\">Apply Here</a>",
+    "content": "20051 Interstate 45, Spring, TX 77388<br>(281) 288-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.055414",
@@ -11949,7 +11948,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2007 W 2nd Loop Rd., Florence, SC, 29501-6124",
     "source": "manual",
-    "content": "2007 W 2nd Loop Rd., Florence, SC, 29501-6124<br>(843) 664-9300<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027123@pizzahut.com\">Apply Here</a>",
+    "content": "2007 W 2nd Loop Rd., Florence, SC, 29501-6124<br>(843) 664-9300",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.172484",
@@ -11975,7 +11974,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "201 E College Dr, Suite D, Marshall, MN 56258",
     "source": "manual",
-    "content": "201 E College Dr, Suite D, Marshall, MN 56258<br>(507) 401-5128<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031171@pizzahut.com\">Apply Here</a>",
+    "content": "201 E College Dr, Suite D, Marshall, MN 56258<br>(507) 401-5128",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.44815",
@@ -12001,7 +12000,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "201 Pena, Carrizo Springs, TX 78834",
     "source": "manual",
-    "content": "201 Pena, Carrizo Springs, TX 78834<br>(830) 876-3553<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031413@pizzahut.com\">Apply Here</a>",
+    "content": "201 Pena, Carrizo Springs, TX 78834<br>(830) 876-3553",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.521606",
@@ -12027,7 +12026,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2012 County Road 42 W, Burnsville, MN 55337-6925",
     "source": "manual",
-    "content": "2012 County Road 42 W, Burnsville, MN 55337-6925<br>(952) 892-7676<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027052@pizzahut.com\">Apply Here</a>",
+    "content": "2012 County Road 42 W, Burnsville, MN 55337-6925<br>(952) 892-7676",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.746563",
@@ -12053,7 +12052,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2015 Woodlyn Ave., A, Maplewood, MN 55109-1417",
     "source": "manual",
-    "content": "2015 Woodlyn Ave., A, Maplewood, MN 55109-1417<br>(651) 770-3070<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030222@pizzahut.com\">Apply Here</a>",
+    "content": "2015 Woodlyn Ave., A, Maplewood, MN 55109-1417<br>(651) 770-3070",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.03371",
@@ -12079,7 +12078,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2018 N Gessner Drive, Houston, TX 77080",
     "source": "manual",
-    "content": "2018 N Gessner Drive, Houston, TX 77080<br>(713) 973-9444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030220@pizzahut.com\">Apply Here</a>",
+    "content": "2018 N Gessner Drive, Houston, TX 77080<br>(713) 973-9444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.808184",
@@ -12105,7 +12104,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2022 East Main Street, Alice, TX 78332",
     "source": "manual",
-    "content": "2022 East Main Street, Alice, TX 78332<br>(361) 664-2189<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027126@pizzahut.com\">Apply Here</a>",
+    "content": "2022 East Main Street, Alice, TX 78332<br>(361) 664-2189",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.762031",
@@ -12131,7 +12130,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "20220 Texas 6, Manvel, TX 77578",
     "source": "manual",
-    "content": "20220 Texas 6, Manvel, TX 77578<br>(281) 288-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs028734@pizzahut.com\">Apply Here</a>",
+    "content": "20220 Texas 6, Manvel, TX 77578<br>(281) 288-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.472492",
@@ -12157,7 +12156,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2035 South Hackberry, San Antonio, TX 78210-3516",
     "source": "manual",
-    "content": "2035 South Hackberry, San Antonio, TX 78210-3516<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027066@pizzahut.com\">Apply Here</a>",
+    "content": "2035 South Hackberry, San Antonio, TX 78210-3516<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.396433",
@@ -12183,7 +12182,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "205 Applewood Center Place, Seneca, SC, 29672",
     "source": "manual",
-    "content": "205 Applewood Center Place, Seneca, SC, 29672<br>(864) 888-8855<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031177@pizzahut.com\">Apply Here</a>",
+    "content": "205 Applewood Center Place, Seneca, SC, 29672<br>(864) 888-8855",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.690486",
@@ -12209,7 +12208,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "20630 Hwy.46 W #135, Bulverde, TX  78163",
     "source": "manual",
-    "content": "20630 Hwy.46 W #135, Bulverde, TX  78163<br>(830) 980-5595<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027078@pizzahut.com\">Apply Here</a>",
+    "content": "20630 Hwy.46 W #135, Bulverde, TX  78163<br>(830) 980-5595",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.799132",
@@ -12235,7 +12234,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "210 West Sinton, Sinton, TX  78387",
     "source": "manual",
-    "content": "210 West Sinton, Sinton, TX  78387<br>(361) 364-4796<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022648@pizzahut.com\">Apply Here</a>",
+    "content": "210 West Sinton, Sinton, TX  78387<br>(361) 364-4796",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.036975",
@@ -12261,7 +12260,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2100 W Holdombe Blvd, Houston, TX 77030",
     "source": "manual",
-    "content": "2100 W Holdombe Blvd, Houston, TX 77030<br>(713) 521-2266<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027136@pizzahut.com\">Apply Here</a>",
+    "content": "2100 W Holdombe Blvd, Houston, TX 77030<br>(713) 521-2266",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.706545",
@@ -12287,7 +12286,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2101-104 Pyramid Village Blvd, Greensboro, NC, 27405",
     "source": "manual",
-    "content": "2101-104 Pyramid Village Blvd, Greensboro, NC, 27405<br>(336) 375-5778<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031205@pizzahut.com\">Apply Here</a>",
+    "content": "2101-104 Pyramid Village Blvd, Greensboro, NC, 27405<br>(336) 375-5778",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.107724",
@@ -12313,7 +12312,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2112 N Turner St, Hobbs NM 88240",
     "source": "manual",
-    "content": "2112 N Turner St, Hobbs NM 88240<br>(575) 397-6467<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023639@pizzahut.com\">Apply Here</a>",
+    "content": "2112 N Turner St, Hobbs NM 88240<br>(575) 397-6467",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "32.723483",
@@ -12339,7 +12338,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2114 Veterans Blvd, Del Rio, TX  78840",
     "source": "manual",
-    "content": "2114 Veterans Blvd, Del Rio, TX  78840<br>(830) 774-5576<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027054@pizzahut.com\">Apply Here</a>",
+    "content": "2114 Veterans Blvd, Del Rio, TX  78840<br>(830) 774-5576",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.387163",
@@ -12365,7 +12364,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2117 4th St SW, Mason City, IA 50401-0000",
     "source": "manual",
-    "content": "2117 4th St SW, Mason City, IA 50401-0000<br>(641) 423-1732<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030196@pizzahut.com\">Apply Here</a>",
+    "content": "2117 4th St SW, Mason City, IA 50401-0000<br>(641) 423-1732",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "43.14774",
@@ -12391,7 +12390,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2120 South Staples Street, Corpus Christi TX 78404-3006",
     "source": "manual",
-    "content": "2120 South Staples Street, Corpus Christi TX 78404-3006<br>(361) 883-3669<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023634@pizzahut.com\">Apply Here</a>",
+    "content": "2120 South Staples Street, Corpus Christi TX 78404-3006<br>(361) 883-3669",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.764791",
@@ -12417,7 +12416,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2125 South Church Street, Burlington, NC, 27215",
     "source": "manual",
-    "content": "2125 South Church Street, Burlington, NC, 27215<br>(336) 226-4464<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031200@pizzahut.com\">Apply Here</a>",
+    "content": "2125 South Church Street, Burlington, NC, 27215<br>(336) 226-4464",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.082864",
@@ -12443,7 +12442,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2135 Cliff Road, Eagan, MN 55122",
     "source": "manual",
-    "content": "2135 Cliff Road, Eagan, MN 55122<br>(651) 289-3672<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030235@pizzahut.com\">Apply Here</a>",
+    "content": "2135 Cliff Road, Eagan, MN 55122<br>(651) 289-3672",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.79027",
@@ -12469,7 +12468,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "229 East Grant Street, Roma, TX 78584",
     "source": "manual",
-    "content": "229 East Grant Street, Roma, TX 78584<br>(956) 849-4475<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027062@pizzahut.com\">Apply Here</a>",
+    "content": "229 East Grant Street, Roma, TX 78584<br>(956) 849-4475",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.409921",
@@ -12495,7 +12494,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2292 FM 2234 Road, Missouri City, TX 77489",
     "source": "manual",
-    "content": "2292 FM 2234 Road, Missouri City, TX 77489<br>(281) 261-6611<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027130@pizzahut.com\">Apply Here</a>",
+    "content": "2292 FM 2234 Road, Missouri City, TX 77489<br>(281) 261-6611",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.594605",
@@ -12521,7 +12520,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "230 Shoppers World Ct., Charlottesville, VA, 22901",
     "source": "manual",
-    "content": "230 Shoppers World Ct., Charlottesville, VA, 22901<br>(434) 975-0510<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031214@pizzahut.com\">Apply Here</a>",
+    "content": "230 Shoppers World Ct., Charlottesville, VA, 22901<br>(434) 975-0510",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.077682",
@@ -12547,7 +12546,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2305 Palmer Hwy, Texas City, TX 77590",
     "source": "manual",
-    "content": "2305 Palmer Hwy, Texas City, TX 77590<br>(409) 948-4327<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027153@pizzahut.com\">Apply Here</a>",
+    "content": "2305 Palmer Hwy, Texas City, TX 77590<br>(409) 948-4327",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.393467",
@@ -12573,7 +12572,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2313 Hennepin Ave, Minneapolis, MN 55405-2740",
     "source": "manual",
-    "content": "2313 Hennepin Ave, Minneapolis, MN 55405-2740<br>(612) 374-4000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030224@pizzahut.com\">Apply Here</a>",
+    "content": "2313 Hennepin Ave, Minneapolis, MN 55405-2740<br>(612) 374-4000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.959678",
@@ -12599,7 +12598,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2323 Clear Lake Blvd #110, Houston, TX 77062",
     "source": "manual",
-    "content": "2323 Clear Lake Blvd #110, Houston, TX 77062<br>(281) 486-1621<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027171@pizzahut.com\">Apply Here</a>",
+    "content": "2323 Clear Lake Blvd #110, Houston, TX 77062<br>(281) 486-1621",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.59282",
@@ -12625,7 +12624,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2350 N Main Street, Liberty, TX 77575",
     "source": "manual",
-    "content": "2350 N Main Street, Liberty, TX 77575<br>(936) 336-8708<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027188@pizzahut.com\">Apply Here</a>",
+    "content": "2350 N Main Street, Liberty, TX 77575<br>(936) 336-8708",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.073865",
@@ -12651,7 +12650,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2400 N. St. Mary??s St., Beeville, TX 78102",
     "source": "manual",
-    "content": "2400 N. St. Mary??s St., Beeville, TX 78102<br>(361) 358-2970<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031000@pizzahut.com\">Apply Here</a>",
+    "content": "2400 N. St. Mary??s St., Beeville, TX 78102<br>(361) 358-2970",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.3844235",
@@ -12677,7 +12676,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2401 Zaragosa Rd, El Paso, TX 79938",
     "source": "manual",
-    "content": "2401 Zaragosa Rd, El Paso, TX 79938<br>(915) 235-0123<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs028299@pizzahut.com\">Apply Here</a>",
+    "content": "2401 Zaragosa Rd, El Paso, TX 79938<br>(915) 235-0123",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.77875",
@@ -12703,7 +12702,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "24040 FM 1314 Rd, Porter, TX 77365",
     "source": "manual",
-    "content": "24040 FM 1314 Rd, Porter, TX 77365<br>(281) 354-5100<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027181@pizzahut.com\">Apply Here</a>",
+    "content": "24040 FM 1314 Rd, Porter, TX 77365<br>(281) 354-5100",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.104409",
@@ -12729,7 +12728,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2418 E. Hwy 76, Marion, SC, 29571-6349",
     "source": "manual",
-    "content": "2418 E. Hwy 76, Marion, SC, 29571-6349<br>(843) 423-1272<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031172@pizzahut.com\">Apply Here</a>",
+    "content": "2418 E. Hwy 76, Marion, SC, 29571-6349<br>(843) 423-1272",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.20342",
@@ -12755,7 +12754,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2425 East Main, Eagle Pass, TX  78852",
     "source": "manual",
-    "content": "2425 East Main, Eagle Pass, TX  78852<br>(830) 773-5371<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027055@pizzahut.com\">Apply Here</a>",
+    "content": "2425 East Main, Eagle Pass, TX  78852<br>(830) 773-5371",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.709186",
@@ -12781,7 +12780,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2485 South Main Street, Harrisonburg, VA, 22801",
     "source": "manual",
-    "content": "2485 South Main Street, Harrisonburg, VA, 22801<br>(540) 433-1821<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031192@pizzahut.com\">Apply Here</a>",
+    "content": "2485 South Main Street, Harrisonburg, VA, 22801<br>(540) 433-1821",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.418999",
@@ -12807,7 +12806,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "249 South Stuart Avenue, Elkton, VA, 22827",
     "source": "manual",
-    "content": "249 South Stuart Avenue, Elkton, VA, 22827<br>(540) 298-9439<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031203@pizzahut.com\">Apply Here</a>",
+    "content": "249 South Stuart Avenue, Elkton, VA, 22827<br>(540) 298-9439",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.406676",
@@ -12833,7 +12832,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "24914 Kuykendahl Suite A, Spring TX 77389",
     "source": "manual",
-    "content": "24914 Kuykendahl Suite A, Spring TX 77389<br>(281) 351-8246<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027172@pizzahut.com\">Apply Here</a>",
+    "content": "24914 Kuykendahl Suite A, Spring TX 77389<br>(281) 351-8246",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.163495",
@@ -12859,7 +12858,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "250 Windy Hill Road, S-200, Marietta, GA, 30060",
     "source": "manual",
-    "content": "250 Windy Hill Road, S-200, Marietta, GA, 30060<br>(770) 436-7000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031143@pizzahut.com \">Apply Here</a>",
+    "content": "250 Windy Hill Road, S-200, Marietta, GA, 30060<br>(770) 436-7000<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.894609",
@@ -12885,7 +12884,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "251 Hartsville Crossing Blvd, Hartsville, SC, 29550",
     "source": "manual",
-    "content": "251 Hartsville Crossing Blvd, Hartsville, SC, 29550<br>(843) 332-4118<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031178@pizzahut.com\">Apply Here</a>",
+    "content": "251 Hartsville Crossing Blvd, Hartsville, SC, 29550<br>(843) 332-4118",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.358779",
@@ -12911,7 +12910,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2549 S.W. Military Dr., San Antonio, TX  78224",
     "source": "manual",
-    "content": "2549 S.W. Military Dr., San Antonio, TX  78224<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027077@pizzahut.com\">Apply Here</a>",
+    "content": "2549 S.W. Military Dr., San Antonio, TX  78224<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.357115",
@@ -12937,7 +12936,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2550 Greensboro Road, Martinsville, VA, 24112",
     "source": "manual",
-    "content": "2550 Greensboro Road, Martinsville, VA, 24112<br>(276) 638-4514<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031191@pizzahut.com\">Apply Here</a>",
+    "content": "2550 Greensboro Road, Martinsville, VA, 24112<br>(276) 638-4514",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.65512",
@@ -12963,7 +12962,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "257 Marschall Rd S, Shakopee, MN 55379-0000",
     "source": "manual",
-    "content": "257 Marschall Rd S, Shakopee, MN 55379-0000<br>(952) 445-7888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030204@pizzahut.com\">Apply Here</a>",
+    "content": "257 Marschall Rd S, Shakopee, MN 55379-0000<br>(952) 445-7888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.79894",
@@ -12989,7 +12988,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "25701 IH-45 N Suite 1, The Woodlands, TX 77380",
     "source": "manual",
-    "content": "25701 IH-45 N Suite 1, The Woodlands, TX 77380<br>(281) 292-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027151@pizzahut.com\">Apply Here</a>",
+    "content": "25701 IH-45 N Suite 1, The Woodlands, TX 77380<br>(281) 292-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.135392",
@@ -13015,7 +13014,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2627 Stuarts Draft Highway, Stuarts Draft VA? , 24477",
     "source": "manual",
-    "content": "2627 Stuarts Draft Highway, Stuarts Draft VA, 24477<br>(540) 337-3300<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031206@pizzahut.com\">Apply Here</a>",
+    "content": "2627 Stuarts Draft Highway, Stuarts Draft VA, 24477<br>(540) 337-3300",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.033669",
@@ -13041,7 +13040,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2661 Hwy. 361, Suite A, Ingleside TX 78362",
     "source": "manual",
-    "content": "2661 Hwy. 361, Suite A, Ingleside TX 78362<br>(361) 758-2813<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs029723@pizzahut.com\">Apply Here</a>",
+    "content": "2661 Hwy. 361, Suite A, Ingleside TX 78362<br>(361) 758-2813",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.882042",
@@ -13067,7 +13066,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2711 N. Hwy 35, Rockport, TX 78382",
     "source": "manual",
-    "content": "2711 N. Hwy 35, Rockport, TX 78382<br>(361) 729-7270<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023654@pizzahut.com\">Apply Here</a>",
+    "content": "2711 N. Hwy 35, Rockport, TX 78382<br>(361) 729-7270",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.054831",
@@ -13093,7 +13092,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "272 E Franklin St, Hartwell, GA, 30643-2299",
     "source": "manual",
-    "content": "272 E Franklin St, Hartwell, GA, 30643-2299<br>(706) 376-1100<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031164@pizzahut.com\">Apply Here</a>",
+    "content": "272 E Franklin St, Hartwell, GA, 30643-2299<br>(706) 376-1100",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.352734",
@@ -13119,7 +13118,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2728 Broadway Street, Pearland, TX 77581",
     "source": "manual",
-    "content": "2728 Broadway Street, Pearland, TX 77581<br>(281) 485-5373<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027163@pizzahut.com\">Apply Here</a>",
+    "content": "2728 Broadway Street, Pearland, TX 77581<br>(281) 485-5373",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.554761",
@@ -13145,7 +13144,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2735 West Wheeler Ave., Aransas Pass TX 78336",
     "source": "manual",
-    "content": "2735 West Wheeler Ave., Aransas Pass TX 78336<br>(361) 758-2813<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023659@pizzahut.com\">Apply Here</a>",
+    "content": "2735 West Wheeler Ave., Aransas Pass TX 78336<br>(361) 758-2813",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.924943",
@@ -13171,7 +13170,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2757 Rayford Rd Ste F, Spring, TX 77386",
     "source": "manual",
-    "content": "2757 Rayford Rd Ste F, Spring, TX 77386<br>(281) 292-8916<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027177@pizzahut.com\">Apply Here</a>",
+    "content": "2757 Rayford Rd Ste F, Spring, TX 77386<br>(281) 292-8916",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.121571",
@@ -13197,7 +13196,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2800 W Main, League City, TX 77573",
     "source": "manual",
-    "content": "2800 W Main, League City, TX 77573<br>(281) 338-8707<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027248@pizzahut.com\">Apply Here</a>",
+    "content": "2800 W Main, League City, TX 77573<br>(281) 338-8707",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.500228",
@@ -13223,7 +13222,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2803 Main St, Newberry, SC, 29108-4133",
     "source": "manual",
-    "content": "2803 Main St, Newberry, SC, 29108-4133<br>(803) 276-7242<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031176@pizzahut.com\">Apply Here</a>",
+    "content": "2803 Main St, Newberry, SC, 29108-4133<br>(803) 276-7242",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.283005",
@@ -13249,7 +13248,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2901 Lavender Parkway, Faribault, MN 55021",
     "source": "manual",
-    "content": "2901 Lavender Parkway, Faribault, MN 55021<br>(507) 334-8998<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030291@pizzahut.com\">Apply Here</a>",
+    "content": "2901 Lavender Parkway, Faribault, MN 55021<br>(507) 334-8998",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.316377",
@@ -13275,7 +13274,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2914 Virginia Avenue, Collinsville, VA, 24078",
     "source": "manual",
-    "content": "2914 Virginia Avenue, Collinsville, VA, 24078<br>(276) 647-3946<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031188@pizzahut.com\">Apply Here</a>",
+    "content": "2914 Virginia Avenue, Collinsville, VA, 24078<br>(276) 647-3946",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.720289",
@@ -13301,7 +13300,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2915 N. Mesa, El Paso, TX 79902",
     "source": "manual",
-    "content": "2915 N. Mesa, El Paso, TX 79902<br>(915) 544-9818<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023636@pizzahut.com\">Apply Here</a>",
+    "content": "2915 N. Mesa, El Paso, TX 79902<br>(915) 544-9818",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.779094",
@@ -13327,7 +13326,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2959 Carter Road, Bldg. #2969, Fort Bliss TX 79906",
     "source": "manual",
-    "content": "2959 Carter Road, Bldg. #2969, Fort Bliss TX 79906<br>(915) 566-5130<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs025512@pizzahut.com\">Apply Here</a>",
+    "content": "2959 Carter Road, Bldg. #2969, Fort Bliss TX 79906<br>(915) 566-5130",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.805355",
@@ -13353,7 +13352,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2985 Brookdale Dr, Brooklyn Park, MN 55444",
     "source": "manual",
-    "content": "2985 Brookdale Dr, Brooklyn Park, MN 55444<br>(763) 566-5000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030218@pizzahut.com\">Apply Here</a>",
+    "content": "2985 Brookdale Dr, Brooklyn Park, MN 55444<br>(763) 566-5000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.096579",
@@ -13379,7 +13378,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3010 FM 1764 Road, La Marque, TX 77568",
     "source": "manual",
-    "content": "3010 FM 1764 Road, La Marque, TX 77568<br>(409) 986-6465<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027178@pizzahut.com\">Apply Here</a>",
+    "content": "3010 FM 1764 Road, La Marque, TX 77568<br>(409) 986-6465",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.399838",
@@ -13405,7 +13404,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "302 Valley Hi Drive, Suite 102, San Antonio, TX 78227",
     "source": "manual",
-    "content": "302 Valley Hi Drive, Suite 102, San Antonio, TX 78227<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027550@pizzahut.com\">Apply Here</a>",
+    "content": "302 Valley Hi Drive, Suite 102, San Antonio, TX 78227<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.380922",
@@ -13431,7 +13430,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3033 Shaver Street, Pasadena, TX 77502",
     "source": "manual",
-    "content": "3033 Shaver Street, Pasadena, TX 77502<br>(713) 943-6089<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027174@pizzahut.com\">Apply Here</a>",
+    "content": "3033 Shaver Street, Pasadena, TX 77502<br>(713) 943-6089",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.665239",
@@ -13457,7 +13456,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "305 5th Ave. South, Suite 190, Saint Cloud, MN 56301",
     "source": "manual",
-    "content": "305 5th Ave. South, Suite 190, Saint Cloud, MN 56301<br>(320) 255-5500<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031282@pizzahut.com\">Apply Here</a>",
+    "content": "305 5th Ave. South, Suite 190, Saint Cloud, MN 56301<br>(320) 255-5500",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.5578755",
@@ -13483,7 +13482,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3050 Northpark Drive, Kingwood, TX 77339",
     "source": "manual",
-    "content": "3050 Northpark Drive, Kingwood, TX 77339<br>(281) 360-3322<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027134@pizzahut.com\">Apply Here</a>",
+    "content": "3050 Northpark Drive, Kingwood, TX 77339<br>(281) 360-3322",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.067549",
@@ -13509,7 +13508,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "309 -A Jonesboro Rd, McDonough, GA, 30253",
     "source": "manual",
-    "content": "309 -A Jonesboro Rd, McDonough, GA, 30253<br>(770) 957-4111<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031155@pizzahut.com\">Apply Here</a>",
+    "content": "309 -A Jonesboro Rd, McDonough, GA, 30253<br>(770) 957-4111",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.453828",
@@ -13535,7 +13534,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "309 W. Avenue J., Robstown, TX 78380",
     "source": "manual",
-    "content": "309 W. Avenue J., Robstown, TX 78380<br>(361) 387-1587<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023633@pizzahut.com\">Apply Here</a>",
+    "content": "309 W. Avenue J., Robstown, TX 78380<br>(361) 387-1587",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.800953",
@@ -13561,7 +13560,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3091 College Park Drive, Suite 220, The Woodlands, TX 77384",
     "source": "manual",
-    "content": "3091 College Park Drive, Suite 220, The Woodlands, TX 77384<br>(936) 271-9888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027122@pizzahut.com\">Apply Here</a>",
+    "content": "3091 College Park Drive, Suite 220, The Woodlands, TX 77384<br>(936) 271-9888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.204979",
@@ -13587,7 +13586,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3103 K-FM 1960 East, Humble, TX 77338`",
     "source": "manual",
-    "content": "3103 K-FM 1960 East, Humble, TX 77338`<br>(281) 443-7851<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027124@pizzahut.com\">Apply Here</a>",
+    "content": "3103 K-FM 1960 East, Humble, TX 77338`<br>(281) 443-7851",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.999445",
@@ -13613,7 +13612,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "312 Hwy 90A East, Gonzales, TX  78629",
     "source": "manual",
-    "content": "312 Hwy 90A East, Gonzales, TX  78629<br>(830) 672-9616<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022644@pizzahut.com\">Apply Here</a>",
+    "content": "312 Hwy 90A East, Gonzales, TX  78629<br>(830) 672-9616",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.51557",
@@ -13639,7 +13638,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3125 Riverside Drive, Danville, VA, 24541",
     "source": "manual",
-    "content": "3125 Riverside Drive, Danville, VA, 24541<br>(434) 797-5285<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031189@pizzahut.com\">Apply Here</a>",
+    "content": "3125 Riverside Drive, Danville, VA, 24541<br>(434) 797-5285",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.586229",
@@ -13665,7 +13664,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3150 E. Hwy. 34  Suite 210, Newnan, GA, 30265",
     "source": "manual",
-    "content": "3150 E. Hwy. 34  Suite 210, Newnan, GA, 30265<br>(770) 254-8882<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031150@pizzahut.com\">Apply Here</a>",
+    "content": "3150 E. Hwy. 34  Suite 210, Newnan, GA, 30265<br>(770) 254-8882",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.409268",
@@ -13691,7 +13690,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3150 S Pokegama Ave, Suite 101, Grand Rapids, MN 55744",
     "source": "manual",
-    "content": "3150 S Pokegama Ave, Suite 101, Grand Rapids, MN 55744<br>(218) 326-1214<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031410@pizzahut.com\">Apply Here</a>",
+    "content": "3150 S Pokegama Ave, Suite 101, Grand Rapids, MN 55744<br>(218) 326-1214",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "47.2009923",
@@ -13717,7 +13716,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "325 West Reservoir Road, Woodstock, VA, 22664",
     "source": "manual",
-    "content": "325 West Reservoir Road, Woodstock, VA, 22664<br>(540) 459-4502<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031153@pizzahut.com \">Apply Here</a>",
+    "content": "325 West Reservoir Road, Woodstock, VA, 22664<br>(540) 459-4502<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.870184",
@@ -13743,7 +13742,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3217 New Macland Road, Ste 150 Powder Springs, GA 30127, USA",
     "source": "manual",
-    "content": "3217 New Macland Road, Ste 150 Powder Springs, GA, 30127<br>(770) 943-3400<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031204@pizzahut.com\">Apply Here</a>",
+    "content": "3217 New Macland Road, Ste 150 Powder Springs, GA, 30127<br>(770) 943-3400",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.874820",
@@ -13775,7 +13774,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3320 Hwy 6 South (Mission Bend)#B, Houston, TX 77082",
     "source": "manual",
-    "content": "3320 Hwy 6 South (Mission Bend)#B, Houston, TX 77082<br>(281) 558-7041<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027160@pizzahut.com\">Apply Here</a>",
+    "content": "3320 Hwy 6 South (Mission Bend)#B, Houston, TX 77082<br>(281) 558-7041",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.722281",
@@ -13801,7 +13800,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3323 Roosevelt, San Antonio, TX  78214",
     "source": "manual",
-    "content": "3323 Roosevelt, San Antonio, TX  78214<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027065@pizzahut.com\">Apply Here</a>",
+    "content": "3323 Roosevelt, San Antonio, TX  78214<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.360175",
@@ -13827,7 +13826,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3404 N. Navarro, Victoria, TX  77901",
     "source": "manual",
-    "content": "3404 N. Navarro, Victoria, TX  77901<br>(361) 575-3731<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022652@pizzahut.com\">Apply Here</a>",
+    "content": "3404 N. Navarro, Victoria, TX  77901<br>(361) 575-3731",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.826586",
@@ -13853,7 +13852,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3426 Gulf Freeway, Dickinson, TX 77539",
     "source": "manual",
-    "content": "3426 Gulf Freeway, Dickinson, TX 77539<br>(281) 337-1212<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027413@pizzahut.com\">Apply Here</a>",
+    "content": "3426 Gulf Freeway, Dickinson, TX 77539<br>(281) 337-1212",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.450253",
@@ -13879,7 +13878,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3545 North Yarbrough Drive, El Paso, TX 79925-1635",
     "source": "manual",
-    "content": "3545 North Yarbrough Drive, El Paso, TX 79925-1635<br>(915) 591-2012<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023635@pizzahut.com\">Apply Here</a>",
+    "content": "3545 North Yarbrough Drive, El Paso, TX 79925-1635<br>(915) 591-2012",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.796856",
@@ -13905,7 +13904,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3600 Cherokee St,  #101, Kennesaw, GA, 30144",
     "source": "manual",
-    "content": "3600 Cherokee St,  #101, Kennesaw, GA, 30144<br>(770) 427-6900<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031154@pizzahut.com\">Apply Here</a>",
+    "content": "3600 Cherokee St,  #101, Kennesaw, GA, 30144<br>(770) 427-6900",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.041645",
@@ -13931,7 +13930,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3620 Katy Fwy Suite D, Houston, TX 77007",
     "source": "manual",
-    "content": "3620 Katy Fwy Suite D, Houston, TX 77007<br>(713) 861-8877<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027165@pizzahut.com\">Apply Here</a>",
+    "content": "3620 Katy Fwy Suite D, Houston, TX 77007<br>(713) 861-8877",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.777366",
@@ -13957,7 +13956,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3638 Hwy 6 Bay P7, Sugar Land, TX 77478",
     "source": "manual",
-    "content": "3638 Hwy 6 Bay P7, Sugar Land, TX 77478<br>(281) 265-1000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027131@pizzahut.com\">Apply Here</a>",
+    "content": "3638 Hwy 6 Bay P7, Sugar Land, TX 77478<br>(281) 265-1000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.614649",
@@ -13983,7 +13982,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3657 E. Leopard Street, Corpus Christi, TX 78408",
     "source": "manual",
-    "content": "3657 E. Leopard Street, Corpus Christi, TX 78408<br>(361) 884-7691<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs024118@pizzahut.com\">Apply Here</a>",
+    "content": "3657 E. Leopard Street, Corpus Christi, TX 78408<br>(361) 884-7691",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.796761",
@@ -14009,7 +14008,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3697 Hwy 5  Suite 4, Douglasville, GA, 30135",
     "source": "manual",
-    "content": "3697 Hwy 5  Suite 4, Douglasville, GA, 30135<br>(770) 489-8700<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031158@pizzahut.com\">Apply Here</a>",
+    "content": "3697 Hwy 5  Suite 4, Douglasville, GA, 30135<br>(770) 489-8700",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.706698",
@@ -14035,7 +14034,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3701 W Old Shakopee Rd Ste 200, Bloomington, MN 55431-3560",
     "source": "manual",
-    "content": "3701 W Old Shakopee Rd Ste 200, Bloomington, MN 55431-3560<br>(952) 881-1222<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030232@pizzahut.com\">Apply Here</a>",
+    "content": "3701 W Old Shakopee Rd Ste 200, Bloomington, MN 55431-3560<br>(952) 881-1222",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.810369",
@@ -14061,7 +14060,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3820 FM 3009 #164, Schertz TX 78154",
     "source": "manual",
-    "content": "3820 FM 3009 #164, Schertz TX 78154<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027081@pizzahut.com\">Apply Here</a>",
+    "content": "3820 FM 3009 #164, Schertz TX 78154<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.586837",
@@ -14087,7 +14086,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3821 South Staples Street, Corpus Christi TX 78411-2347",
     "source": "manual",
-    "content": "3821 South Staples Street, Corpus Christi TX 78411-2347<br>(361) 851-5151<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023645@pizzahut.com\">Apply Here</a>",
+    "content": "3821 South Staples Street, Corpus Christi TX 78411-2347<br>(361) 851-5151",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.737969",
@@ -14113,7 +14112,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3831 Grandview Dr, Simpsonville, SC, 29680-3162",
     "source": "manual",
-    "content": "3831 Grandview Dr, Simpsonville, SC, 29680-3162<br>(864) 967-4966<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031174@pizzahut.com\">Apply Here</a>",
+    "content": "3831 Grandview Dr, Simpsonville, SC, 29680-3162<br>(864) 967-4966",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.718071",
@@ -14139,7 +14138,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3932 E Palmetto St, Florence, SC, 29506",
     "source": "manual",
-    "content": "3932 E Palmetto St, Florence, SC, 29506<br>(843) 679-2489<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031169@pizzahut.com\">Apply Here</a>",
+    "content": "3932 E Palmetto St, Florence, SC, 29506<br>(843) 679-2489",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.196135",
@@ -14165,7 +14164,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4001 Richmond Ave, Suite D, Houston, TX 77057",
     "source": "manual",
-    "content": "4001 Richmond Ave, Suite D, Houston, TX 77057<br>(713) 621-3344<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031644@pizzahut.com\">Apply Here</a>",
+    "content": "4001 Richmond Ave, Suite D, Houston, TX 77057<br>(713) 621-3344",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.7322512",
@@ -14191,7 +14190,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4001 Saratoga Blvd., Suite 103, Corpus Christi, TX 78413",
     "source": "manual",
-    "content": "5501 Grand Ave, Duluth, MN 55807<br>(361) 991-3278<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031741@pizzahut.com\">Apply Here</a>",
+    "content": "5501 Grand Ave, Duluth, MN 55807<br>(361) 991-3278",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.698714",
@@ -14217,7 +14216,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4001-I Bellaire Blvd, Southside Place, TX 77025",
     "source": "manual",
-    "content": "4001-I Bellaire Blvd, Southside Place, TX 77025<br>(713) 664-2222<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027119@pizzahut.com\">Apply Here</a>",
+    "content": "4001-I Bellaire Blvd, Southside Place, TX 77025<br>(713) 664-2222",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.70539",
@@ -14243,7 +14242,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4002 Elton Way, Greensboro, NC, 27406",
     "source": "manual",
-    "content": "4002 Elton Way, Greensboro, NC, 27406<br>(336) 378-9978<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031212@pizzahut.com\">Apply Here</a>",
+    "content": "4002 Elton Way, Greensboro, NC, 27406<br>(336) 378-9978",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.005442",
@@ -14269,7 +14268,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4008-F Battleground Avenue, Greensboro, NC, 27410",
     "source": "manual",
-    "content": "4008-F Battleground Avenue, Greensboro, NC, 27410<br>(336) 286-6160<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031215@pizzahut.com\">Apply Here</a>",
+    "content": "4008-F Battleground Avenue, Greensboro, NC, 27410<br>(336) 286-6160",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.148438",
@@ -14295,7 +14294,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "401  Hwy 277 North, Sonora, TX 76950",
     "source": "manual",
-    "content": "401  Hwy 277 North, Sonora, TX 76950<br>(325) 387-3540<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022656@pizzahut.com\">Apply Here</a>",
+    "content": "401  Hwy 277 North, Sonora, TX 76950<br>(325) 387-3540",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.564759",
@@ -14321,7 +14320,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4014 Fairmont Pwy, Pasadena, TX 77504",
     "source": "manual",
-    "content": "4014 Fairmont Pwy, Pasadena, TX 77504<br>(281) 991-6055<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027150@pizzahut.com\">Apply Here</a>",
+    "content": "4014 Fairmont Pwy, Pasadena, TX 77504<br>(281) 991-6055",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.649935",
@@ -14347,7 +14346,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "403 Central Ave. E, Saint Michael, MN 55376",
     "source": "manual",
-    "content": "403 Central Ave. E, Saint Michael, MN 55376<br>(763) 497-1189<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030240@pizzahut.com\">Apply Here</a>",
+    "content": "403 Central Ave. E, Saint Michael, MN 55376<br>(763) 497-1189",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.209315",
@@ -14373,7 +14372,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "405 Babcock Blvd., W Floor: Suite 110, Delano, MN 55328",
     "source": "manual",
-    "content": "405 Babcock Blvd., W Floor: Suite 110, Delano, MN 55328<br>(763) 972-2925<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030245@pizzahut.com\">Apply Here</a>",
+    "content": "405 Babcock Blvd., W Floor: Suite 110, Delano, MN 55328<br>(763) 972-2925",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.035571",
@@ -14399,7 +14398,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "405 S. Bibb St, Unit 3002, Eagle Pass, TX 78852",
     "source": "manual",
-    "content": "405 S. Bibb St, Unit 3002, Eagle Pass, TX 78852<br>(830) 773-5371<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031567@pizzahut.com\">Apply Here</a>",
+    "content": "405 S. Bibb St, Unit 3002, Eagle Pass, TX 78852<br>(830) 773-5371",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.7028696",
@@ -14425,7 +14424,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4075 Marietta Hwy., S-152, Dallas, GA, 30157",
     "source": "manual",
-    "content": "4075 Marietta Hwy., S-152, Dallas, GA, 30157<br>(770) 443-8800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031157@pizzahut.com\">Apply Here</a>",
+    "content": "4075 Marietta Hwy., S-152, Dallas, GA, 30157<br>(770) 443-8800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.934301",
@@ -14451,7 +14450,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4101 Hwy 77 #M-6, Corpus Christi, TX 78410",
     "source": "manual",
-    "content": "4101 Hwy 77 #M-6, Corpus Christi, TX 78410<br>(361) 241-1414<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023652@pizzahut.com\">Apply Here</a>",
+    "content": "4101 Hwy 77 #M-6, Corpus Christi, TX 78410<br>(361) 241-1414",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.856862",
@@ -14477,7 +14476,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "418 W Mcintyre St, Mullins, SC, 29574-3406",
     "source": "manual",
-    "content": "418 W Mcintyre St, Mullins, SC, 29574-3406<br>(843) 464-6420<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031165@pizzahut.com\">Apply Here</a>",
+    "content": "418 W Mcintyre St, Mullins, SC, 29574-3406<br>(843) 464-6420",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.199384",
@@ -14503,7 +14502,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4221 Bells Ferry Road Suite 103, Kennesaw, GA, 30144",
     "source": "manual",
-    "content": "4221 Bells Ferry Road Suite 103, Kennesaw, GA, 30144<br>(770) 928-9967<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031136@pizzahut.com\">Apply Here</a>",
+    "content": "4221 Bells Ferry Road Suite 103, Kennesaw, GA, 30144<br>(770) 928-9967",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.054119",
@@ -14529,7 +14528,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "425 N. 35 Hwy Bypass, Port Lavaca, TX  77979",
     "source": "manual",
-    "content": "425 N. 35 Hwy Bypass, Port Lavaca, TX  77979<br>(361) 552-6868<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022650@pizzahut.com\">Apply Here</a>",
+    "content": "425 N. 35 Hwy Bypass, Port Lavaca, TX  77979<br>(361) 552-6868",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.614997",
@@ -14555,7 +14554,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "430-A Racetrack Rd NE, Fort Walton Beach, FL, 32547",
     "source": "manual",
-    "content": "430-A Racetrack Rd NE, Fort Walton Beach, FL, 32547<br>(850) 863-4470<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031209@pizzahut.com\">Apply Here</a>",
+    "content": "430-A Racetrack Rd NE, Fort Walton Beach, FL, 32547<br>(850) 863-4470",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.442472",
@@ -14581,7 +14580,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4300 Hwy 83 E, Rio Grande City, TX 78582",
     "source": "manual",
-    "content": "4300 Hwy 83 E, Rio Grande City, TX 78582<br>(956) 487-2551<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027061@pizzahut.com\">Apply Here</a>",
+    "content": "4300 Hwy 83 E, Rio Grande City, TX 78582<br>(956) 487-2551",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.605814",
@@ -14607,7 +14606,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4407 W Fuqua Street, Ste.F, Houston TX 77045",
     "source": "manual",
-    "content": "4407 W Fuqua Street, Ste.F, Houston TX 77045<br>(713) 434-5566<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027168@pizzahut.com\">Apply Here</a>",
+    "content": "4407 W Fuqua Street, Ste.F, Houston TX 77045<br>(713) 434-5566",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.612927",
@@ -14633,7 +14632,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4451 Towne Lake Parkway, St 310, Woodstock, GA, 30189",
     "source": "manual",
-    "content": "4451 Towne Lake Parkway, St 310, Woodstock, GA, 30189<br>(770) 516-7700<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023626@pizzahut.com\">Apply Here</a>",
+    "content": "4451 Towne Lake Parkway, St 310, Woodstock, GA, 30189<br>(770) 516-7700",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.10572",
@@ -14659,7 +14658,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4491 N Henry Blvd., Stockbridge, GA, 30281",
     "source": "manual",
-    "content": "4491 N Henry Blvd., Stockbridge, GA, 30281<br>(770) 474-9844<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031159@pizzahut.com\">Apply Here</a>",
+    "content": "4491 N Henry Blvd., Stockbridge, GA, 30281<br>(770) 474-9844",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.543334",
@@ -14685,7 +14684,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4615 North Freeway, Suite 200, Houston, TX 77022",
     "source": "manual",
-    "content": "4615 North Freeway, Suite 200, Houston, TX 77022<br>(713) 695-0384<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031151@pizzahut.com \">Apply Here</a>",
+    "content": "4615 North Freeway, Suite 200, Houston, TX 77022<br>(713) 695-0384<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.833056",
@@ -14711,7 +14710,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4715 Jonesboro Rd, Union City, GA, 30291",
     "source": "manual",
-    "content": "4715 Jonesboro Rd, Union City, GA, 30291<br>(770) 969-0612<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031140@pizzahut.com\">Apply Here</a>",
+    "content": "4715 Jonesboro Rd, Union City, GA, 30291<br>(770) 969-0612",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.569626",
@@ -14737,7 +14736,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4719D Highpoint Road, Greensboro, NC, 27407",
     "source": "manual",
-    "content": "4719D Highpoint Road, Greensboro, NC, 27407<br>(336) 299-5504<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031202@pizzahut.com\">Apply Here</a>",
+    "content": "4719D Highpoint Road, Greensboro, NC, 27407<br>(336) 299-5504",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.028777",
@@ -14763,7 +14762,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4800 Chicago Ave, Minneapolis, MN 55417-1009",
     "source": "manual",
-    "content": "4800 Chicago Ave, Minneapolis, MN 55417-1009<br>(612) 825-9820<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030214@pizzahut.com\">Apply Here</a>",
+    "content": "4800 Chicago Ave, Minneapolis, MN 55417-1009<br>(612) 825-9820",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.915993",
@@ -14789,7 +14788,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4811 Ridge Road, Suite 101, Douglasville, GA, 30134",
     "source": "manual",
-    "content": "4811 Ridge Road, Suite 101, Douglasville, GA, 30134<br>(770) 489-7855<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031152@pizzahut.com\">Apply Here</a>",
+    "content": "4811 Ridge Road, Suite 101, Douglasville, GA, 30134<br>(770) 489-7855",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.818854",
@@ -14815,7 +14814,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4815 S. Staples St., Corpust Christi, TX 78411",
     "source": "manual",
-    "content": "4815 S. Staples St., Corpust Christi, TX 78411<br>(361) 992-8471<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023629@pizzahut.com\">Apply Here</a>",
+    "content": "4815 S. Staples St., Corpust Christi, TX 78411<br>(361) 992-8471",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.713231",
@@ -14841,7 +14840,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4908B Seawall Blvd, Galveston, TX 77551",
     "source": "manual",
-    "content": "4908B Seawall Blvd, Galveston, TX 77551<br>(409) 740-3400<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs029753@pizzahut.com\">Apply Here</a>",
+    "content": "4908B Seawall Blvd, Galveston, TX 77551<br>(409) 740-3400",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.273637",
@@ -14867,7 +14866,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "50 Holiday N Road, Miramar Beach, FL, 32550",
     "source": "manual",
-    "content": "50 Holiday N Road, Miramar Beach, FL, 32550<br>(850) 269-3262<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031185@pizzahut.com\">Apply Here</a>",
+    "content": "50 Holiday N Road, Miramar Beach, FL, 32550<br>(850) 269-3262",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.384272",
@@ -14893,7 +14892,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5005 Floyd Road Ste. 910, Mableton, GA, 30126",
     "source": "manual",
-    "content": "5005 Floyd Road Ste. 910, Mableton, GA, 30126<br>(770) 739-7739<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031179@pizzahut.com\">Apply Here</a>",
+    "content": "5005 Floyd Road Ste. 910, Mableton, GA, 30126<br>(770) 739-7739",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.833268",
@@ -14919,7 +14918,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "502 E Main St, Uvalde, TX 78801",
     "source": "manual",
-    "content": "502 E Main St, Uvalde, TX 78801<br>(830) 278-1181<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027072@pizzahut.com\">Apply Here</a>",
+    "content": "502 E Main St, Uvalde, TX 78801<br>(830) 278-1181",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.21239",
@@ -14945,7 +14944,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5070 Cherokee Street, Acworth, GA, 30101",
     "source": "manual",
-    "content": "5070 Cherokee Street, Acworth, GA, 30101<br>(770) 975-7444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031147@pizzahut.com\">Apply Here</a>",
+    "content": "5070 Cherokee Street, Acworth, GA, 30101<br>(770) 975-7444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.075391",
@@ -14971,7 +14970,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "509 Paul Bunyan Dr NW, Bemidji, MN 56601-2400",
     "source": "manual",
-    "content": "509 Paul Bunyan Dr NW, Bemidji, MN 56601-2400<br>(218) 751-1601<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030198@pizzahut.com\">Apply Here</a>",
+    "content": "509 Paul Bunyan Dr NW, Bemidji, MN 56601-2400<br>(218) 751-1601",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "47.491174",
@@ -14997,7 +14996,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "517 North Hwy 9, Mathis, TX  78368",
     "source": "manual",
-    "content": "517 North Hwy 9, Mathis, TX  78368<br>(361) 547-9127<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022647@pizzahut.com\">Apply Here</a>",
+    "content": "517 North Hwy 9, Mathis, TX  78368<br>(361) 547-9127",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.073338",
@@ -15023,7 +15022,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5201 Montana, El Paso, TX 79903",
     "source": "manual",
-    "content": "5201 Montana, El Paso, TX 79903<br>(915) 562-1177<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023643@pizzahut.com\">Apply Here</a>",
+    "content": "5201 Montana, El Paso, TX 79903<br>(915) 562-1177",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.783994",
@@ -15049,7 +15048,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5302 Chimney Rock Rd, Houston TX 77081",
     "source": "manual",
-    "content": "5302 Chimney Rock Rd, Houston TX 77081<br>(713) 667-6667<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027191@pizzahut.com\">Apply Here</a>",
+    "content": "5302 Chimney Rock Rd, Houston TX 77081<br>(713) 667-6667",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.724378",
@@ -15075,7 +15074,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5330 Antoine Drive, Houston, TX 77091",
     "source": "manual",
-    "content": "5330 Antoine Drive, Houston, TX 77091<br>(713) 688-0888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027118@pizzahut.com\">Apply Here</a>",
+    "content": "5330 Antoine Drive, Houston, TX 77091<br>(713) 688-0888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.841905",
@@ -15101,7 +15100,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "535 Bypass 72 NW, Greenwood, SC, 29649-1301",
     "source": "manual",
-    "content": "535 Bypass 72 NW, Greenwood, SC, 29649-1301<br>(864) 229-4812<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031173@pizzahut.com\">Apply Here</a>",
+    "content": "535 Bypass 72 NW, Greenwood, SC, 29649-1301<br>(864) 229-4812",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.203566",
@@ -15127,7 +15126,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "539 10th St., Floresville, TX  78114",
     "source": "manual",
-    "content": "539 10th St., Floresville, TX  78114<br>(830) 393-1956<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027073@pizzahut.com\">Apply Here</a>",
+    "content": "539 10th St., Floresville, TX  78114<br>(830) 393-1956",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.154192",
@@ -15153,7 +15152,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5501 Grand Ave, Duluth, MN 55807",
     "source": "manual",
-    "content": "5501 Grand Ave, Duluth, MN 55807<br>218-624-7000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031350@pizzahut.com\">Apply Here</a>",
+    "content": "5501 Grand Ave, Duluth, MN 55807<br>218-624-7000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "46.740962",
@@ -15179,7 +15178,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5636 Fairburn Road, Douglasville, GA, 30134",
     "source": "manual",
-    "content": "5636 Fairburn Road, Douglasville, GA, 30134<br>(770) 920-5050<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023655@pizzahut.com\">Apply Here</a>",
+    "content": "5636 Fairburn Road, Douglasville, GA, 30134<br>(770) 920-5050",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.75053",
@@ -15205,7 +15204,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5806 Xerxes Ave N, Brooklyn Center, MN 55430-2415",
     "source": "manual",
-    "content": "5806 Xerxes Ave N, Brooklyn Center, MN 55430-2415<br>(763) 561-6161<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031146@pizzahut.com\">Apply Here</a>",
+    "content": "5806 Xerxes Ave N, Brooklyn Center, MN 55430-2415<br>(763) 561-6161",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.060207",
@@ -15231,7 +15230,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "585 Heard St, Elberton, GA, 30635-0000",
     "source": "manual",
-    "content": "585 Heard St, Elberton, GA, 30635-0000<br>(706) 283-6293<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030212@pizzahut.com\">Apply Here</a>",
+    "content": "585 Heard St, Elberton, GA, 30635-0000<br>(706) 283-6293",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.106761",
@@ -15257,7 +15256,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5933 McArdle Road, Corpus Christi TX 78413",
     "source": "manual",
-    "content": "5933 McArdle Road, Corpus Christi TX 78413<br>(361) 992-2299<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031161@pizzahut.com\">Apply Here</a>",
+    "content": "5933 McArdle Road, Corpus Christi TX 78413<br>(361) 992-2299",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.706868",
@@ -15283,7 +15282,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "600 College Road, Greensboro, NC, 27410",
     "source": "manual",
-    "content": "600 College Road, Greensboro, NC, 27410<br>(336) 294-2800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023648@pizzahut.com\">Apply Here</a>",
+    "content": "600 College Road, Greensboro, NC, 27410<br>(336) 294-2800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.086139",
@@ -15309,7 +15308,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "601 N. Zaragosa, El Paso, TX 79907",
     "source": "manual",
-    "content": "601 N. Zaragosa, El Paso, TX 79907<br>(915) 860-0040<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031196@pizzahut.com\">Apply Here</a>",
+    "content": "601 N. Zaragosa, El Paso, TX 79907<br>(915) 860-0040",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.703525",
@@ -15335,7 +15334,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "602 S. Main, Lovington, NM 88260",
     "source": "manual",
-    "content": "602 S. Main, Lovington, NM 88260<br>(575) 396-4062<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023644@pizzahut.com\">Apply Here</a>",
+    "content": "602 S. Main, Lovington, NM 88260<br>(575) 396-4062",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "32.942695",
@@ -15361,7 +15360,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "607 E. Hondo, Devine TX 78016",
     "source": "manual",
-    "content": "607 E. Hondo, Devine TX 78016<br>(830) 455-4138<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023638@pizzahut.com\">Apply Here</a>",
+    "content": "607 E. Hondo, Devine TX 78016<br>(830) 455-4138",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.136762",
@@ -15387,7 +15386,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6110 Dyer St, El Paso, TX 79904",
     "source": "manual",
-    "content": "6110 Dyer St, El Paso, TX 79904<br>(915) 757-0323<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027512@pizzahut.com\">Apply Here</a>",
+    "content": "6110 Dyer St, El Paso, TX 79904<br>(915) 757-0323",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.833649",
@@ -15413,7 +15412,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6200 boradway Suite 124, Pearland, TX 77581",
     "source": "manual",
-    "content": "6200 boradway Suite 124, Pearland, TX 77581<br>(281) 485-0660<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027167@pizzahut.com\">Apply Here</a>",
+    "content": "6200 boradway Suite 124, Pearland, TX 77581<br>(281) 485-0660",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.559435",
@@ -15439,7 +15438,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6415 San Felipe Ste M-1, Houston, TX 77057",
     "source": "manual",
-    "content": "6415 San Felipe Ste M-1, Houston, TX 77057<br>(713) 783-8899<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027133@pizzahut.com\">Apply Here</a>",
+    "content": "6415 San Felipe Ste M-1, Houston, TX 77057<br>(713) 783-8899",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.749527",
@@ -15465,7 +15464,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "649 Las Palmas Blvd., Suite C, Cotulla, TX 78014",
     "source": "manual",
-    "content": "649 Las Palmas Blvd., Suite C, Cotulla, TX 78014<br>(830) 879-4080<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs029902@pizzahut.com\">Apply Here</a>",
+    "content": "649 Las Palmas Blvd., Suite C, Cotulla, TX 78014<br>(830) 879-4080",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.445498",
@@ -15491,7 +15490,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "650 North Glynn Street, Fayetteville, GA, 30214",
     "source": "manual",
-    "content": "650 North Glynn Street, Fayetteville, GA, 30214<br>(770) 460-3030<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031142@pizzahut.com\">Apply Here</a>",
+    "content": "650 North Glynn Street, Fayetteville, GA, 30214<br>(770) 460-3030",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.460545",
@@ -15517,7 +15516,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "651 Egret Bay Blvd Ste G, League City, TX 77573",
     "source": "manual",
-    "content": "651 Egret Bay Blvd Ste G, League City, TX 77573<br>(281) 554-4141<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027141@pizzahut.com\">Apply Here</a>",
+    "content": "651 Egret Bay Blvd Ste G, League City, TX 77573<br>(281) 554-4141",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.517185",
@@ -15543,7 +15542,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6537 S. Staples Street, Corpus Christi TX 78413-5418",
     "source": "manual",
-    "content": "6537 S. Staples Street, Corpus Christi TX 78413-5418<br>(361) 994-9494<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023651@pizzahut.com\">Apply Here</a>",
+    "content": "6537 S. Staples Street, Corpus Christi TX 78413-5418<br>(361) 994-9494",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.684085",
@@ -15569,7 +15568,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6700 Woodlands Pwy Bldg E Suite 110, The Woodlands, TX 77382",
     "source": "manual",
-    "content": "6700 Woodlands Pwy Bldg E Suite 110, The Woodlands, TX 77382<br>(281) 292-9595<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027152@pizzahut.com\">Apply Here</a>",
+    "content": "6700 Woodlands Pwy Bldg E Suite 110, The Woodlands, TX 77382<br>(281) 292-9595",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.182696",
@@ -15595,7 +15594,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6704 Montana, El Paso, TX 79925",
     "source": "manual",
-    "content": "6704 Montana, El Paso, TX 79925<br>(915) 778-9103<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023637@pizzahut.com\">Apply Here</a>",
+    "content": "6704 Montana, El Paso, TX 79925<br>(915) 778-9103",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.789498",
@@ -15621,7 +15620,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6805 B York Ave So, Edina, MN 55435",
     "source": "manual",
-    "content": "6805 B York Ave So, Edina, MN 55435<br>(952) 893-9000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030233@pizzahut.com\">Apply Here</a>",
+    "content": "6805 B York Ave So, Edina, MN 55435<br>(952) 893-9000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.879178",
@@ -15647,7 +15646,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6845 Spencer Hwy, Pasadena, TX 77505",
     "source": "manual",
-    "content": "6845 Spencer Hwy, Pasadena, TX 77505<br>(281) 998-3737<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027189@pizzahut.com\">Apply Here</a>",
+    "content": "6845 Spencer Hwy, Pasadena, TX 77505<br>(281) 998-3737",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.663862",
@@ -15673,7 +15672,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6880 Boudin St. NE, Prior Lake, MN 55372",
     "source": "manual",
-    "content": "6880 Boudin St. NE, Prior Lake, MN 55372<br>(952) 440-8888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030243@pizzahut.com\">Apply Here</a>",
+    "content": "6880 Boudin St. NE, Prior Lake, MN 55372<br>(952) 440-8888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.741534",
@@ -15699,7 +15698,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6951 South Sweetwater Road, Lithia Springs, GA, 30122",
     "source": "manual",
-    "content": "6951 South Sweetwater Road, Lithia Springs, GA, 30122<br>(770) 732-1000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031156@pizzahut.com\">Apply Here</a>",
+    "content": "6951 South Sweetwater Road, Lithia Springs, GA, 30122<br>(770) 732-1000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.785657",
@@ -15725,7 +15724,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6990 80th St S, Ste 150, Cottage Grove, MN 55016-2665",
     "source": "manual",
-    "content": "6990 80th St S, Ste 150, Cottage Grove, MN 55016-2665<br>(651) 458-3000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030223@pizzahut.com\">Apply Here</a>",
+    "content": "6990 80th St S, Ste 150, Cottage Grove, MN 55016-2665<br>(651) 458-3000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.831557",
@@ -15751,7 +15750,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7 10th Ave S, Hopkins, MN 55343-7505",
     "source": "manual",
-    "content": "7 10th Ave S, Hopkins, MN 55343-7505<br>(952) 933-2404<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030208@pizzahut.com\">Apply Here</a>",
+    "content": "7 10th Ave S, Hopkins, MN 55343-7505<br>(952) 933-2404",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.924017",
@@ -15777,7 +15776,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7002 NE Zac Lentz Pkwy., Victoria TX 77904",
     "source": "manual",
-    "content": "7002 NE Zac Lentz Pkwy., Victoria TX 77904<br>(361) 573-9137<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023459@pizzahut.com\">Apply Here</a>",
+    "content": "7002 NE Zac Lentz Pkwy., Victoria TX 77904<br>(361) 573-9137",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.865111",
@@ -15803,7 +15802,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "701 Highway 33 S, Cloquet, MN 55720-2693",
     "source": "manual",
-    "content": "701 Highway 33 S, Cloquet, MN 55720-2693<br>(218) 879-1554<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030191@pizzahut.com\">Apply Here</a>",
+    "content": "701 Highway 33 S, Cloquet, MN 55720-2693<br>(218) 879-1554",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "46.712617",
@@ -15829,7 +15828,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7049-A Desert Blvd. South, Suite 101, El Paso, TX 79932",
     "source": "manual",
-    "content": "7049-A Desert Blvd. South, Suite 101, El Paso, TX 79932<br>(915) 235-0123<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs028300@pizzahut.com\">Apply Here</a>",
+    "content": "7049-A Desert Blvd. South, Suite 101, El Paso, TX 79932<br>(915) 235-0123",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.911155",
@@ -15855,7 +15854,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7076 Bissonnette Sp A-10, Houston, TX 77074",
     "source": "manual",
-    "content": "7076 Bissonnette Sp A-10, Houston, TX 77074<br>(713) 995-0555<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027128@pizzahut.com\">Apply Here</a>",
+    "content": "7076 Bissonnette Sp A-10, Houston, TX 77074<br>(713) 995-0555",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.688577",
@@ -15881,7 +15880,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7103 Hwy 6 South Ste A, Missouri City, TX 77479",
     "source": "manual",
-    "content": "7103 Hwy 6 South Ste A, Missouri City, TX 77479<br>(281) 208-3100<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027145@pizzahut.com\">Apply Here</a>",
+    "content": "7103 Hwy 6 South Ste A, Missouri City, TX 77479<br>(281) 208-3100",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.590231",
@@ -15907,7 +15906,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7117 Cedar Lake Road, St Louis Park, MN 55426",
     "source": "manual",
-    "content": "7117 Cedar Lake Road, St Louis Park, MN 55426<br>(952) 925-3929<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030635@pizzahut.com\">Apply Here</a>",
+    "content": "7117 Cedar Lake Road, St Louis Park, MN 55426<br>(952) 925-3929",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.960096",
@@ -15933,7 +15932,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "720 A Kingwood Drive, Kingwood, TX 77339",
     "source": "manual",
-    "content": "720 A Kingwood Drive, Kingwood, TX 77339<br>(281) 358-0683<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027175@pizzahut.com\">Apply Here</a>",
+    "content": "720 A Kingwood Drive, Kingwood, TX 77339<br>(281) 358-0683",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.050993",
@@ -15959,7 +15958,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "720 Victoria Highway, Refugio, TX 78377",
     "source": "manual",
-    "content": "720 Victoria Highway, Refugio, TX 78377<br>361-526-8103<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031675@pizzahut.com\">Apply Here</a>",
+    "content": "720 Victoria Highway, Refugio, TX 78377<br>361-526-8103",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.3052838",
@@ -15985,7 +15984,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "721 East Main Street, Luray, VA, 22835",
     "source": "manual",
-    "content": "721 East Main Street, Luray, VA, 22835<br>(540) 743-5177<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031199@pizzahut.com\">Apply Here</a>",
+    "content": "721 East Main Street, Luray, VA, 22835<br>(540) 743-5177",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.666079",
@@ -16011,7 +16010,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "729 &quot;C&quot; Richmond Ave, Staunton, VA, 24001",
     "source": "manual",
-    "content": "729 \"C\" Richmond Ave, Staunton, VA, 24001<br>(540) 887-9860<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031210@pizzahut.com\">Apply Here</a>",
+    "content": "729 \"C\" Richmond Ave, Staunton, VA, 24001<br>(540) 887-9860",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.14285",
@@ -16037,7 +16036,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "730 S. Santa Rosa  San Antonio, TX 78204",
     "source": "manual",
-    "content": "730 S. Santa Rosa  San Antonio, TX 78204<br>(210) 798-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027075@pizzahut.com\">Apply Here</a>",
+    "content": "730 S. Santa Rosa  San Antonio, TX 78204<br>(210) 798-4800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.418201",
@@ -16063,7 +16062,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "743 Dairy Ashford Street, Houston, TX 77079",
     "source": "manual",
-    "content": "743 Dairy Ashford Street, Houston, TX 77079<br>(281) 497-0420<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027120@pizzahut.com\">Apply Here</a>",
+    "content": "743 Dairy Ashford Street, Houston, TX 77079<br>(281) 497-0420",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.772602",
@@ -16089,7 +16088,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "759 North Ferdon Blvd, Crestview, FL, 32536",
     "source": "manual",
-    "content": "759 North Ferdon Blvd, Crestview, FL, 32536<br>(850) 682-9960<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031183@pizzahut.com\">Apply Here</a>",
+    "content": "759 North Ferdon Blvd, Crestview, FL, 32536<br>(850) 682-9960",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.77174",
@@ -16115,7 +16114,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7820 Long Point Road, Houston, TX 77055",
     "source": "manual",
-    "content": "7820 Long Point Road, Houston, TX 77055<br>(713) 688-8100<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027127@pizzahut.com\">Apply Here</a>",
+    "content": "7820 Long Point Road, Houston, TX 77055<br>(713) 688-8100",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.803067",
@@ -16141,7 +16140,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7844 Portland Ave, Bloomington, MN 55420-1313",
     "source": "manual",
-    "content": "7844 Portland Ave, Bloomington, MN 55420-1313<br>(952) 884-2822<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030216@pizzahut.com\">Apply Here</a>",
+    "content": "7844 Portland Ave, Bloomington, MN 55420-1313<br>(952) 884-2822",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.860714",
@@ -16167,7 +16166,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7948 Gateway East, El Paso, TX 79915",
     "source": "manual",
-    "content": "7948 Gateway East, El Paso, TX 79915<br>(915) 592-9929<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023650@pizzahut.com\">Apply Here</a>",
+    "content": "7948 Gateway East, El Paso, TX 79915<br>(915) 592-9929",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.752596",
@@ -16193,7 +16192,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7960 N Mesa St, El Paso TX 79932",
     "source": "manual",
-    "content": "7960 N Mesa St, El Paso TX 79932<br>(915) 584-5574<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023640@pizzahut.com\">Apply Here</a>",
+    "content": "7960 N Mesa St, El Paso TX 79932<br>(915) 584-5574",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.840896",
@@ -16219,7 +16218,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "801 19th Street, Hondo, TX  78861",
     "source": "manual",
-    "content": "801 19th Street, Hondo, TX  78861<br>(830) 426-3391<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027057@pizzahut.com\">Apply Here</a>",
+    "content": "801 19th Street, Hondo, TX  78861<br>(830) 426-3391",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.347616",
@@ -16245,7 +16244,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "803 West Main, Edna, TX  77957",
     "source": "manual",
-    "content": "803 West Main, Edna, TX  77957<br>(361) 782-7197<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022649@pizzahut.com\">Apply Here</a>",
+    "content": "803 West Main, Edna, TX  77957<br>(361) 782-7197",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.973706",
@@ -16271,7 +16270,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8057 B Kirby Dr, Houston, TX 77054",
     "source": "manual",
-    "content": "8057 B Kirby Dr, Houston, TX 77054<br>(713) 521-2266<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031260@pizzahut.com\">Apply Here</a>",
+    "content": "8057 B Kirby Dr, Houston, TX 77054<br>(713) 521-2266",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.6918056",
@@ -16297,7 +16296,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "812 W Greenwood St, Abbeville, SC, 29620-2515",
     "source": "manual",
-    "content": "812 W Greenwood St, Abbeville, SC, 29620-2515<br>(864) 459-2685<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031162@pizzahut.com\">Apply Here</a>",
+    "content": "812 W Greenwood St, Abbeville, SC, 29620-2515<br>(864) 459-2685",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.162489",
@@ -16323,7 +16322,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "814 North Oak, Pearsall, TX 78061",
     "source": "manual",
-    "content": "814 North Oak, Pearsall, TX 78061<br>(830) 334-8051<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027060@pizzahut.com\">Apply Here</a>",
+    "content": "814 North Oak, Pearsall, TX 78061<br>(830) 334-8051",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "28.898551",
@@ -16349,7 +16348,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8157 Highway 65 No, Spring Lake Park, MN 55432",
     "source": "manual",
-    "content": "8157 Highway 65 No, Spring Lake Park, MN 55432<br>(763) 785-0085<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030207@pizzahut.com\">Apply Here</a>",
+    "content": "8157 Highway 65 No, Spring Lake Park, MN 55432<br>(763) 785-0085",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.116152",
@@ -16375,7 +16374,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "823 South Main Street, Graham, NC, 27253",
     "source": "manual",
-    "content": "823 South Main Street, Graham, NC, 27253<br>(336) 226-0077<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031201@pizzahut.com\">Apply Here</a>",
+    "content": "823 South Main Street, Graham, NC, 27253<br>(336) 226-0077",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.05647",
@@ -16401,7 +16400,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8330 Highway 210 W, Baxter, MN 56425-0000",
     "source": "manual",
-    "content": "8330 Highway 210 W, Baxter, MN 56425-0000<br>(218) 828-1424<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030197@pizzahut.com\">Apply Here</a>",
+    "content": "8330 Highway 210 W, Baxter, MN 56425-0000<br>(218) 828-1424",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "46.355332",
@@ -16427,7 +16426,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "840 S Broadway, Rochester, MN 55904-6443",
     "source": "manual",
-    "content": "840 S Broadway, Rochester, MN 55904-6443<br>(507) 285-5000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030228@pizzahut.com\">Apply Here</a>",
+    "content": "840 S Broadway, Rochester, MN 55904-6443<br>(507) 285-5000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.013812",
@@ -16453,7 +16452,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8400 W Belfort Ave, Houston, TX 77071",
     "source": "manual",
-    "content": "8400 W Belfort Ave, Houston, TX 77071<br>(713) 771-6161<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027139@pizzahut.com\">Apply Here</a>",
+    "content": "8400 W Belfort Ave, Houston, TX 77071<br>(713) 771-6161",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.655789",
@@ -16479,7 +16478,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8582 Seminole Trail, Ruckersville, VA, 22967",
     "source": "manual",
-    "content": "8582 Seminole Trail, Ruckersville, VA, 22967<br>(434) 990-2605<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031213@pizzahut.com\">Apply Here</a>",
+    "content": "8582 Seminole Trail, Ruckersville, VA, 22967<br>(434) 990-2605",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.229877",
@@ -16505,7 +16504,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8615 Tidwell Rd, Suite B, Houston, TX 77028",
     "source": "manual",
-    "content": "8615 Tidwell Rd, Suite B, Houston, TX 77028<br>(281) 288-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs028529@pizzahut.com\">Apply Here</a>",
+    "content": "8615 Tidwell Rd, Suite B, Houston, TX 77028<br>(281) 288-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.850392",
@@ -16531,7 +16530,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8692 Navarre Pkwy, Navarre, FL, 32566",
     "source": "manual",
-    "content": "8692 Navarre Pkwy, Navarre, FL, 32566<br>(850) 939-8217<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031182@pizzahut.com\">Apply Here</a>",
+    "content": "8692 Navarre Pkwy, Navarre, FL, 32566<br>(850) 939-8217",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.402116",
@@ -16557,7 +16556,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8765 Spring Cypress Road, Spring, TX 77379",
     "source": "manual",
-    "content": "8765 Spring Cypress Road, Spring, TX 77379<br>(281) 376-8019<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027121@pizzahut.com\">Apply Here</a>",
+    "content": "8765 Spring Cypress Road, Spring, TX 77379<br>(281) 376-8019",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.032807",
@@ -16583,7 +16582,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8876 Dallas/Acworth Hwy #106, Dallas, GA, 30132",
     "source": "manual",
-    "content": "8876 Dallas/Acworth Hwy #106, Dallas, GA, 30132<br>(770) 917-0111<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031137@pizzahut.com\">Apply Here</a>",
+    "content": "8876 Dallas/Acworth Hwy #106, Dallas, GA, 30132<br>(770) 917-0111",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.01074",
@@ -16609,7 +16608,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8880 Bellaire Blvd Ste D, Houston, TX 77036",
     "source": "manual",
-    "content": "8880 Bellaire Blvd Ste D, Houston, TX 77036<br>(713) 777-0338<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027173@pizzahut.com\">Apply Here</a>",
+    "content": "8880 Bellaire Blvd Ste D, Houston, TX 77036<br>(713) 777-0338",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.705865",
@@ -16635,7 +16634,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "890 S Interstate 35 Frontage Rd, New Braunfels, TX 78130",
     "source": "manual",
-    "content": "890 S Interstate 35 Frontage Rd, New Braunfels, TX 78130<br>(830) 626-8888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027074@pizzahut.com\">Apply Here</a>",
+    "content": "890 S Interstate 35 Frontage Rd, New Braunfels, TX 78130<br>(830) 626-8888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.71188",
@@ -16661,7 +16660,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "902 Woodland Ave, Duluth, MN 55812",
     "source": "manual",
-    "content": "902 Woodland Ave, Duluth, MN 55812<br>(218) 624-7000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031360@pizzahut.com\">Apply Here</a>",
+    "content": "902 Woodland Ave, Duluth, MN 55812<br>(218) 624-7000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "46.815955",
@@ -16687,7 +16686,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "906 Saint Emanuel St., Houston, TX 77003",
     "source": "manual",
-    "content": "906 Saint Emanuel St., Houston, TX 77003<br>(281) 288-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs028583@pizzahut.com\">Apply Here</a>",
+    "content": "906 Saint Emanuel St., Houston, TX 77003<br>(281) 288-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.751899",
@@ -16713,7 +16712,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "915 S. St. Mary's, Falfurrias, TX  78355",
     "source": "manual",
-    "content": "915 S. St. Mary's, Falfurrias, TX  78355<br>(361) 325-3621<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027056@pizzahut.com\">Apply Here</a>",
+    "content": "915 S. St. Mary's, Falfurrias, TX  78355<br>(361) 325-3621",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.218401",
@@ -16739,7 +16738,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "930 N Riverfront Dr, Mankato, MN 56001-3338",
     "source": "manual",
-    "content": "930 N Riverfront Dr, Mankato, MN 56001-3338<br>(507) 388-2973<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs030226@pizzahut.com\">Apply Here</a>",
+    "content": "930 N Riverfront Dr, Mankato, MN 56001-3338<br>(507) 388-2973",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.175888",
@@ -16765,7 +16764,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "9369 Richmond Ave, Houston, TX 77063",
     "source": "manual",
-    "content": "9369 Richmond Ave, Houston, TX 77063<br>(713) 266-6161<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027142@pizzahut.com\">Apply Here</a>",
+    "content": "9369 Richmond Ave, Houston, TX 77063<br>(713) 266-6161",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.727961",
@@ -16791,7 +16790,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "9441 Cullen Blvd Suite A-1, Houston, TX 77051",
     "source": "manual",
-    "content": "9441 Cullen Blvd Suite A-1, Houston, TX 77051<br>(281) 288-4444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027757@pizzahut.com\">Apply Here</a>",
+    "content": "9441 Cullen Blvd Suite A-1, Houston, TX 77051<br>(281) 288-4444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.654352",
@@ -16817,7 +16816,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "945 Hwy 90 East, Castroville, TX  78009",
     "source": "manual",
-    "content": "945 Hwy 90 East, Castroville, TX  78009<br>(830) 931-3901<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs022655@pizzahut.com\">Apply Here</a>",
+    "content": "945 Hwy 90 East, Castroville, TX  78009<br>(830) 931-3901",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.355986",
@@ -16843,7 +16842,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "955 N. Resler, El Paso, TX 79912",
     "source": "manual",
-    "content": "955 N. Resler, El Paso, TX 79912<br>(915) 581-8204<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023658@pizzahut.com\">Apply Here</a>",
+    "content": "955 N. Resler, El Paso, TX 79912<br>(915) 581-8204",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "31.861806",
@@ -16869,7 +16868,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "961 S Irby St, Florence, SC, 29501-5238",
     "source": "manual",
-    "content": "961 S Irby St, Florence, SC, 29501-5238<br>(843) 679-2490<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031166@pizzahut.com\">Apply Here</a>",
+    "content": "961 S Irby St, Florence, SC, 29501-5238<br>(843) 679-2490",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.211172",
@@ -16895,7 +16894,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "999 Junction Hwy, Kerrville, TX 78028",
     "source": "manual",
-    "content": "999 Junction Hwy, Kerrville, TX 78028<br>(830) 895-4141<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs027059@pizzahut.com\">Apply Here</a>",
+    "content": "999 Junction Hwy, Kerrville, TX 78028<br>(830) 895-4141",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.057927",
@@ -16921,7 +16920,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5220 Central Ave NE #220, Columbia Heights, MN 55421",
     "source": "manual",
-    "content": "5220 Central Ave NE #220, Columbia Heights, MN 55421<br>(651) 488-8888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031833@pizzahut.com\">Apply Here</a>",
+    "content": "5220 Central Ave NE #220, Columbia Heights, MN 55421<br>(651) 488-8888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.06302",
@@ -16947,7 +16946,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "12379 James Madison Highway, Orange, VA 22960",
     "source": "manual",
-    "content": "12379 James Madison Highway, Orange, VA 22960<br>(540) 672-2747<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs031923@pizzahut.com\">Apply Here</a>",
+    "content": "12379 James Madison Highway, Orange, VA 22960<br>(540) 672-2747",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.232849",
@@ -16973,7 +16972,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1075 Whitlock Ave SW, Marietta, GA 30064",
     "source": "manual",
-    "content": "11075 Whitlock Ave SW, Marietta, GA 30064<br>(470) 282-0222<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032510@pizzahut.com\">Apply Here</a>",
+    "content": "11075 Whitlock Ave SW, Marietta, GA 30064<br>(470) 282-0222",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.951492",
@@ -16999,7 +16998,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2020 Bolton Rd, Ste 202, Atlanta, GA 30318",
     "source": "manual",
-    "content": "2020 Bolton Rd, Ste 202, Atlanta, GA 30318<br>(404) 458-0555<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032509@pizzahut.com\">Apply Here</a>",
+    "content": "2020 Bolton Rd, Ste 202, Atlanta, GA 30318<br>(404) 458-0555",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.811289",
@@ -17025,7 +17024,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1742 Zebulon Rd, Suite F, Griffin, GA 30224",
     "source": "manual",
-    "content": "1742 Zebulon Rd, Suite F, Griffin, GA 30224<br>(470) 204-0204<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032549@pizzahut.com\">Apply Here</a>",
+    "content": "1742 Zebulon Rd, Suite F, Griffin, GA 30224<br>(470) 204-0204",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.193614",
@@ -17051,7 +17050,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "90 Cape Fear Drive, Unit H, Whitsett, NC 27377",
     "source": "manual",
-    "content": "90 Cape Fear Drive, Unit H, Whitsett, NC 27377<br>(336) 663-0655<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032571@pizzahut.com\">Apply Here</a>",
+    "content": "90 Cape Fear Drive, Unit H, Whitsett, NC 27377<br>(336) 663-0655",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.078387",
@@ -17077,7 +17076,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6640 South Shore Blvd., Suite 150, League City, TX 77573",
     "source": "manual",
-    "content": "6640 South Shore Blvd., Suite 150, League City, TX 77573<br>(832) 905-0111<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032692@pizzahut.com\">Apply Here</a>",
+    "content": "6640 South Shore Blvd., Suite 150, League City, TX 77573<br>(832) 905-0111",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.503258",
@@ -17103,7 +17102,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "12160 County Line Rd., Fayetteville, GA 30215",
     "source": "manual",
-    "content": "12160 County Line Rd., Fayetteville, GA 30215<br>(678) 783-7777<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032687@pizzahut.com\">Apply Here</a>",
+    "content": "12160 County Line Rd., Fayetteville, GA 30215<br>(678) 783-7777",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.426865",
@@ -17129,7 +17128,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1550 E. Market Street, Harrisonburg, VA 22801",
     "source": "manual",
-    "content": "1550 E. Market Street, Harrisonburg, VA 22801<br>(540) 209-9004<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032511@pizzahut.com\">Apply Here</a>",
+    "content": "1550 E. Market Street, Harrisonburg, VA 22801<br>(540) 209-9004",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.435346",
@@ -17155,7 +17154,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1653 Weir Dr., Woodbury, MN 55125",
     "source": "manual",
-    "content": "1653 Weir Dr., Woodbury, MN 55125<br>(651) 735-5585<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032653@pizzahut.com\">Apply Here</a>",
+    "content": "1653 Weir Dr., Woodbury, MN 55125<br>(651) 735-5585",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.926004",
@@ -17181,7 +17180,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "17305 Kenrick Ave, Lakeville, MN 55044",
     "source": "manual",
-    "content": "17305 Kenrick Ave, Lakeville, MN 55044<br>(952) 892-6935<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032745@pizzahut.com\">Apply Here</a>",
+    "content": "17305 Kenrick Ave, Lakeville, MN 55044<br>(952) 892-6935",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "44.697907",
@@ -17207,7 +17206,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1719 Spring Garden Ln, Suite A, Greensboro, NC 27403",
     "source": "manual",
-    "content": "1719 Spring Garden Ln, Suite A, Greensboro, NC 27403<br>(336) 663-0644<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032570@pizzahut.com\">Apply Here</a>",
+    "content": "1719 Spring Garden Ln, Suite A, Greensboro, NC 27403<br>(336) 663-0644",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.063309",
@@ -17233,7 +17232,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4514 N Cobb Pkwy, Suite 101, Acworth, GA 30101",
     "source": "manual",
-    "content": "4514 N Cobb Pkwy, Suite 101, Acworth, GA 30101<br>(678) 403-0000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032688@pizzahut.com\">Apply Here</a>",
+    "content": "4514 N Cobb Pkwy, Suite 101, Acworth, GA 30101<br>(678) 403-0000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "34.059506",
@@ -17259,7 +17258,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4101 Burlington Rd, Suite A, Greensboro, NC 27405",
     "source": "manual",
-    "content": "4101 Burlington Rd, Suite A, Greensboro, NC 27405<br>(336) 663-0660<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032572@pizzahut.com\">Apply Here</a>",
+    "content": "4101 Burlington Rd, Suite A, Greensboro, NC 27405<br>(336) 663-0660",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "36.087736",
@@ -17285,7 +17284,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8390 Senoia Rd, Suite C, Fairburn, GA 30213",
     "source": "manual",
-    "content": "8390 Senoia Rd, Suite C, Fairburn, GA 30213<br>(404) 400-6623<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032914@pizzahut.com\">Apply Here</a>",
+    "content": "8390 Senoia Rd, Suite C, Fairburn, GA 30213<br>(404) 400-6623",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.528702",
@@ -17311,7 +17310,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1001 West Main, Charlottesville, VA 22903",
     "source": "manual",
-    "content": "1001 West Main, Charlottesville, VA 22903<br>(434) 422-4680<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032620@pizzahut.com\">Apply Here</a>",
+    "content": "1001 West Main, Charlottesville, VA 22903<br>(434) 422-4680",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.03288",
@@ -17369,7 +17368,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "6342 Vinewood Lane, Osseo, MN 55311",
     "source": "manual",
-    "content": "6342 Vinewood Lane, Osseo, MN 55311<br>(763) 253-2010<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs032628@pizzahut.com\">Apply Here</a>",
+    "content": "6342 Vinewood Lane, Osseo, MN 55311<br>(763) 253-2010",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "45.069439",
@@ -17397,7 +17396,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "400 Tiffany Dr, Waynesboro, VA 22980",
     "source": "manual",
-    "content": "400 Tiffany Dr, Waynesboro, VA 22980<br>(540) 943-9092<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033040@pizzahut.com\">Apply Here</a>",
+    "content": "400 Tiffany Dr, Waynesboro, VA 22980<br>(540) 943-9092",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "38.066685",
@@ -17425,7 +17424,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "101 East Central Entrance, Duluth, MN 55811",
     "source": "manual",
-    "content": "101 East Central Entrance, Duluth, MN 55811<br>(218) 722-8426<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033133@pizzahut.com\">Apply Here</a>",
+    "content": "101 East Central Entrance, Duluth, MN 55811<br>(218) 722-8426",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "46.800631",
@@ -17453,7 +17452,7 @@ var config = {
     "title": "Wendy's",
     "address": "2575 Nicholasville Road, Lexington, KY, United States",
     "source": "manual",
-    "content": "2575 Nicholasville Rd, Lexington, KY 40503<br>(859) 277-4311<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02728@muyhamburgers.com\">Apply Here</a>",
+    "content": "2575 Nicholasville Rd, Lexington, KY 40503<br>(859) 277-4311",
     "location": {
       "icon": wendysIcon,
       "lat": "37.999673",
@@ -17481,7 +17480,7 @@ var config = {
     "title": "Wendy's",
     "address": "1499 Boardwalk, Lexington, KY, United States",
     "source": "manual",
-    "content": "1499 Boardwalk, Lexington, KY 40511<br>(859) 253-0403<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02831@muyhamburgers.com\">Apply Here</a>",
+    "content": "1499 Boardwalk, Lexington, KY 40511<br>(859) 253-0403",
     "location": {
       "icon": wendysIcon,
       "lat": "38.0720501",
@@ -17513,7 +17512,7 @@ var config = {
     "title": "Wendy's",
     "address": "1792 Alexandria Drive, Lexington, KY, United States",
     "source": "manual",
-    "content": "1792 Alexandria Dr, Lexington, KY 40504<br>(859) 276-4214<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03497@muyhamburgers.com\">Apply Here</a>",
+    "content": "1792 Alexandria Dr, Lexington, KY 40504<br>(859) 276-4214",
     "location": {
       "icon": wendysIcon,
       "lat": "38.0381748",
@@ -17545,7 +17544,7 @@ var config = {
     "title": "Wendy's",
     "address": "3010 Richmond Road, Lexington, KY, United States",
     "source": "manual",
-    "content": "3010 Richmond Rd, Lexington, KY 40509<br>(859) 269-9140<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws03624@muyhamburgers.com\">Apply Here</a>",
+    "content": "3010 Richmond Rd, Lexington, KY 40509<br>(859) 269-9140",
     "location": {
       "icon": wendysIcon,
       "lat": "38.0051437",
@@ -17577,7 +17576,7 @@ var config = {
     "title": "Wendy's",
     "address": "946 North Main Street, Nicholasville, KY, United States",
     "source": "manual",
-    "content": "946 North Main Street, Nicholasville, KY 40356<br>(859) 887-1509<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04383@muyhamburgers.com\">Apply Here</a>",
+    "content": "946 North Main Street, Nicholasville, KY 40356<br>(859) 887-1509",
     "location": {
       "icon": wendysIcon,
       "lat": "37.89548800000001",
@@ -17609,7 +17608,7 @@ var config = {
     "title": "Wendy's",
     "address": "101 Prince Royal Drive, Berea, KY, United States",
     "source": "manual",
-    "content": "101 Prince Royal, Berea, KY 40403<br>(859) 986-2231<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04738@muyhamburgers.com\">Apply Here</a>",
+    "content": "101 Prince Royal, Berea, KY 40403<br>(859) 986-2231",
     "location": {
       "icon": wendysIcon,
       "lat": "37.56886189999999",
@@ -17641,7 +17640,7 @@ var config = {
     "title": "Wendy's",
     "address": "72 Broadway Street, Dry Ridge, KY, United States",
     "source": "manual",
-    "content": "72 Broadway Street, Dry Ridge, KY 41035<br>(859) 824-3033<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws04763@muyhamburgers.com\">Apply Here</a>",
+    "content": "72 Broadway Street, Dry Ridge, KY 41035<br>(859) 824-3033",
     "location": {
       "icon": wendysIcon,
       "lat": "38.6827227",
@@ -17673,7 +17672,7 @@ var config = {
     "title": "Wendy's",
     "address": "2296 Thunderstick Dr, Lexington, KY, United States",
     "source": "manual",
-    "content": "2296 Thunderstick Dr, Lexington, KY 40505<br>(859) 299-1432<br><a href=\"https://muyhamburgers.com/crew-application/?store-email= ws05234@muyhamburgers.com\">Apply Here</a>",
+    "content": "2296 Thunderstick Dr, Lexington, KY 40505<br>(859) 299-1432<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "38.0420969",
@@ -17705,7 +17704,7 @@ var config = {
     "title": "Wendy's",
     "address": "101 Wingtip Way, Mount Sterling, KY, United States",
     "source": "manual",
-    "content": "101 Wing Tip Way, Mt Sterling, KY 40353<br>(859) 498-9545<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05573@muyhamburgers.com\">Apply Here</a>",
+    "content": "101 Wing Tip Way, Mt Sterling, KY 40353<br>(859) 498-9545",
     "location": {
       "icon": wendysIcon,
       "lat": "38.0754276",
@@ -17737,7 +17736,7 @@ var config = {
     "title": "Wendy's",
     "address": "113 North Keeneland Drive, Richmond, KY, United States",
     "source": "manual",
-    "content": "113 North Keeneland Dr, Richmond, KY 40475<br>(859) 623-6958<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08112@muyhamburgers.com\">Apply Here</a>",
+    "content": "113 North Keeneland Dr, Richmond, KY 40475<br>(859) 623-6958",
     "location": {
       "icon": wendysIcon,
       "lat": "37.77689389999999",
@@ -17769,7 +17768,7 @@ var config = {
     "title": "Wendy's",
     "address": "1907 Plaudit Place Suite 20, Lexington, KY, United States",
     "source": "manual",
-    "content": "1907 Plaudit Place, Suite 20, Lexington, KY 40509<br>(859) 263-2414<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws08790@muyhamburgers.com\">Apply Here</a>",
+    "content": "1907 Plaudit Place, Suite 20, Lexington, KY 40509<br>(859) 263-2414",
     "location": {
       "icon": wendysIcon,
       "lat": "38.0189781",
@@ -17801,7 +17800,7 @@ var config = {
     "title": "Wendy's",
     "address": "5365 Athens Boonesboro Road, Lexington, KY, United States",
     "source": "manual",
-    "content": "5365 Athens Boonesboro Rd, Lexington, KY 40509<br>(859) 263-0315<br><a href=\"https://muyhamburgers.com/crew-application/?store-email= ws09604@muyhamburgers.com\">Apply Here</a>",
+    "content": "5365 Athens Boonesboro Rd, Lexington, KY 40509<br>(859) 263-0315<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "37.9642876",
@@ -17833,7 +17832,7 @@ var config = {
     "title": "Wendy's",
     "address": "1760 Sharkey Way, Lexington, KY, United States",
     "source": "manual",
-    "content": "1760 Sharkey Way, Lexington, KY 40511<br>(859) 280-2300<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10910@muyhamburgers.com\">Apply Here</a>",
+    "content": "1760 Sharkey Way, Lexington, KY 40511<br>(859) 280-2300",
     "location": {
       "icon": wendysIcon,
       "lat": "38.0689607",
@@ -17865,7 +17864,7 @@ var config = {
     "title": "Wendy's",
     "address": "411 Leighway Drive, Richmond, KY, United States",
     "source": "manual",
-    "content": "411 Leighway Dr, Richmond, KY 40475<br>(859) 623-6985<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws10921@muyhamburgers.com\">Apply Here</a>",
+    "content": "411 Leighway Dr, Richmond, KY 40475<br>(859) 623-6985",
     "location": {
       "icon": wendysIcon,
       "lat": "37.7371295",
@@ -17897,7 +17896,7 @@ var config = {
     "title": "Wendy's",
     "address": "105 Hospital Drive, Winchester, KY, United States",
     "source": "manual",
-    "content": "105 Hospital Way, Winchester, KY 40391<br>(859) 744-7711<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11345@muyhamburgers.com\">Apply Here</a>",
+    "content": "105 Hospital Way, Winchester, KY 40391<br>(859) 744-7711",
     "location": {
       "icon": wendysIcon,
       "lat": "38.00968559999999",
@@ -17929,7 +17928,7 @@ var config = {
     "title": "Wendy's",
     "address": "10926 Culebra Rd, San Antonio, TX 78253, United States",
     "source": "manual",
-    "content": "10926 Culebra Rd, San Antonio, TX 78253<br>(210) 688-9193<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11943@muyhamburgers.com\">Apply Here</a>",
+    "content": "10926 Culebra Rd, San Antonio, TX 78253<br>(210) 688-9193",
     "location": {
       "icon": wendysIcon,
       "lat": "29.4951897",
@@ -18025,7 +18024,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2000 S Mccoll Ste E McAllen, TX 78503",
     "source": "manual",
-    "content": "2000 S Mccoll Ste E McAllen, TX 78503<br>(956) 630-3077<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033878@pizzahut.com>Apply Here</a>",
+    "content": "2000 S Mccoll Ste E McAllen, TX 78503<br>(956) 630-3077",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.183744",
@@ -18051,7 +18050,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "739 W. Dove McAllen, TX 78504",
     "source": "manual",
-    "content": "739 W. Dove McAllen, TX 78504<br>(956) 971-8282<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033879@pizzahut.com>Apply Here</a>",
+    "content": "739 W. Dove McAllen, TX 78504<br>(956) 971-8282",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.252629",
@@ -18077,7 +18076,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1524 W University Dr Edinburg, TX 78539",
     "source": "manual",
-    "content": "1524 W University Dr Edinburg, TX 78539<br>(956) 381-9144<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033880@pizzahut.com>Apply Here</a>",
+    "content": "1524 W University Dr Edinburg, TX 78539<br>(956) 381-9144",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.303256",
@@ -18103,7 +18102,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "404 S 10th St McAllen, TX 78501",
     "source": "manual",
-    "content": "404 S 10th St McAllen, TX 78501<br>(956) 682-4115<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033881@pizzahut.com>Apply Here</a>",
+    "content": "404 S 10th St McAllen, TX 78501<br>(956) 682-4115",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.199394",
@@ -18129,7 +18128,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1224 S Commerce St Harlingen, TX 78550",
     "source": "manual",
-    "content": "1224 S Commerce St Harlingen, TX 78550<br>(956) 423-1900<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033882@pizzahut.com>Apply Here</a>",
+    "content": "1224 S Commerce St Harlingen, TX 78550<br>(956) 423-1900",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.179665",
@@ -18155,7 +18154,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1519 Guadalupe St Laredo, TX 78040",
     "source": "manual",
-    "content": "1519 Guadalupe St Laredo, TX 78040<br>(956) 722-0222<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033883@pizzahut.com>Apply Here</a>",
+    "content": "1519 Guadalupe St Laredo, TX 78040<br>(956) 722-0222",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.506394",
@@ -18181,7 +18180,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1830 Central Blvd Brownsville, TX 78520",
     "source": "manual",
-    "content": "1830 Central Blvd Brownsville, TX 78520<br>(956) 546-8272<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033884@pizzahut.com>Apply Here</a>",
+    "content": "1830 Central Blvd Brownsville, TX 78520<br>(956) 546-8272",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "25.929834",
@@ -18207,7 +18206,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "623 W Us Highway 83 Weslaco, TX 78596",
     "source": "manual",
-    "content": "623 W Us Highway 83 Weslaco, TX 78596<br>(956) 969-1444<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033885@pizzahut.com>Apply Here</a>",
+    "content": "623 W Us Highway 83 Weslaco, TX 78596<br>(956) 969-1444",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.196031",
@@ -18233,7 +18232,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "3609 N 10th St McAllen, TX 78501",
     "source": "manual",
-    "content": "3609 N 10th St McAllen, TX 78501<br>(956) 686-1701<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033886@pizzahut.com>Apply Here</a>",
+    "content": "3609 N 10th St McAllen, TX 78501<br>(956) 686-1701",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.236323",
@@ -18259,7 +18258,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "821 E 9th St Mission, TX 78572",
     "source": "manual",
-    "content": "821 E 9th St Mission, TX 78572<br>(956) 581-7466<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033887@pizzahut.com>Apply Here</a>",
+    "content": "821 E 9th St Mission, TX 78572<br>(956) 581-7466",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.213960",
@@ -18287,7 +18286,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4821 San Bernardo Ave Laredo, TX 78041",
     "source": "manual",
-    "content": "4821 San Bernardo Ave Laredo, TX 78041<br>(956) 722-3682<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033888@pizzahut.com>Apply Here</a>",
+    "content": "4821 San Bernardo Ave Laredo, TX 78041<br>(956) 722-3682",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.545271",
@@ -18313,7 +18312,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "245 Security Dr Brownsville, TX 78521",
     "source": "manual",
-    "content": "245 Security Dr Brownsville, TX 78521<br>(956) 541-6393<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033889@pizzahut.com>Apply Here</a>",
+    "content": "245 Security Dr Brownsville, TX 78521<br>(956) 541-6393",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "25.919579",
@@ -18339,7 +18338,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1001 W Highway 83 Pharr, TX 78577",
     "source": "manual",
-    "content": "1001 W Highway 83 Pharr, TX 78577<br>(956) 787-1593<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033890@pizzahut.com>Apply Here</a>",
+    "content": "1001 W Highway 83 Pharr, TX 78577<br>(956) 787-1593",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.196919",
@@ -18365,7 +18364,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "501 E Hidalgo Ave Raymondville, TX 78580",
     "source": "manual",
-    "content": "501 E Hidalgo Ave Raymondville, TX 78580<br>(956) 689-5564<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033891@pizzahut.com>Apply Here</a>",
+    "content": "501 E Hidalgo Ave Raymondville, TX 78580<br>(956) 689-5564",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.482182",
@@ -18391,7 +18390,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "826 W 2nd St Mercedes, TX 78570",
     "source": "manual",
-    "content": "826 W 2nd St Mercedes, TX 78570<br>(956) 565-6319<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033892@pizzahut.com>Apply Here</a>",
+    "content": "826 W 2nd St Mercedes, TX 78570<br>(956) 565-6319",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.149645",
@@ -18417,7 +18416,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1802 S Closner Blvd Edinburg, TX 78539",
     "source": "manual",
-    "content": "1802 S Closner Blvd Edinburg, TX 78539<br>(956) 381-0991<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033893@pizzahut.com>Apply Here</a>",
+    "content": "1802 S Closner Blvd Edinburg, TX 78539<br>(956) 381-0991",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.284712",
@@ -18443,7 +18442,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "920 Morgan Blvd Harlingen, TX 78550",
     "source": "manual",
-    "content": "920 Morgan Blvd Harlingen, TX 78550<br>(956) 428-2191<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033894@pizzahut.com>Apply Here</a>",
+    "content": "920 Morgan Blvd Harlingen, TX 78550<br>(956) 428-2191",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.201541",
@@ -18469,7 +18468,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2619 E Saunders St Laredo, TX 78041",
     "source": "manual",
-    "content": "2619 E Saunders St Laredo, TX 78041<br>(956) 727-1354<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033895@pizzahut.com>Apply Here</a>",
+    "content": "2619 E Saunders St Laredo, TX 78041<br>(956) 727-1354",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.530337",
@@ -18495,7 +18494,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2121 N 23rd St McAllen, TX 78501",
     "source": "manual",
-    "content": "2121 N 23rd St McAllen, TX 78501<br>(956) 687-7859<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033896@pizzahut.com>Apply Here</a>",
+    "content": "2121 N 23rd St McAllen, TX 78501<br>(956) 687-7859",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.225697",
@@ -18521,7 +18520,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2333 Boca Chica Blvd Brownsville, TX 78521",
     "source": "manual",
-    "content": "2333 Boca Chica Blvd Brownsville, TX 78521<br>(956) 544-7711<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033897@pizzahut.com>Apply Here</a>",
+    "content": "2333 Boca Chica Blvd Brownsville, TX 78521<br>(956) 544-7711",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "25.922302",
@@ -18547,7 +18546,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1179 Fm 802 Brownsville, TX 78526",
     "source": "manual",
-    "content": "1179 Fm 802 Brownsville, TX 78526<br>(956) 544-7733<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033898@pizzahut.com>Apply Here</a>",
+    "content": "1179 Fm 802 Brownsville, TX 78526<br>(956) 544-7733",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "25.950508",
@@ -18573,7 +18572,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1309 E. Us Hwy 83 Donna, TX 78537",
     "source": "manual",
-    "content": "1309 E. Us Hwy 83 Donna, TX 78537<br>(956) 464-7855<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033899@pizzahut.com>Apply Here</a>",
+    "content": "1309 E. Us Hwy 83 Donna, TX 78537<br>(956) 464-7855",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.197747",
@@ -18599,7 +18598,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1802 W Tyler St Harlingen, TX 78550",
     "source": "manual",
-    "content": "1802 W Tyler St Harlingen, TX 78550<br>(956) 425-6520<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033900@pizzahut.com>Apply Here</a>",
+    "content": "1802 W Tyler St Harlingen, TX 78550<br>(956) 425-6520",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.189930",
@@ -18627,7 +18626,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5303 Mcpherson Ave Laredo, TX 78041",
     "source": "manual",
-    "content": "5303 Mcpherson Ave Laredo, TX 78041<br>(956) 727-8988<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033901@pizzahut.com>Apply Here</a>",
+    "content": "5303 Mcpherson Ave Laredo, TX 78041<br>(956) 727-8988",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.516790",
@@ -18655,7 +18654,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2106 Santa Ursula Ave Laredo, TX 78040",
     "source": "manual",
-    "content": "2106 Santa Ursula Ave Laredo, TX 78040<br>(956) 722-1234<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033902@pizzahut.com>Apply Here</a>",
+    "content": "2106 Santa Ursula Ave Laredo, TX 78040<br>(956) 722-1234",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.518519",
@@ -18681,7 +18680,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "522 N Alamo Rd Alamo, TX 78516",
     "source": "manual",
-    "content": "522 N Alamo Rd Alamo, TX 78516<br>(956) 783-1515<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033903@pizzahut.com>Apply Here</a>",
+    "content": "522 N Alamo Rd Alamo, TX 78516<br>(956) 783-1515",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.189724",
@@ -18707,7 +18706,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "311 E Us Expressway 83 Mission, TX 78572",
     "source": "manual",
-    "content": "311 E Us Expressway 83 Mission, TX 78572<br>(956) 581-9000<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033904@pizzahut.com>Apply Here</a>",
+    "content": "311 E Us Expressway 83 Mission, TX 78572<br>(956) 581-9000",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.201360",
@@ -18735,7 +18734,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "709 E Edinburg Ave Elsa, TX 78543",
     "source": "manual",
-    "content": "709 E Edinburg Ave Elsa, TX 78543<br>(956) 262-4744<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033905@pizzahut.com>Apply Here</a>",
+    "content": "709 E Edinburg Ave Elsa, TX 78543<br>(956) 262-4744",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.293901",
@@ -18761,7 +18760,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2119 Pine Laredo, TX 78046",
     "source": "manual",
-    "content": "2119 Pine Laredo, TX 78046<br>(956) 791-1199<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033906@pizzahut.com>Apply Here</a>",
+    "content": "2119 Pine Laredo, TX 78046<br>(956) 791-1199",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.480254",
@@ -18787,7 +18786,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1302 N Texas Weslaco, TX 78596",
     "source": "manual",
-    "content": "1302 N Texas Weslaco, TX 78596<br>(956) 969-1133<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033907@pizzahut.com>Apply Here</a>",
+    "content": "1302 N Texas Weslaco, TX 78596<br>(956) 969-1133",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.102237",
@@ -18813,7 +18812,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1130 W Us Highway 77 San Benito, TX 78586",
     "source": "manual",
-    "content": "1130 W Us Highway 77 San Benito, TX 78586<br>(956) 399-1612<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033908@pizzahut.com>Apply Here</a>",
+    "content": "1130 W Us Highway 77 San Benito, TX 78586<br>(956) 399-1612",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.133430",
@@ -18841,7 +18840,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "9001 Fm 1472 Laredo, TX 78041",
     "source": "manual",
-    "content": "9001 Fm 1472 Laredo, TX 78041<br>(956) 791-8888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033909@pizzahut.com>Apply Here</a>",
+    "content": "9001 Fm 1472 Laredo, TX 78041<br>(956) 791-8888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.583652",
@@ -18867,7 +18866,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1200 International Blvd Brownsville, TX 78520",
     "source": "manual",
-    "content": "1200 International Blvd Brownsville, TX 78520<br>(956) 542-3400<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033910@pizzahut.com>Apply Here</a>",
+    "content": "1200 International Blvd Brownsville, TX 78520<br>(956) 542-3400",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "25.901167",
@@ -18893,7 +18892,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "651 N. Nebraska San Juan, TX 78589",
     "source": "manual",
-    "content": "651 N. Nebraska San Juan, TX 78589<br>(956) 702-8800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033911@pizzahut.com>Apply Here</a>",
+    "content": "651 N. Nebraska San Juan, TX 78589<br>(956) 702-8800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.19753",
@@ -18919,7 +18918,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "9810 N Mcpherson Ave Laredo, TX 78045",
     "source": "manual",
-    "content": "9810 N Mcpherson Ave Laredo, TX 78045<br>(956) 725-9933<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033912@pizzahut.com>Apply Here</a>",
+    "content": "9810 N Mcpherson Ave Laredo, TX 78045<br>(956) 725-9933",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.59922",
@@ -18945,7 +18944,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1905 Padre Blvd South Padre Island, TX 78597",
     "source": "manual",
-    "content": "1905 Padre Blvd South Padre Island, TX 78597<br>(956) 761-1361<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033913@pizzahut.com>Apply Here</a>",
+    "content": "1905 Padre Blvd South Padre Island, TX 78597<br>(956) 761-1361",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.098564",
@@ -18971,7 +18970,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "209 N Hwy. 83 Zapata, TX 78076",
     "source": "manual",
-    "content": "209 N Hwy. 83 Zapata, TX 78076<br>(956) 765-4882<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033914@pizzahut.com>Apply Here</a>",
+    "content": "209 N Hwy. 83 Zapata, TX 78076<br>(956) 765-4882",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.897440",
@@ -18999,7 +18998,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1202 Hwy 100 Port Isabel, TX 78578",
     "source": "manual",
-    "content": "1202 Hwy 100 Port Isabel, TX 78578<br>(956) 943-8888<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033915@pizzahut.com>Apply Here</a>",
+    "content": "1202 Hwy 100 Port Isabel, TX 78578<br>(956) 943-8888",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.071915",
@@ -19025,7 +19024,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "7222 W Expressway 83 Mission, TX 78572",
     "source": "manual",
-    "content": "7222 W Expressway 83 Mission, TX 78572<br>(956) 585-7750<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033916@pizzahut.com>Apply Here</a>",
+    "content": "7222 W Expressway 83 Mission, TX 78572<br>(956) 585-7750",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.238653",
@@ -19051,7 +19050,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2217 E Griffin Pkwy Mission, TX 78572",
     "source": "manual",
-    "content": "2217 E Griffin Pkwy Mission, TX 78572<br>(956) 585-0185<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033917@pizzahut.com>Apply Here</a>",
+    "content": "2217 E Griffin Pkwy Mission, TX 78572<br>(956) 585-0185",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.224773",
@@ -19077,7 +19076,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "247 East Trenton Edinburg, TX 78539",
     "source": "manual",
-    "content": "247 East Trenton Edinburg, TX 78539<br>(956) 381-0992<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033918@pizzahut.com>Apply Here</a>",
+    "content": "247 East Trenton Edinburg, TX 78539<br>(956) 381-0992",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.262280",
@@ -19105,7 +19104,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2253 W. University Dr. Edinburg, TX 78539",
     "source": "manual",
-    "content": "2253 W. University Dr. Edinburg, TX 78539<br>(956) 381-9145<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033919@pizzahut.com>Apply Here</a>",
+    "content": "2253 W. University Dr. Edinburg, TX 78539<br>(956) 381-9145",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.306479",
@@ -19131,7 +19130,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4416 N. Conway Ave., Suite 114 Palmhurst, TX 78573",
     "source": "manual",
-    "content": "4416 N. Conway Ave., Suite 114 Palmhurst, TX 78573<br>(956) 580-9727<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033920@pizzahut.com>Apply Here</a>",
+    "content": "4416 N. Conway Ave., Suite 114 Palmhurst, TX 78573<br>(956) 580-9727",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.260637",
@@ -19157,7 +19156,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1300 S. Cage Blvd. Suite 15 Pharr, TX 78577",
     "source": "manual",
-    "content": "1300 S. Cage Blvd. Suite 15 Pharr, TX 78577<br>(956) 702-0800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033921@pizzahut.com>Apply Here</a>",
+    "content": "1300 S. Cage Blvd. Suite 15 Pharr, TX 78577<br>(956) 702-0800",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.179296",
@@ -19183,7 +19182,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2329 Jacaman Road #13 Laredo, TX 78041",
     "source": "manual",
-    "content": "2329 Jacaman Road #13 Laredo, TX 78041<br>(956) 568-0414<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs033922@pizzahut.com>Apply Here</a>",
+    "content": "2329 Jacaman Road #13 Laredo, TX 78041<br>(956) 568-0414",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.562082",
@@ -19209,7 +19208,7 @@ var config = {
     "title": "Wendy's",
     "address": "5622 FM423, Frisco, TX 75034, United States",
     "source": "manual",
-    "content": "5622 FM 423, Frisco, TX 75034<br>(214) 919-4547<br><a href=\"https://muypizzas.com/crew-application/?store-email=ws11940@muyhamburgers.com>Apply Here</a>",
+    "content": "5622 FM 423, Frisco, TX 75034<br>(214) 919-4547",
     "location": {
       "icon": wendysIcon,
       "lat": "33.126248",
@@ -19241,7 +19240,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1152 Jodeco Rd, Stockbridge, GA 30281, United States",
     "source": "manual",
-    "content": "1152 Jodeco Rd, Stockbridge, GA 30281<br>(770) 957-4827<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs034153@pizzahut.com\">Apply Here</a>",
+    "content": "1152 Jodeco Rd, Stockbridge, GA 30281<br>(770) 957-4827",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.4975346",
@@ -19273,7 +19272,7 @@ var config = {
     "title": "Wendy's",
     "address": "3911 Matlock Rd, Arlington, TX 76015, United States",
     "source": "manual",
-    "content": "3911 Matlock Rd, Arlington, TX 76015<br>(817) 375-9953<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws05257@muyhamburgers.com\">Apply Here</a>",
+    "content": "3911 Matlock Rd, Arlington, TX 76015<br>(817) 375-9953",
     "location": {
       "icon": wendysIcon,
       "lat": "32.681194",
@@ -19305,7 +19304,7 @@ var config = {
     "title": "Wendy's",
     "address": "3400 South Cooper Street, Arlington, TX 76015, United States",
     "source": "manual",
-    "content": "3400 S Cooper, Arlington, TX 76015<br>(817) 375-9986<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02254@muyhamburgers.com\">Apply Here</a>",
+    "content": "3400 S Cooper, Arlington, TX 76015<br>(817) 375-9986",
     "location": {
       "icon": wendysIcon,
       "lat": "32.6907588",
@@ -19337,7 +19336,7 @@ var config = {
     "title": "Wendy's",
     "address": "1687 State HWY 46 South, New Braunfels, TX 78130",
     "source": "manual",
-    "content": "1687 State HWY 46 South, New Braunfels, TX 78130<br>(830) 515-4324<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11729@muyhamburgers.com\">Apply Here</a>\r\n",
+    "content": "1687 State HWY 46 South, New Braunfels, TX 78130<br>(830) 515-4324\r\n",
     "location": {
       "icon": wendysIcon,
       "lat": "29.676936",
@@ -19365,7 +19364,7 @@ var config = {
     "title": "Wendy's",
     "address": "3750 East Broad Street, Mansfield, TX 76063, USA",
     "source": "manual",
-    "content": "3750 East Broad Street, Mansfield, TX 76063<br>(682) 330-7228<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11883@muyhamburgers.com\">Apply Here</a>",
+    "content": "3750 East Broad Street, Mansfield, TX 76063<br>(682) 330-7228",
     "location": {
       "icon": wendysIcon,
       "lat": "32.578914",
@@ -19397,7 +19396,7 @@ var config = {
     "title": "Wendy's",
     "address": "11960 Lebanon Rd, Sharonville, OH 45241, USA",
     "source": "manual",
-    "content": "11960 Lebanon Rd Sharonville, OH 45241<br>(513) 769-3742<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws00279@muyhamburgers.com\">Apply Here</a>",
+    "content": "11960 Lebanon Rd Sharonville, OH 45241<br>(513) 769-3742",
     "location": {
       "icon": wendysIcon,
       "lat": "39.2917328",
@@ -19429,7 +19428,7 @@ var config = {
     "title": "Wendy's",
     "address": "1155 Reading Rd, Mason, OH 45040, USA",
     "source": "manual",
-    "content": "1155 Reading Rd Mason, OH 45040<br>(513) 336-7183<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws02428@muyhamburgers.com\">Apply Here</a>",
+    "content": "1155 Reading Rd Mason, OH 45040<br>(513) 336-7183",
     "location": {
       "icon": wendysIcon,
       "lat": "39.33601039999999",
@@ -19461,7 +19460,7 @@ var config = {
     "title": "Wendy's",
     "address": "8200 Arbor Square Dr, Mason, OH 45040, USA",
     "source": "manual",
-    "content": "8200 Arbor Square Dr Mason, OH 45040<br>(513) 770-4331<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws09574@muyhamburgers.com\">Apply Here</a>",
+    "content": "8200 Arbor Square Dr Mason, OH 45040<br>(513) 770-4331",
     "location": {
       "icon": wendysIcon,
       "lat": "39.31982189999999",
@@ -19493,7 +19492,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "103 W Bay Area Blvd, Webster, TX 77598",
     "source": "manual",
-    "content": "103 W Bay Area Blvd<br>(281) 286-0606<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs034968@pizzahut.com\">Apply Here</a>",
+    "content": "103 W Bay Area Blvd<br>(281) 286-0606",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.548000",
@@ -19525,7 +19524,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "15122 Potranco Road, San Antonio, TX 78245, USA",
     "source": "manual",
-    "content": "15122 Potranco Road, San Antonio, TX 78245<br>(210) 966-4455<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs034961@pizzahut.com\">Apply Here</a>",
+    "content": "15122 Potranco Road, San Antonio, TX 78245<br>(210) 966-4455",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.426480",
@@ -19557,7 +19556,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "8001 South Jackson Road, Pharr, TX 78577, USA",
     "source": "manual",
-    "content": "8001 S Jackson Road, Pharr, TX 78577<br>(956) 403-6655<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs035062@pizzahut.com\">Apply Here</a>",
+    "content": "8001 S Jackson Road, Pharr, TX 78577<br>(956) 403-6655",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.1197366",
@@ -19621,7 +19620,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5300 El Bosque Drive, Edinburg, TX 78542, USA",
     "source": "manual",
-    "content": "5300 El Bosque Edinburg, TX 78542<br>(956) 603-1060<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs035122@pizzahut.com\">Apply Here</a",
+    "content": "5300 El Bosque Edinburg, TX 78542<br>(956) 603-1060<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "26.2436941",
@@ -19653,7 +19652,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "21460 Kuykendahl Building 14A, Suite 200 Spring, TX 77389",
     "source": "manual",
-    "content": "21460 Kuykendahl Building 14A, Suite 200 Spring, TX 77389\r\n<br>(346) 201-7700<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs035331@pizzahut.com\">Apply Here</a",
+    "content": "21460 Kuykendahl Building 14A, Suite 200 Spring, TX 77389\r\n<br>(346) 201-7700<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "30.114860",
@@ -19681,7 +19680,7 @@ var config = {
     "title": "Wendy's",
     "address": "742 Seguin St, San Antonio, TX 78208, USA",
     "source": "manual",
-    "content": "742 Seguin St. San Antonio, TX 78208<br>(210) 501-1162<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws12158@muyhamburgers.com\">Apply Here</a>",
+    "content": "742 Seguin St. San Antonio, TX 78208<br>(210) 501-1162",
     "location": {
       "icon": wendysIcon,
       "lat": "29.4383923",
@@ -19713,7 +19712,7 @@ var config = {
     "title": "Wendy's",
     "address": "4900 Teasley Lane, Denton, TX 76210, USA",
     "source": "manual",
-    "content": "4900 Teasley Lane, Denton, TX 76210<br>(940) 293-2606<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws12240@muyhamburgers.com\">Apply Here",
+    "content": "4900 Teasley Lane, Denton, TX 76210<br>(940) 293-2606<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "33.1484429",
@@ -19745,7 +19744,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1175 E. Alton Gloor Blvd, Brownsville, TX 78521",
     "source": "manual",
-    "content": "1175 E. Alton Gloor Blvd, Brownsville, TX 78521\r\n<br>(956) 338-1510<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs035451@pizzahut.com\">Apply ",
+    "content": "1175 E. Alton Gloor Blvd, Brownsville, TX 78521\r\n<br>(956) 338-1510",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "25.979590",
@@ -19773,7 +19772,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "5944 East Lake Parkway, McDonough, GA 30253, USA",
     "source": "manual",
-    "content": "5944 E. Lake Parkway, McDonough, GA 30253\r\n<br>(678) 940-0501<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs035339@pizzahut.com\">Apply Here</a",
+    "content": "5944 E. Lake Parkway, McDonough, GA 30253\r\n<br>(678) 940-0501<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.5063694",
@@ -19805,7 +19804,7 @@ var config = {
     "title": "Wendy's",
     "address": "4097 Lexington Road, Nicholasville, KY 40356, USA",
     "source": "manual",
-    "content": "4097 Lexington Road, Nicholasville, KY 40356<br>(859) 469-6841<br><a href=\"https://muyhamburgers.com/crew-application/?store-email=ws12209@muyhamburgers.com\">Apply Here",
+    "content": "4097 Lexington Road, Nicholasville, KY 40356<br>(859) 469-6841<br>",
     "location": {
       "icon": wendysIcon,
       "lat": "37.9532566",
@@ -19869,7 +19868,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2820 E Atlanta Rd, Ellenwood, GA 30294, USA",
     "source": "manual",
-    "content": "2820 E Atlanta Rd, Ellenwood, GA 30294\r\n<br>(678) 940-0498<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs035420@pizzahut.com\">Apply Here</a",
+    "content": "2820 E Atlanta Rd, Ellenwood, GA 30294\r\n<br>(678) 940-0498<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.6174829",
@@ -19901,7 +19900,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1702 W Loop N Freeway Ste 1720A, Houston, TX 77008",
     "source": "manual",
-    "content": "1702 W Loop N Freeway Ste 1720A, Houston, TX 77008\r\n<br>(346) 201-7676<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs035332@pizzahut.com\">Apply Here</",
+    "content": "1702 W Loop N Freeway Ste 1720A, Houston, TX 77008\r\n<br>(346) 201-7676",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.800672",
@@ -19929,7 +19928,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "1454 Lockwood Dr Ste C Houston, TX 77020",
     "source": "manual",
-    "content": "1454 Lockwood Dr. Ste C, Houston, TX 77020\r\n<br>(346) 800-9096<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs035631@pizzahut.com\">Apply Here</",
+    "content": "1454 Lockwood Dr. Ste C, Houston, TX 77020\r\n<br>(346) 800-9096<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "29.775363",
@@ -19989,7 +19988,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4480 S Cobb Dr Ste Q Smyrna, GA 30080",
     "source": "manual",
-    "content": "4480 S Cobb Dr Ste Q Smyrna, GA 30080\r\n<br>(770) 434-2345<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs036368@pizzahut.com\">Apply Here</",
+    "content": "4480 S Cobb Dr Ste Q Smyrna, GA 30080\r\n<br>(770) 434-2345<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.845215",
@@ -20017,7 +20016,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "500 Nathan Dean Blvd Ste 101 Dallas, GA 30157",
     "source": "manual",
-    "content": "500 Nathan Dean Blvd, Ste 101, Dallas, GA 30157\r\n<br>(770) 443-2122<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs036475@pizzahut.com\">Apply Here</",
+    "content": "500 Nathan Dean Blvd, Ste 101, Dallas, GA 30157\r\n<br>(770) 443-2122<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.908090",
@@ -20045,7 +20044,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "2860 East West Connector Ste 105 Austell, GA 30106",
     "source": "manual",
-    "content": "2860 East West Connector Ste 105 Austell, GA 30106\r\n<br>(770) 435-4800<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs036504@pizzahut.com\">Apply Here</",
+    "content": "2860 East West Connector Ste 105 Austell, GA 30106\r\n<br>(770) 435-4800<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "33.866940",
@@ -20133,7 +20132,7 @@ var config = {
     "title": "Wendy's",
     "address": "1100 South Broadway, Lexington, KY 40504, USA",
     "source": "manual",
-    "content": "1100 S. Broadway, Lexington, KY 40504<br>\r\n859-381-8140<br>\r\n<a href=\"https://muyhamburgers.com/crew-application/?store-email=ws12744@muyhamburgers.com\">Apply Here",
+    "content": "1100 S. Broadway, Lexington, KY 40504<br>\r\n859-381-8140<br>\r\n",
     "location": {
       "icon": wendysIcon,
       "lat": "38.03657699999999",
@@ -20164,7 +20163,7 @@ var config = {
     "title": "Wendy's",
     "address": "2520 Walden Ave, Cheektowaga, NY 14225, USA",
     "source": "manual",
-    "content": "2520 Walden Ave, Cheektowaga, NY 14225<br>\r\n716-206-7599<br>\r\n<a href=\"https://muyhamburgers.com/crew-application/?store-email=ws12550@muyhamburgers.com\">Apply Here",
+    "content": "2520 Walden Ave, Cheektowaga, NY 14225<br>\r\n716-206-7599<br>\r\n",
     "location": {
       "icon": wendysIcon,
       "lat": "42.9089136",
@@ -20195,7 +20194,7 @@ var config = {
     "title": "Wendy's",
     "address": "3190 Latta Rd, Greece, NY 14612, USA",
     "source": "manual",
-    "content": "3190 Latta Rd, Greece, NY 14612<br>\r\n585-203-8591<br>\r\n<a href=\"https://muyhamburgers.com/crew-application/?store-email=ws12180@muyhamburgers.com\">Apply Here",
+    "content": "3190 Latta Rd, Greece, NY 14612<br>\r\n585-203-8591<br>\r\n",
     "location": {
       "icon": wendysIcon,
       "lat": "43.25295089999999",
@@ -20226,7 +20225,7 @@ var config = {
     "title": "Wendy's",
     "address": "2724 West Loop 340, Waco, TX 76711, USA",
     "source": "manual",
-    "content": "2724 W Loop 340<br>\r\nWaco, TX 76711<br>\r\n(254) 662-9547<br>\r\n<a href=\"https://muyhamburgers.com/crew-application/?store-email=ws12866@muyhamburgers.com\">Apply Here",
+    "content": "2724 W Loop 340<br>\r\nWaco, TX 76711<br>\r\n(254) 662-9547<br>\r\n",
     "location": {
       "icon": wendysIcon,
       "lat": "31.4957582",
@@ -20257,7 +20256,7 @@ var config = {
     "title": "Wendy's",
     "address": "34165 Aurora Rd, Solon, OH 44139, USA",
     "source": "manual",
-    "content": "34165 Aurora Rd, Solon, OH 44139<br>\r\n(440) 991-1273<br>\r\n<a href=\"https://muyhamburgers.com/crew-application/?store-email=ws12678@muyhamburgers.com\">Apply Here",
+    "content": "34165 Aurora Rd, Solon, OH 44139<br>\r\n(440) 991-1273<br>\r\n",
     "location": {
       "icon": wendysIcon,
       "lat": "41.385407",
@@ -20288,7 +20287,7 @@ var config = {
     "title": "Wendy's",
     "address": "853 W Stacy Rd, Allen, TX, USA",
     "source": "manual",
-    "content": "853 W Stacy Rd. Allen, TX 75013<br>\r\n(469) 854-6435<br>\r\n<a href=\"https://muyhamburgers.com/crew-application/?store-email=ws11816@muyhamburgers.com\">Apply Here",
+    "content": "853 W Stacy Rd. Allen, TX 75013<br>\r\n(469) 854-6435<br>\r\n",
     "location": {
       "icon": wendysIcon,
       "lat": "33.1295327",
@@ -20319,7 +20318,7 @@ var config = {
     "title": "Pizza Hut",
     "address": "4414 Ayers St, Corpus Christi, TX 78415, USA",
     "source": "manual",
-    "content": "4414 Ayers St, Corpus Christi, TX 78415,\r\n<br>(361) 852-5601<br><a href=\"https://muypizzas.com/crew-application/?store-email=rs023626@pizzahut.com\">Apply Here</",
+    "content": "4414 Ayers St, Corpus Christi, TX 78415,\r\n<br>(361) 852-5601<br>",
     "location": {
       "icon": pizzaHutIcon,
       "lat": "27.7466212",
