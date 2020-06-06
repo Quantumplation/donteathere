@@ -47,8 +47,11 @@ function init(config) {
   }
 
   //Add marker clustering
-  console.log(config.marker_cluster.image_path);
-  var markerCluster = new MarkerClusterer(map, mapMarkers, {imagePath: config.marker_cluster.image_path});
+  var clusteringOptions = {
+    imagePath: config.marker_cluster.image_path,
+    maxZoom: config.marker_cluster.max_zoom
+  };
+  var markerCluster = new MarkerClusterer(map, mapMarkers, clusteringOptions);
 }
 
 function initMap() {
@@ -20346,13 +20349,8 @@ var config = {
     }]
   }],
   "marker_cluster": {
-    "grid": "20",
     "max_zoom": "8",
-    "image_path": "https://muycompanies.com/wp-content/plugins/wp-google-map-gold/assets/images/m",
-    "icon": "https://muycompanies.com/wp-content/plugins/wp-google-map-gold/assets/images/cluster/8.png",
-    "hover_icon": "https://muycompanies.com/wp-content/plugins/wp-google-map-gold/assets/images/cluster/8.png",
-    "apply_style": true,
-    "marker_zoom_level": "10"
+    "image_path": "images/map/m"
   },
   "listing": {
     "listing_header": "<h2>Map Locations</h2>",
