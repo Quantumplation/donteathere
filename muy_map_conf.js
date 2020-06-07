@@ -21,7 +21,6 @@ function init(config) {
     navigator.geolocation.getCurrentPosition(function(position) {
       map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
       map.setZoom(12);
-      console.log(position.coords.latitude, position.coords.longitude);
     });
   }
 
