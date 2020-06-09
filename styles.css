@@ -70,6 +70,7 @@ body {
 #info-btn {
   font-size: 12pt;
   color: #9c9c9c;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 850px) {
