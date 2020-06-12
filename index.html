@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Vote With Your Wallet | Don't Eat Here</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-fetch" href="https://maps.googleapis.com">
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
     <meta charset="utf-8" /> 
@@ -13,11 +16,8 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-168572685-1');
-
     </script>
-
   </head>
   <body>
     <h1 id="vote-header" class="intro">
@@ -61,8 +61,11 @@
     <div id="map" class="content">
       Map.
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT5S34GDF7ZpjX-aSMkqvDpNuwjl2kwD0&callback=initMap" async defer></script>
     <script src="https://unpkg.com/@google/markerclustererplus@5.0.4/dist/markerclustererplus.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT5S34GDF7ZpjX-aSMkqvDpNuwjl2kwD0"></script>
     <script src="muy_map_conf.js"></script>
+    <script type="text/javascript">
+      initMap();
+    </script>
   </body>
 </html>
