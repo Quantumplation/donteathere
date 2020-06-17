@@ -15,7 +15,7 @@ function init(config) {
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
   var mapMarkers = [];
   var openInfoWindow;
-
+  window.__deh_map = map;
 
   for (var i = 0; i < config.places.length; ++i) {
     (function(place) {

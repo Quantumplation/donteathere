@@ -31,8 +31,8 @@ window.onload = function() {
     //If we can get location information from the browser, update the map's center point & zoom level
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-        map.setZoom(12);
+        window.__deh_map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+        window.__deh_map.setZoom(12);
       });
     }
   }
