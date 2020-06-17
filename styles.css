@@ -79,6 +79,7 @@ body {
   padding-bottom: 10px;
   color: #9c9c9c;
   cursor: pointer;
+  user-select: none;
 }
 
 @media screen and (min-height: 900px) {
@@ -128,6 +129,7 @@ a:visited {
   margin: 0px;
   background-color: #e74c3c;
   cursor: pointer;
+  user-select: none;
 }
 
 .disclaimer {
