@@ -16,13 +16,6 @@ function init(config) {
   var mapMarkers = [];
   var openInfoWindow;
 
-  //If we can get location information from the browser, update the map's center point & zoom level
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-      map.setZoom(12);
-    });
-  }
 
   for (var i = 0; i < config.places.length; ++i) {
     (function(place) {
