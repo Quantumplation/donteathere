@@ -3,6 +3,7 @@ window.onload = function() {
   var intro = document.getElementById("intro");
   var dismissBtn = document.getElementById("dismiss-btn");
   var infoBtn = document.getElementById("info-btn");
+  var locationCentered = false;
   //var content = document.getElementById('intro-content');
 
   function hideIntro() {
@@ -25,9 +26,20 @@ window.onload = function() {
 
     header.classList.add("intro");
   }
+  function centerUser() {
+    locationCentered = true;
+    //If we can get location information from the browser, update the map's center point & zoom level
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+        map.setZoom(12);
+      });
+    }
+  }
 
   if(window.localStorage && window.localStorage.getItem('dismissed')) {
     hideIntro();
+    centerUser();
   } else {
     showIntro();
   }
@@ -35,7 +47,11 @@ window.onload = function() {
     if(window.localStorage) {
       window.localStorage.setItem('dismissed', true);
     }
+
     hideIntro();
+    if(!locationCentered) {
+      centerUser();
+    }
   }
   infoBtn.onclick = showIntro;
 }
