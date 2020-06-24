@@ -1,0 +1,42 @@
+$hero-width: 35vw;
+$hero-bg-color: #2996FF;
+
+$call-to-action-width: 65vw;
+
+#landing{
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  background: red;
+  width: 100%;
+  height: calc(100vh - 120px);
+
+  #hero-image{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: $hero-width;
+    height: 100%;
+    background: $hero-bg-color;
+
+    .hero-img{
+      background: url('./../assets/vote-hero-img.svg') no-repeat bottom;
+      background-size: 96% auto;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  #call-to-action{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    background: white;
+    width: $call-to-action-width;
+    height: 100%;
+
+    padding: 40px;
+    box-sizing: border-box;
+  }
+}
