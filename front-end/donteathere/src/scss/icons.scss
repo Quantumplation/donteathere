@@ -1,0 +1,23 @@
+.scroll-alert-icon{
+  position: relative;
+  display: block;
+  background: url('./../assets/scroll_arrow.svg') no-repeat center;
+  background-size: 100% 100%;
+
+  width: 100%;
+  height: 100%;
+}
+
+.wallet-icon{
+  position: relative;
+  display: block;
+  background: url('./../assets/wallet-icon.svg') no-repeat center;
+  background-size: 100% 100%;
+}
+
+.dollar-sign-icon{
+  position: relative;
+  display: block;
+  background: url('./../assets/dollar-sign-icon.svg') no-repeat center;
+  background-size: auto 100%;
+}

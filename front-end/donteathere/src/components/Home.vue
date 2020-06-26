@@ -3,6 +3,7 @@
     <div id="landing">
       <HeroImage></HeroImage>
       <CallToAction></CallToAction>
+      <span class="scroll-indication scroll-alert-icon"></span>
     </div>
     <div class="section">
       <Map></Map>

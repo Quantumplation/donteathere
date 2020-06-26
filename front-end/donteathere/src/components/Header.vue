@@ -1,6 +1,6 @@
 <template>
   <div id="header" class="">
-
+    <span class="wallet-icon"></span>
   </div>
 </template>
 

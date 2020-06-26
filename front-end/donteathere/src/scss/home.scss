@@ -37,6 +37,37 @@ $call-to-action-width: 60vw;
       text-align: center;
       bottom: 20px;
     }
+
+    .dollar-signs{
+      position: absolute;
+      display: flex;
+      flex-flow: row nowrap;
+      top: calc(90vh - 120px);
+
+      height: 5vw;
+      width: 10vw;
+
+      .dollar-sign-icon{
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 60px;
+      }
+    }
+  }
+
+  .scroll-indication{
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+  }
+
+  .scroll-hero{
+    display: none;
   }
 
   #call-to-action{
@@ -80,11 +111,35 @@ $call-to-action-width: 60vw;
           background-attachment: fixed;
           background-position: center center;
           background-repeat: no-repeat;
-          background-size: 70%;
+          background-size: 60%;
           box-sizing: border-box;
 
           width: 100%;
           height: 100%;
+        }
+
+        p{
+          position: absolute;
+          text-align: center;
+          bottom: 120px;
+        }
+
+        .dollar-signs{
+          position: absolute;
+          display: flex;
+          flex-flow: row nowrap;
+
+          top: calc(80vh - 120px);
+
+          height: 10vw;
+          width: 180px;
+
+          .dollar-sign-icon{
+            position: relative;
+            display: block;
+            height: 100%;
+            width: 60px;
+          }
         }
       }
 
@@ -92,6 +147,15 @@ $call-to-action-width: 60vw;
         p{
           font-size: 1.2em;
         }
+      }
+
+      .scroll-hero, .scroll-indication{
+        position: absolute;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        z-index: 2;
       }
   }
 
