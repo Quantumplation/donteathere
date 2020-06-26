@@ -1,15 +1,16 @@
-$hero-width: 35vw;
+$hero-width: 40vw;
 $hero-bg-color: #2996FF;
 
-$call-to-action-width: 65vw;
+$call-to-action-width: 60vw;
 
 #landing{
   position: relative;
   display: flex;
   flex-flow: row nowrap;
-  background: red;
   width: 100%;
-  height: calc(100vh - 120px);
+  height: 100vh;
+  padding-top: $header-height;
+  box-sizing: border-box;
 
   #hero-image{
     position: relative;
@@ -18,13 +19,23 @@ $call-to-action-width: 65vw;
     width: $hero-width;
     height: 100%;
     background: $hero-bg-color;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 
-    .hero-img{
-      background: url('./../assets/vote-hero-img.svg') no-repeat bottom;
-      background-size: 96% auto;
+    .img{
+      position: relative;
+      display: flex;
+      background: url('./../assets/vote-hero-img.svg') no-repeat center;
+      background-size: 80% 80%;
       width: 100%;
       height: 100%;
-      box-sizing: border-box;
+    }
+
+    p{
+      position: absolute;
+      text-align: center;
+      bottom: 20px;
     }
   }
 
@@ -36,7 +47,61 @@ $call-to-action-width: 65vw;
     width: $call-to-action-width;
     height: 100%;
 
-    padding: 40px;
+    padding: 80px;
     box-sizing: border-box;
+
+    p{
+      font-size: 16px;
+      font-size: 1.3em;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 960px) {
+  #landing {
+    position: relative;
+    display: block;
+    flex-flow: column wrap;
+    height: auto;
+
+      #hero-image, #call-to-action{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 120px);
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #hero-image{
+        .img{
+          background-attachment: fixed;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 70%;
+          box-sizing: border-box;
+
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      #call-to-action{
+        p{
+          font-size: 1.2em;
+        }
+      }
+  }
+
+  .section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 120px);
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
   }
 }

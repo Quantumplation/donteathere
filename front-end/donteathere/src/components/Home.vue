@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    <div id="landing" class="section">
+    <div id="landing">
       <HeroImage></HeroImage>
       <CallToAction></CallToAction>
     </div>
     <div class="section">
-
+      <Map></Map>
     </div>
   </div>
 </template>
@@ -13,6 +13,7 @@
 <script>
 import HeroImage from './Home/HeroImage.vue'
 import CallToAction from './Home/CallToAction.vue'
+import Map from './Home/Map.vue'
 
 export default {
   name: 'Home',
@@ -23,7 +24,8 @@ export default {
   },
   components:{
     HeroImage,
-    CallToAction
+    CallToAction,
+    Map
   }
 }
 </script>

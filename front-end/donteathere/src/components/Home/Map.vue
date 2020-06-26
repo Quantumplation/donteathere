@@ -1,0 +1,13 @@
+<template>
+  <div id="map">
+    Map
+  </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style lang="css" scoped>
+</style>

@@ -1,6 +1,7 @@
 <template>
   <div id="hero-image">
-    <span class="hero-img"></span>
+    <div class="img"></div>
+     <p>$$$$$$$$$$$$$</p>
   </div>
 </template>
 
