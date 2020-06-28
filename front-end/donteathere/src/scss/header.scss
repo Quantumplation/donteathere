@@ -5,15 +5,13 @@
   height: $header-height;
   background: $header-bg-color;
   top: 0;
-
   z-index: 99;
-
   justify-content: flex-start;
 
   span {
     position: relative;
     display: block;
-    width: 100px;
+    width: 10vh;
     margin-left: 10px;
   }
 }

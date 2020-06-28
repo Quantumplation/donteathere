@@ -2,6 +2,7 @@ $hero-width: 40vw;
 $hero-bg-color: #2996FF;
 
 $call-to-action-width: 60vw;
+$call-to-action-font: 'Source Sans Pro', sans-serif;
 
 #landing{
   position: relative;
@@ -80,10 +81,23 @@ $call-to-action-width: 60vw;
 
     padding: 80px;
     box-sizing: border-box;
+    font-family: $call-to-action-font;
 
     p{
+      display: block;
+      width: 100%;
       font-size: 16px;
       font-size: 1.3em;
+    }
+
+    a.color-red{
+      font-weight: 700;
+      color: red;
+    }
+
+    a.color-yellow{
+      font-weight: 700;
+      color: #F7931E;
     }
   }
 }
@@ -100,7 +114,7 @@ $call-to-action-width: 60vw;
         position: relative;
         display: flex;
         width: 100%;
-        height: calc(100vh - 120px);
+        min-height: calc(100vh - 120px);
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
@@ -156,16 +170,12 @@ $call-to-action-width: 60vw;
         height: 60px;
         bottom: 30px;
         z-index: 2;
+        justify-content: center;
       }
   }
 
-  .section{
-    position: relative;
+  #call-to-action{
     display: flex;
-    width: 100%;
-    height: calc(100vh - 120px);
-    flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
   }
 }

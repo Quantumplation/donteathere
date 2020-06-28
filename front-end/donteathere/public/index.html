@@ -4,13 +4,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-fetch" href="https://maps.googleapis.com">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Don't Eat Here - Fast Food that Contributes to Trump 2020</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://donteathere.dev/">
+    <meta property="og:title" content="Don't Eat Here - Fast Food that Contributes to Trump 2020">
+    <meta property="og:description" content="Fast food franchisee, Muy! Brands, has contributed nearly $325,000 to the Trump campaign in the 2020 election cycle. Vote with your wallet. Avoid spending at businesses that support Donald Trump.">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168572685-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-168572685-1');
+    </script>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but Don't Eat Here - Fast Food that Contributes to Trump 2020 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+      <script src="https://unpkg.com/@google/markerclustererplus@5.0.4/dist/markerclustererplus.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT5S34GDF7ZpjX-aSMkqvDpNuwjl2kwD0"></script>
+    <script src="muy_map_conf.js"></script>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

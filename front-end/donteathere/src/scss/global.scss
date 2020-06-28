@@ -1,7 +1,9 @@
 $background-color: orange;
 
-$header-height: 120px;
+$header-height: 12vh;
 $header-bg-color: #2582CE;
+
+$section-height: calc(100vh - 12vh);
 
 html{
   position: absolute;
@@ -12,21 +14,35 @@ html{
 }
 
 body{
-  background: $background-color;
+  // background: $background-color;
   position: relative;
   margin: 0;
-  // padding: $header-height 0 0 0;
   width: 100%;
-  // height: 100%;
-
   font-size: 16px;
   color: black;
 }
 
 
-.section{
+%section{
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: $section-height;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.section{
+  @extend %section;
+}
+
+#map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
