@@ -98,6 +98,23 @@ $hero-font-family: 'Libre Franklin', sans-serif;
     display: flex;
     flex-flow: row nowrap;
   }
+
+  .scroll-alert-icon{
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    animation-name: example;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes example {
+    0%   {bottom: 30px;}
+    50%  {bottom: 40px;}
+    100% {bottom: 29px;}
+  }
 }
 
 @media only screen and (max-width: 960px) {

@@ -28,6 +28,22 @@ export default {
         return color;
     }
   },
+  mounted:function(){
+    $(window).scroll(function() {
+     var scrollPosition = $(window).scrollTop();
+      // console.log(scrollPosition);
+     if (scrollPosition < 20) { //object comes into view (scrolling down)
+       if ($(".scroll-alert-icon").css("opacity")==0) {
+         $(".scroll-alert-icon").fadeTo(200,1);
+       }
+     }
+     else { //object goes out of view (scrolling up)
+       if ($(".scroll-alert-icon").css("opacity")==1) {
+         $(".scroll-alert-icon").fadeTo(200,0);
+       }
+     }
+   });
+ },
   created:function(){
     $(window).scroll(function() {
       $(".slide-left").css({
@@ -42,23 +58,6 @@ export default {
         "left": ($(window).scrollTop()) + "px"
       });
     });
-
-    $(window).scroll(function() {
-      $(".scroll-alert-icon").fadeTo(1.0, 0.0);
-    });
-
-    $(window).scroll(function() {
-     var scrollPosition = $(window).scrollTop();
-      $(".scroll-hero").each(function() {
-        // console.log($(this).css("opacity"));
-       /* If the element is completely within bounds of the window, fade it in */
-       if (scrollPosition > 10) { //object comes into view (scrolling down)
-         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-       } else { //object goes out of view (scrolling up)
-         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-       }
-     });
-   })
   },
 }
 </script>
