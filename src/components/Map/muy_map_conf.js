@@ -1,9 +1,12 @@
+import { Loader } from 'google-maps';
+import MarkerClusterer from '@google/markerclustererplus';
+
 const wendysIcon = "images/w_icon.png";
 const tacoBellIcon = "images/tb_icon.png";
 const pizzaHutIcon = "images/ph_icon.png";
 const phoneIcon = "https://muycompanies.com/wp-content/plugins/wp-google-map-gold/assets/images/icons/telephone.png"; //This is never used, why did they have it?
 
-export function init(config) {
+function init(google, config) {
   var mapOptions = {
     center: {
       lat: parseFloat(config.map_options.center_lat, 10),
@@ -52,11 +55,15 @@ export function init(config) {
     imagePath: config.marker_cluster.image_path,
     maxZoom: config.marker_cluster.max_zoom
   };
-  var markerCluster = new MarkerClusterer(map, mapMarkers, clusteringOptions);
+  
+  new MarkerClusterer(map, mapMarkers, clusteringOptions);
 }
 
 export function initMap() {
-  init(config);
+  const loader = new Loader('AIzaSyDT5S34GDF7ZpjX-aSMkqvDpNuwjl2kwD0');
+  loader.load().then((google) => {
+    init(google, config);
+  });
 }
 
 var config = {
