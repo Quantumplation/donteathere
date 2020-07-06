@@ -63,6 +63,14 @@ export function initMap() {
   const loader = new Loader('AIzaSyDT5S34GDF7ZpjX-aSMkqvDpNuwjl2kwD0');
   loader.load().then((google) => {
     init(google, config);
+
+    //If we can get location information from the browser, update the map's center point & zoom level
+    if (window.__deh_map && navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        window.__deh_map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+        window.__deh_map.setZoom(12);
+      });
+    }
   });
 }
 
