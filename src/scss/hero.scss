@@ -1,0 +1,126 @@
+$hero-bg:#2996FF;
+$hero-font-size: 14vh;
+$hero-font-height: 14.2vh;
+
+$hero-vote-color: red;
+$hero-vote-color-outline: red;
+
+$hero-text-bg-color:#237ace;
+
+$hero-other-color:white;
+$hero-other-color-outline:#FBB03B;
+
+$hero-dollar-sign-color:#FF9800;
+$hero-dollar-sign-color-outline:#FFEB3B;
+
+$hero-font-family: 'Libre Franklin', sans-serif;
+
+.hero-text-div{
+  position: relative;
+  display: flex;
+  background: #2996FF;
+  font-family: $hero-font-family;
+  overflow: hidden;
+  width: 40vw;
+  // width: 100%;
+  align-items:center;
+  flex-flow: column nowrap;
+  user-select:none;
+
+  p{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: 800;
+    font-size: $hero-font-size;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: $hero-text-bg-color;
+    height: $hero-font-height;
+    padding: 0;
+    margin: 0;
+    word-wrap: nowrap;
+    // overflow: hidden;
+  }
+
+  .text-outline{
+    position: absolute;
+    display: block;
+    -webkit-text-stroke-color: $hero-other-color-outline;
+    color:transparent;
+    left: 5px;
+    top: -6px;
+    -webkit-text-stroke-width: 3px;
+  }
+
+  .text-red{
+    position: relative;
+    display: block;
+    color: transparent;
+    -webkit-text-stroke-color: $hero-vote-color-outline;
+
+    .text-outline{
+      color: $hero-vote-color;
+      -webkit-text-stroke-color: $hero-vote-color-outline;
+    }
+  }
+
+  .text-white{
+    position: relative;
+    display: block;
+    color: $hero-other-color;
+    -webkit-text-stroke-color: $hero-other-color-outline;
+    -webkit-text-stroke-width: 0;
+  }
+
+  .text-yellow{
+    position: relative;
+    display: block;
+    color: $hero-dollar-sign-color;
+    -webkit-text-stroke-color: $hero-dollar-sign-color;
+
+    .text-outline{
+      color: $hero-dollar-sign-color-outline;
+    }
+  }
+
+  .slide-left{
+    text-align: left;
+  }
+
+  .slide-right{
+    display:flex;
+    text-align: right;
+    justify-content: center;
+  }
+
+  .row{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .scroll-alert-icon{
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    animation-name: example;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes example {
+    0%   {bottom: 30px;}
+    50%  {bottom: 40px;}
+    100% {bottom: 29px;}
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .hero-text-div{
+    width: 100%;
+    align-items:center;
+    height: $section-height;
+  }
+}

@@ -1,9 +1,12 @@
+import { Loader } from 'google-maps';
+import MarkerClusterer from '@google/markerclustererplus';
+
 const wendysIcon = "images/w_icon.png";
 const tacoBellIcon = "images/tb_icon.png";
 const pizzaHutIcon = "images/ph_icon.png";
 const phoneIcon = "https://muycompanies.com/wp-content/plugins/wp-google-map-gold/assets/images/icons/telephone.png"; //This is never used, why did they have it?
 
-function init(config) {
+function init(google, config) {
   var mapOptions = {
     center: {
       lat: parseFloat(config.map_options.center_lat, 10),
@@ -22,7 +25,7 @@ function init(config) {
       var image = {
         url: place.location.icon,
       };
-  
+
       var marker = new google.maps.Marker({
         map: map,
         icon: image,
@@ -33,7 +36,7 @@ function init(config) {
         }
       });
       mapMarkers.push(marker);
-  
+
       var infoWindow = new google.maps.InfoWindow({
         content: '<h2>' + place.title + '</h2>' + place.content
       });
@@ -52,11 +55,23 @@ function init(config) {
     imagePath: config.marker_cluster.image_path,
     maxZoom: config.marker_cluster.max_zoom
   };
-  var markerCluster = new MarkerClusterer(map, mapMarkers, clusteringOptions);
+  
+  new MarkerClusterer(map, mapMarkers, clusteringOptions);
 }
 
-function initMap() {
-  init(config);
+export function initMap() {
+  const loader = new Loader('AIzaSyDT5S34GDF7ZpjX-aSMkqvDpNuwjl2kwD0');
+  loader.load().then((google) => {
+    init(google, config);
+
+    //If we can get location information from the browser, update the map's center point & zoom level
+    if (window.__deh_map && navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        window.__deh_map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+        window.__deh_map.setZoom(12);
+      });
+    }
+  });
 }
 
 var config = {
